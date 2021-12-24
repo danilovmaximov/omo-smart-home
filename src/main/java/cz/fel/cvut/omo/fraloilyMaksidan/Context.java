@@ -6,6 +6,7 @@ public class Context {
     private int lightLevel;
     private int humidityLevel;
     private ReportsAPI reports;
+    private int windSpeed;
 
     private static Context instance;
 
@@ -19,24 +20,32 @@ public class Context {
         return lightLevel;
     }
 
-    public int getHumidityLevel() {
-        return humidityLevel;
-    }
-
-    public ReportsAPI getReports() {
-        return reports;
-    }
-
     public void setLightLevel(int lightLevel) {
         this.lightLevel = lightLevel;
+    }
+
+    public int getHumidityLevel() {
+        return humidityLevel;
     }
 
     public void setHumidityLevel(int humidityLevel) {
         this.humidityLevel = humidityLevel;
     }
 
+    public ReportsAPI getReports() {
+        return reports;
+    }
+
     public void setReports(ReportsAPI reports) {
         this.reports = reports;
+    }
+
+    public int getWindSpeed() {
+        return windSpeed;
+    }
+
+    public void setWindSpeed(int windSpeed) {
+        this.windSpeed = windSpeed;
     }
 
     public static Context getInstance() {
@@ -44,6 +53,10 @@ public class Context {
             instance = new Context(50,50, new ReportsAPI());
         }
         return instance;
+    }
+
+    public void step() {
+        //TODO: change context parameters according to could add strategy here
     }
 
 
