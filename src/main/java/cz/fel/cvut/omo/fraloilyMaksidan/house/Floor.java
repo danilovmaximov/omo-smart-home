@@ -6,15 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Floor {
-    List<Appliance> appliances = new ArrayList<>();
+    //List<Appliance> appliances = new ArrayList<>();
     List<LivingEntity> entities = new ArrayList<>();
-    //List<Window> windows = new ArrayList<>();
+    List<Window> windows = new ArrayList<>();
 
-    public void addAppliance(Appliance appliance) {
-        appliances.add(appliance);
-    }
 
     public void addEntities(LivingEntity entity) {
         entities.add(entity);
+    }
+
+    public void addWindows(Window window) {
+        windows.add(window);
     }
 }
