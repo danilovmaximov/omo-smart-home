@@ -1,6 +1,8 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 
 import java.util.List;
 
@@ -10,6 +12,7 @@ import java.util.List;
 abstract public class LivingEntity {
     private final String name;
     private Activity activity;
+    protected House house;
     private final List<Activity> activities;
     private int currentActivity = 0;
 
@@ -31,6 +34,10 @@ abstract public class LivingEntity {
             );
         }
     }
+
+    public void setHouse(House house) { this.house = house; }
+
+    public void reportBreakage(Activity activity) { this.house.addBrokenActivity(activity); }
 
     public void step() {
         this.activity.doActivity(this);
