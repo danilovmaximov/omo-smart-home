@@ -1,23 +1,26 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.Room;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
 
 abstract public class Activity {
     final String name;
-    final Room room;
+    Room room;
     final ActivityReporter reporter;
     int activityLength;
 
     LivingEntity isUsing;
     int currentStep = 0;
 
-    public Activity(Room room, String name, int activityLength, ActivityReporter reporter) {
+    public Activity(String name, int activityLength, ActivityReporter reporter) {
         this.name = name;
-        this.room = room;
         this.reporter = reporter;
         this.activityLength = activityLength;
+    }
+
+    public void moveToTheRoom(Room room) {
+        this.room = room;
     }
 
     public void doActivity(LivingEntity entity) {

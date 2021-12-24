@@ -12,11 +12,11 @@ import java.util.List;
 abstract public class LivingEntity {
     private final String name;
     private Activity activity;
-    private final List<CoffeeMaker> activities;
+    private final List<Activity> activities;
     int currentActivity = 0;
     private ActivityReporter rp;
 
-    public LivingEntity(String name, List<CoffeeMaker> activities, ActivityReporter rp) {
+    public LivingEntity(String name, List<Activity> activities, ActivityReporter rp) {
         this.name = name;
         this.activities = activities;
         this.rp = rp;
