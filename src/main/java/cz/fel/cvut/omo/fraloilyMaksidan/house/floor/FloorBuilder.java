@@ -1,6 +1,5 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.floor;
 
-
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
 public class FloorBuilder implements Builder {
@@ -19,7 +18,13 @@ public class FloorBuilder implements Builder {
 
     @Override
     public FloorBuilder addRoom(Room room) {
-        this.floor.AddRoom(room);
+        this.floor.addRoom(room);
+        return this;
+    }
+
+    @Override
+    public FloorBuilder initRooms() {
+        this.floor.initRooms();
         return this;
     }
 
