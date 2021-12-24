@@ -40,6 +40,7 @@ public class Main {
 
 
         World w1 = new World( house, 50, 40);
-        w1.startSimulation(10);
+        w1.startSimulation(3);
+        reporter.EntityToActivityMapping();
     }
 }

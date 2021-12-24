@@ -33,12 +33,14 @@ abstract public class Activity {
             return;
         }
         if(currentStep == 0) {
+            System.out.println("New activity!");
             isUsing = entity;
             reporter.addToReports(isUsing, this);
         }
         if(currentStep == activityLength) {
             currentStep = 0;
             isUsing = null;
+            System.out.println(entity + " finished with " + this + " in the " + room);
             entity.changeState();
         } else {
             System.out.println(entity + " uses " + this + " in the " + room);
