@@ -7,7 +7,7 @@ public class CoffeeMaker extends Activity {
 
     public static final int MAX_LENGTH = 2;
 
-    public CoffeeMaker(ActivityReporter reporter) {
-        super("CoffeeMaker3000", 2, reporter);
+    public CoffeeMaker() {
+        super("CoffeeMaker3000", 2);
     }
 }

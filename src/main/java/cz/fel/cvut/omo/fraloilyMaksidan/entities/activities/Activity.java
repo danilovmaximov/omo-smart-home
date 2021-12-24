@@ -1,21 +1,21 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
 
 abstract public class Activity {
-    final String name;
-    Room room;
-    final ActivityReporter reporter;
-    int activityLength;
+    private final String name;
+    private Room room;
+    private final Context context = Context.getInstance();
+    private int activityLength;
 
-    LivingEntity isUsing;
-    int currentStep = 0;
+    private LivingEntity isUsing;
+    private int currentStep = 0;
 
-    public Activity(String name, int activityLength, ActivityReporter reporter) {
+    public Activity(String name, int activityLength) {
         this.name = name;
-        this.reporter = reporter;
         this.activityLength = activityLength;
     }
 
@@ -35,7 +35,7 @@ abstract public class Activity {
         if(currentStep == 0) {
             System.out.println("New activity!");
             isUsing = entity;
-            reporter.addToReports(isUsing, this);
+            context.getReports().getActivityReporter().addToReports(entity, this);
         }
         if(currentStep == activityLength) {
             currentStep = 0;

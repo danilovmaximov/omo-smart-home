@@ -1,8 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.CoffeeMaker;
-import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
 
 import java.util.List;
 
@@ -13,13 +11,11 @@ abstract public class LivingEntity {
     private final String name;
     private Activity activity;
     private final List<Activity> activities;
-    int currentActivity = 0;
-    private ActivityReporter rp;
+    private int currentActivity = 0;
 
-    public LivingEntity(String name, List<Activity> activities, ActivityReporter rp) {
+    public LivingEntity(String name, List<Activity> activities) {
         this.name = name;
         this.activities = activities;
-        this.rp = rp;
         this.testInstance();
         this.activity = activities.get(0);
     }

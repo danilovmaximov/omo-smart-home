@@ -5,13 +5,9 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 public class World {
 
     private House house;
-    private int lightLevel;
-    private int humidityLevel;
 
-    public World(House house, int lightLevel, int humidityLevel) {
+    public World(House house) {
         this.house = house;
-        this.lightLevel = lightLevel;
-        this.humidityLevel = humidityLevel;
     }
 
     public void startSimulation(int hours) {
