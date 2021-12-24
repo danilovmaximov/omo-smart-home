@@ -1,7 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.senzors;
 
 public class SunSensor extends EventManager {
-
+    String name = "SunSensor";
     boolean reportedUp;
     public SunSensor(String... operations) {
         super(operations);
@@ -20,5 +20,10 @@ public class SunSensor extends EventManager {
             reportedUp = false;
             this.notifySubscribers("LightDown");
         }
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 }

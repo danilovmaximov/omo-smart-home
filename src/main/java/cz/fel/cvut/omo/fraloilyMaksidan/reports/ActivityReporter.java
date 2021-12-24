@@ -18,7 +18,6 @@ public class ActivityReporter {
     public void EntityToActivityMapping() {
         reports.entrySet()
                 .stream()
-                .sorted()
                 .forEach( (entry) -> System.out.println(entry.getKey() + " used " + entry.getValue()));
     }
 
