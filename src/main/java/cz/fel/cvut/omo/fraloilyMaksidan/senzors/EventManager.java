@@ -7,24 +7,27 @@ import java.util.*;
 
 public abstract class EventManager implements Iterable {
     Context context = Context.getInstance();
-    List<Subscriber> subscribers = new LinkedList<>();
+    Map<String, List<Subscriber>> subscribers = new HashMap<>();
 
-    public EventManager(Subscriber... subscribers) {
-        Collections.addAll(this.subscribers, subscribers);
-    }
-
-    public void subscribe(Subscriber s) {
-        this.subscribers.add(s);
-    }
-
-    public void unsubscribe(Subscriber s) {
-        this.subscribers.remove(s);
-    }
-
-    public void notifySubscribers() {
-        for(Subscriber s: this.subscribers) {
-            s.update();
+    public EventManager(String... operations) {
+        for(String operation : operations) {
+            this.subscribers.put(operation, new ArrayList<>());
         }
     }
+
+    public void subscribe(String eventType, Subscriber s) {
+        List<Subscriber> users = subscribers.get(eventType);
+        users.add(s);
+    }
+
+    public void notifySubscribers(String event) {
+        List<Subscriber> users = subscribers.get(event);
+        context.getReports().getEventReport().addToReports(this, event, users);
+        for(Subscriber s: users) {
+            s.update(event);
+        }
+    }
+
+    abstract public void step();
 
 }

@@ -4,6 +4,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandad;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.CoffeeMaker;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.Window;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.senzors.SunSensor;
@@ -12,7 +13,6 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-
         /*
            Configure context of application:
            Weather events, report classes...
@@ -34,9 +34,9 @@ public class Main {
         var me = new Grandad("Ilya", activitiesForGrandad);
 
         /*
-         * Builder is provided for structures of house: rooms, floors and co on...
+         * Builders are provided for structures of house: rooms, floors and co on...
          */
-        var Kitchen = new RoomBuilder()
+        var kitchen = new RoomBuilder()
                 .setName("Kitchen")
                 .setActivityObjects(coffee3000)
                 .setEntities(me)
@@ -44,19 +44,35 @@ public class Main {
 
         var floor = new FloorBuilder()
                 .setFloorNumber(1)
-                .addRoom(Kitchen)
+                .addRoom(kitchen)
                 .getResult();
+
+        var windowInTheKitchen = new Window();
 
         // TODO: add builder to house class.
         var house = new House("Street Lane 69");
         house.addFloor(floor);
-        house.addSensors(new SunSensor());
 
         /*
-         * World class is wrapper around house to provide different simulations...
+         * Sensors are EventManagers, that are responding to context changes.
+         * For example, we can subscribe window for changing light level.
+         * Based on light level window can change its internal state...
+         */
+        var sunSensor = new SunSensor("LightUp", "LightDown");
+        sunSensor.subscribe("LightUp", windowInTheKitchen);
+        sunSensor.subscribe("LightDown", windowInTheKitchen);
+        house.addSensors(sunSensor);
+
+
+        /*
+         * World class is a wrapper around house class to provide different simulations...
          */
         World w1 = new World(house);
         w1.startSimulation(3);
+
+        /*
+        *   Reports are used to deliver different info based on the demand;
+         */
         context.getReports().getActivityReporter().EntityToActivityMapping();
     }
 }
