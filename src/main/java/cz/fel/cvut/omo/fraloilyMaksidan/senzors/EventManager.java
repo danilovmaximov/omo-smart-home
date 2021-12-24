@@ -29,5 +29,4 @@ public abstract class EventManager implements Iterable {
     }
 
     abstract public void step();
-
 }
