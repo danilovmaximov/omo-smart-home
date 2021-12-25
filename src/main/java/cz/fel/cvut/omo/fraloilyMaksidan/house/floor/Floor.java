@@ -7,6 +7,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.zip.CheckedOutputStream;
 
 public class Floor {
@@ -41,8 +42,9 @@ public class Floor {
     public String toString() {
         return "{ " +
                 "name: floor, "+
-                "number: " + floorNumber + "," +
-                "rooms: "  + Arrays.toString(rooms.toArray()) +
+                "number: " + floorNumber + ", " +
+                "rooms: "  + Arrays.toString(rooms.toArray()) + ", " +
+                "entitiesOnTheFloor: " + rooms.stream().map(Room::entitiesConfiguration).collect(Collectors.joining()) +
                 " }";
     }
 }

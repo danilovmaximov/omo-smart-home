@@ -6,18 +6,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
 
-enum Durability {
-    UNBREAKABLE(0), STRONG(5), NORMAL(10), WEAK(20);
-
-    private int deter; // deterioration
-    Durability(int det) {
-        this.deter = det;
-    }
-    public int getDeterioration() {
-        return this.deter;
-    }
-}
-
 abstract public class Activity {
     private final String name;
     private Room room;

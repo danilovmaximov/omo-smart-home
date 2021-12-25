@@ -40,7 +40,7 @@ public class Room {
     }
 
     public String entitiesConfiguration() {
-        return "Entities: " + Arrays.toString(entities.toArray());
+        return Arrays.toString(entities.toArray());
     }
 
     @Override
