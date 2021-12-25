@@ -1,11 +1,13 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.Configurable;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.senzors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.senzors.SensorsStation;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class House {
@@ -46,5 +48,14 @@ public class House {
         Activity result = this.brokenActivities.get(0);
         this.brokenActivities.remove(0);
         return result;
+    }
+
+    @Override
+    public String toString() {
+        return "House: {\n" +
+                "   address: " + address + ",\n" +
+                "   " + station + "\n" +
+                "   floors=" + Arrays.toString(floors.toArray()) + "\n" +
+                "}";
     }
 }

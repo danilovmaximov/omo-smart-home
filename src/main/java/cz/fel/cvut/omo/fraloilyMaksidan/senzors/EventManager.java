@@ -15,6 +15,10 @@ public abstract class EventManager implements Iterable {
         }
     }
 
+    public Map<String, List<Subscriber>> getSubscribers() {
+        return subscribers;
+    }
+
     public void subscribe(String eventType, Subscriber s) {
         List<Subscriber> users = subscribers.get(eventType);
         users.add(s);

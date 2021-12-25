@@ -63,9 +63,11 @@ public class Main {
         house.addFloor(floor);
         house.initFloors();
 
+        // TODO: Нахуя?
         me.setHouse(house);
         otherMe.setHouse(house);
 
+        //TODO: Нахуя?
         coffee3000.moveToTheRoom(kitchen);
         repairKit.moveToTheRoom(kitchen);
 
@@ -88,10 +90,9 @@ public class Main {
         /*
             Reports are used to deliver different info based on the demand;
          */
-        context.getReports().getEventReport().eventsBySource();
-        context.setLightLevel(10);
-        context.setHumidityLevel(10);
-        w1.startSimulation(3);
-        context.getReports().getEventReport().eventsBySource();
+        var reports = context.getReports();
+        reports.getActivityReporter().EntityToActivityMapping();
+        reports.getEventReport().eventsBySource();
+        reports.getHouseConfigurationReport().getConfiguration();
     }
 }

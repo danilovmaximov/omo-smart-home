@@ -4,6 +4,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.senzors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.senzors.Subscriber;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class EventReport {
     Map<EventManager, Map<String, List<Subscriber>>> reports = new LinkedHashMap<>();
@@ -33,6 +34,10 @@ public class EventReport {
                     entry.getValue().entrySet().stream()
                         .forEach(entry2 -> System.out.println(entry2.getKey() + Arrays.toString(entry2.getValue().toArray())));
                 });
+    }
+
+    public void eventsByType() {
+
     }
 
 

@@ -9,6 +9,7 @@ public class World {
 
     public World(House house) {
         this.house = house;
+        context.getReports().getHouseConfigurationReport().setHouse(house);
     }
 
     public void startSimulation(int hours) {
