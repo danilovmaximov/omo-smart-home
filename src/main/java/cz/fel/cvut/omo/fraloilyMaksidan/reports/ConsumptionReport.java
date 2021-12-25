@@ -3,7 +3,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.ApplianceActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.consumptions.Consumption;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.ConsumptionType;
-import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportObjects.ConsumptionTransaction;
+import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ public class ConsumptionReport {
         reports.stream()
                 .collect(Collectors.groupingBy(ConsumptionTransaction::getEntity))
                 .forEach((entity, listOfConsumption) -> {
-                    System.out.println(entity +":\n");
+                    System.out.println("=================== " + entity +" ===================");
                     System.out.printf("Electricity consumption: %d\n", reducePriceByConsumption(listOfConsumption, ConsumptionType.ELECTRICITY));
                     System.out.printf("Water consumption: %d\n", reducePriceByConsumption(listOfConsumption, ConsumptionType.WATER));
                     System.out.printf("Gas consumption: %d\n", reducePriceByConsumption(listOfConsumption, ConsumptionType.GAS));

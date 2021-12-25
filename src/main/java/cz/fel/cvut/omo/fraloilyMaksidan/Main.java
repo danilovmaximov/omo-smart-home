@@ -91,9 +91,14 @@ public class Main {
             Reports are used to deliver different info based on the demand;
          */
         var reports = context.getReports();
+        System.out.println();
         //reports.getActivityReporter().EntityToActivityMapping();
-        //reports.getEventReport().eventsBySource();
-        //reports.getHouseConfigurationReport().getConfiguration();
+        System.out.println();
+        reports.getEventReport().eventsBySource();
+        System.out.println();
+        reports.getHouseConfigurationReport().getConfiguration();
+        System.out.println();
         reports.getConsumptionReport().getAllConsumptions();
+        System.out.println();
     }
 }

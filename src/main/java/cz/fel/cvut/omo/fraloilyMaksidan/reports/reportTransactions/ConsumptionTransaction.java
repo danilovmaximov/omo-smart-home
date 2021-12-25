@@ -1,4 +1,4 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportObjects;
+package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.ApplianceActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.consumptions.Consumption;
