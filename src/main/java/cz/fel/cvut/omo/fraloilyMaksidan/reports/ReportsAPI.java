@@ -4,6 +4,7 @@ public class ReportsAPI {
     ActivityReporter activityReporter = new ActivityReporter();
     EventReport eventReport = new EventReport();
     HouseConfigurationReport houseConfigurationReport = new HouseConfigurationReport();
+    ConsumptionReport consumptionReport = new ConsumptionReport();
 
     public ActivityReporter getActivityReporter() {
         return activityReporter;
@@ -11,6 +12,10 @@ public class ReportsAPI {
 
     public EventReport getEventReport() {
         return eventReport;
+    }
+
+    public ConsumptionReport getConsumptionReport() {
+        return consumptionReport;
     }
 
     public HouseConfigurationReport getHouseConfigurationReport() {

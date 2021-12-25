@@ -1,7 +1,8 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities;
+package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.Durability;
 
 public class RepairKit extends Activity {
     public RepairKit() {

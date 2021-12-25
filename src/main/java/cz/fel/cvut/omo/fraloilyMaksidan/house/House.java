@@ -1,7 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.Configurable;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.senzors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.senzors.SensorsStation;

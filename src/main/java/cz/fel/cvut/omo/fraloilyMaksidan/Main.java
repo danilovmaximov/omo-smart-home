@@ -2,9 +2,9 @@ package cz.fel.cvut.omo.fraloilyMaksidan;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.Father;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandad;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.CoffeeMaker;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.RepairKit;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.CoffeeMaker;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.RepairKit;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.Window;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder;
@@ -91,8 +91,9 @@ public class Main {
             Reports are used to deliver different info based on the demand;
          */
         var reports = context.getReports();
-        reports.getActivityReporter().EntityToActivityMapping();
-        reports.getEventReport().eventsBySource();
-        reports.getHouseConfigurationReport().getConfiguration();
+        //reports.getActivityReporter().EntityToActivityMapping();
+        //reports.getEventReport().eventsBySource();
+        //reports.getHouseConfigurationReport().getConfiguration();
+        reports.getConsumptionReport().getAllConsumptions();
     }
 }

@@ -1,12 +1,10 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.room;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.Configurable;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 
-import javax.swing.text.html.parser.Entity;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
