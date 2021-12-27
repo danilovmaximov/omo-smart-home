@@ -1,19 +1,15 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.EventManager;
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.Subscriber;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
 public class Window implements Subscriber {
     private Context context = Context.getInstance();
     boolean closedCurtain = false;
 
     @Override
-    public void update(String event) {
+    public void update(String event, EventManager source) {
         switch (event) {
             case "LightUp" -> closedCurtain = true;
             case "LightDown" -> closedCurtain = false;

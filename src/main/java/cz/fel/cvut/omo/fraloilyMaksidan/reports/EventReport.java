@@ -1,8 +1,8 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.EventTransaction;
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.EventManager;
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.Subscriber;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
 import java.util.*;
 import java.util.stream.Collectors;

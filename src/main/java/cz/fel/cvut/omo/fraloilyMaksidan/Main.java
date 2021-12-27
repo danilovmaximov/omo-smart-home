@@ -4,17 +4,18 @@ import cz.fel.cvut.omo.fraloilyMaksidan.entities.Father;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandad;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.CoffeeMaker;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.RepairKit;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.Window;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder;
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.SunSensor;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.SunSensor;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        //TODO: Implement queue of activities.
+        //TODO: Finish baby and mum slut.
         /*
             Configure context of application:
             Weather events, report classes...

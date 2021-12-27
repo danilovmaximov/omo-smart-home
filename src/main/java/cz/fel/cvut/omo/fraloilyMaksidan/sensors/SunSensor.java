@@ -1,4 +1,4 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.senzors;
+package cz.fel.cvut.omo.fraloilyMaksidan.sensors;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Iterable;
 

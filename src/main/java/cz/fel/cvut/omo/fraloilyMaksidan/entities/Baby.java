@@ -1,15 +1,15 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.EventManager;
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.Subscriber;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
 import java.util.List;
 
 public class Baby extends LivingEntity {
-    private final String event = "Triggerd";
-    EventManager babyEvents = new EventManager(event);
+    private final String event = "Triggered";
+    EventManager babyEvents;
 
-    public Baby(String name, Subscriber... supervisors) {
+    public Baby(String name) {
         super(name, List.of(
                 // Sleep, eat, shit
         ));
@@ -20,7 +20,5 @@ public class Baby extends LivingEntity {
     }
 
 
-
-
-
 }
+

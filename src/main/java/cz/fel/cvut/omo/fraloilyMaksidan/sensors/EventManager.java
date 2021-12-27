@@ -1,10 +1,10 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.senzors;
+package cz.fel.cvut.omo.fraloilyMaksidan.sensors;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 
 import java.util.*;
 
-public class EventManager {
+public abstract class EventManager {
     Context context = Context.getInstance();
     Map<String, List<Subscriber>> subscribers = new HashMap<>();
 

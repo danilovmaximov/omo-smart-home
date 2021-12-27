@@ -47,7 +47,7 @@ public class Context {
     public void setWindSpeed(int windSpeed) {
         this.windSpeed = windSpeed;
     }
-
+    //  Context context = Context.getInstance();
     public static Context getInstance() {
         if(instance == null) {
             instance = new Context(50,50, new ReportsAPI());

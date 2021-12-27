@@ -1,9 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.EventManager;
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.Subscriber;
-
-import java.util.List;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
 public class EventTransaction {
     private EventManager manager;

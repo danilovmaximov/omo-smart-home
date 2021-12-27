@@ -1,7 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
-import cz.fel.cvut.omo.fraloilyMaksidan.senzors.SunSensor;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.SunSensor;
 
 public class HouseBuilder implements Builder {
     House house = new House();

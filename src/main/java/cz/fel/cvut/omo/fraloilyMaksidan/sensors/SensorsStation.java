@@ -1,6 +1,4 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.senzors;
-
-import cz.fel.cvut.omo.fraloilyMaksidan.Configurable;
+package cz.fel.cvut.omo.fraloilyMaksidan.sensors;
 
 import java.util.ArrayList;
 import java.util.Arrays;
