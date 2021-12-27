@@ -15,10 +15,8 @@ public class RoomBuilder implements Builder{
         return this;
     }
 
-    @Override
-    public RoomBuilder setActivityObjects(Activity activity) {
-        activity.moveToTheRoom(room);
-        this.room.getActivities().add(activity);
+    public RoomBuilder setActivity(Activity activity) {
+        this.room.setActivity(activity);
         return this;
     }
 

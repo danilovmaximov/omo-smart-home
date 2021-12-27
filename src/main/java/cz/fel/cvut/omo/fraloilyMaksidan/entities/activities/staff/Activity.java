@@ -8,16 +8,17 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
 abstract public class Activity {
     private final String name;
+    private final ActivityManual manual;
     private Room room;
     protected House house;
 
-    private Durability durability;
-    private int deterioration;
+    private final Durability durability;
+    private final int deterioration;
     private int condition = 100;
 
-    private int activityLength;
+    private final int activityLength;
     private int currentStep = 0;
-    private LivingEntity isUsing;
+    protected LivingEntity isUsing;
 
     protected final Context context = Context.getInstance();
 
@@ -26,62 +27,75 @@ abstract public class Activity {
         this.activityLength = activityLength;
         this.durability = durability;
         this.deterioration = this.durability.getDeterioration();
+
+        if (this.durability == Durability.WEAK) this.manual = new ActivityManual(true);
+        else this.manual = new ActivityManual(false);
+    }
+
+    public void interactWithActivity(LivingEntity entity) {
+        if(isUsing == entity) {return;}
+        if(room.getEntities().contains(entity)) {
+            if (inUseByOtherThen(entity)) {
+                System.out.println(entity + " wanted to use " + this + " but this is already in use by " + isUsing);
+                entity.changeState();
+            } else {
+                System.out.println(entity +" started using " + this);
+                useActivityBy(entity);
+            }
+        } else {
+            System.out.println(entity + " is moving to the room, where " + this + " is placed.");
+        }
     }
 
     private boolean isBroken() {
         return this.condition <= 0;
     }
+    public ActivityManual getManual() { return this.manual; }
 
     public void moveToTheRoom(Room room) {
         this.room = room;
         this.house = room.getFloor().getHouse();
     }
 
-    public void fixUp() {
-        this.condition = 100;
-    }
+    public void fixUp() { this.condition = 100; }
+    public void getNew() { this.condition = 100; }
 
-    public void doActivity(LivingEntity entity) {
-        if (inUseByOtherThen(entity)) {
-            System.out.println(entity + " wanted to use " + this + " but this is already in use by " + isUsing);
-            entity.changeState();
+    public void step() {
+        if(isIdle()) {
+            System.out.println(this + " is idle.");
+            manageIdle();
             return;
         }
         if (isBroken()) {
-            System.out.println(entity + " wanted to use " + this + " but it is broken");
-            entity.changeState();
+            System.out.println(isUsing + " wanted to use " + this + " but it is broken");
+            isUsing.changeState();
             return;
         }
-        if (isNewActivity()) {
-            System.out.println("New activity: " + this);
-            useActivityBy(entity);
-        }
-
-        if (activityIsFinished()) {
-            finishActivity();
-            System.out.println(entity + " finished with " + this + " in the " + room);
-            entity.changeState();
-            //TODO Change this.
+        if (isFinished()) {
+            System.out.println(isUsing + " finished with " + this + " in the " + room);
+            isUsing.changeState();
+            // TODO Change this.
             if (isBroken()) {
                 condition = 0;
-                System.out.println(this + " has just broken, " + entity + " reports it");
-                entity.reportBreakage(this);
+                System.out.println(this + " has just broken, " + isUsing + " reports it");
+                isUsing.reportBreakage(this);
             }
             //
+            finishActivity();
             System.out.println(this + "'s current condition is " + condition + "%");
             return;
         } else {
-            System.out.println(entity + " uses " + this + " in the " + room);
-            manageState();
+            System.out.println(isUsing + " uses " + this + " in the " + room);
+            manageStep();
         }
+    }
+
+    private boolean isIdle() {
+        return isUsing == null;
     }
 
     private boolean inUseByOtherThen(LivingEntity entity) {
         return isUsing != null && isUsing != entity;
-    }
-
-    private boolean isNewActivity() {
-        return currentStep == 0;
     }
 
     private void useActivityBy(LivingEntity entity) {
@@ -89,11 +103,15 @@ abstract public class Activity {
         context.getReports().getActivityReporter().addToReports(entity, this);
     }
 
-    private boolean activityIsFinished() {
+    private boolean isFinished() {
         return currentStep == activityLength;
     }
 
-    protected void manageState() {
+    private void manageIdle() {
+
+    }
+
+    protected void manageStep() {
         currentStep++;
     }
 

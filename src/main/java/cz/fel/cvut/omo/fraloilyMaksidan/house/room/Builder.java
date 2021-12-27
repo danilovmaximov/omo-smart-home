@@ -5,7 +5,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 
 public interface Builder {
     void reset();
-    RoomBuilder setActivityObjects(Activity activity);
     RoomBuilder setEntities(LivingEntity entity);
     Room getResult();
 }

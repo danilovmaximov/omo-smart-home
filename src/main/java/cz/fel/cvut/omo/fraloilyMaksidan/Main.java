@@ -47,6 +47,8 @@ public class Main {
         var kitchen = new RoomBuilder()
                 .setName("Kitchen")
                 .setEntities(me)
+                .setActivity(coffee3000)
+                .setActivity(repairKit)
                 .setEntities(otherMe)
                 .getResult();
 
@@ -92,7 +94,7 @@ public class Main {
          */
         var reports = context.getReports();
         System.out.println();
-        //reports.getActivityReporter().EntityToActivityMapping();
+        reports.getActivityReporter().EntityToActivityMapping();
         System.out.println();
         reports.getEventReport().eventsBySource();
         System.out.println();

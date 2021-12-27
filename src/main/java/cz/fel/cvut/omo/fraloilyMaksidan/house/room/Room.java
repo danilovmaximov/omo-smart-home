@@ -4,6 +4,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,6 +24,8 @@ public class Room {
 
     public Floor getFloor() { return this.floor; }
 
+    public void setActivity(Activity activity) { this.activities.add(activity); }
+
     public List<Activity> getActivities() {
         return activities;
     }
@@ -32,9 +35,8 @@ public class Room {
     }
 
     public void step() {
-        for(LivingEntity e: entities) {
-            e.step();
-        }
+        entities.forEach(LivingEntity::step);
+        activities.forEach(Activity::step);
     }
 
     public String entitiesConfiguration() {

@@ -39,7 +39,7 @@ abstract public class LivingEntity {
     public void reportBreakage(Activity activity) { this.house.addBrokenActivity(activity); }
 
     public void step() {
-        this.activity.doActivity(this);
+        this.activity.interactWithActivity(this);
     }
 
     public void changeState() {
