@@ -1,11 +1,10 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.senzors;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
-import cz.fel.cvut.omo.fraloilyMaksidan.Iterable;
 
 import java.util.*;
 
-public abstract class EventManager implements Iterable {
+public class EventManager {
     Context context = Context.getInstance();
     Map<String, List<Subscriber>> subscribers = new HashMap<>();
 
@@ -31,6 +30,4 @@ public abstract class EventManager implements Iterable {
             s.update(event);
         }
     }
-
-    abstract public void step();
 }

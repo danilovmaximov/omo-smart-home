@@ -23,8 +23,7 @@ public class ConsumptionReport {
     }
 
     public void addConsumption(ApplianceActivity entity, List<Consumption> consumptions) {
-        consumptions.stream()
-            .forEach(consumption -> reports.add(new ConsumptionTransaction(entity, consumption)));
+        consumptions.forEach(consumption -> reports.add(new ConsumptionTransaction(entity, consumption)));
     }
 
     public void getAllConsumptions() {

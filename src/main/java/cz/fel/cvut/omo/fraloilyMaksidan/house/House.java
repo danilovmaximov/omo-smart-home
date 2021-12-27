@@ -17,14 +17,14 @@ public class House {
     private List<EventManager> eventManagers = new ArrayList<>();
     private List<Activity> brokenActivities = new ArrayList<>();
 
-    public House(String address) {
-        this.address = address;
-    }
+    public int getFloorsNum() { return this.floors.size(); }
+    public Floor getFloor(int i) { return this.floors.get(i); }
 
+    public void setAddress(String address) { this.address = address; }
     public void addFloor(Floor f) {
         this.floors.add(f);
     }
-    public void addSensors(EventManager... sensors) {
+    public void addSensor(EventManager... sensors) {
         this.station = new SensorsStation(sensors);
     }
 

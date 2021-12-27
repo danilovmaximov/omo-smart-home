@@ -2,16 +2,15 @@ package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
 import java.util.List;
 
-/**
- *
- */
 abstract public class LivingEntity {
     private final String name;
     private Activity activity;
     protected House house;
+    protected Room room;
     private final List<Activity> activities;
     private int currentActivity = 0;
 
@@ -34,11 +33,20 @@ abstract public class LivingEntity {
         }
     }
 
-    public void setHouse(House house) { this.house = house; }
+    public void setRoom(Room room) {
+        this.room = room;
+        this.house = room.getFloor().getHouse();
+    }
 
     public void reportBreakage(Activity activity) { this.house.addBrokenActivity(activity); }
 
     public void step() {
+        Room activityRoom = this.activity.getRoom();
+        if(activityRoom != room) {
+            this.room.removeEntity(this);
+            System.out.println(this + " moving from  " + room + " to " + activityRoom);
+            activityRoom.setEntity(this);
+        }
         this.activity.interactWithActivity(this);
     }
 

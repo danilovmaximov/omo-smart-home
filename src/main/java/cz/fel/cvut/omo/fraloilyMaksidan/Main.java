@@ -2,16 +2,16 @@ package cz.fel.cvut.omo.fraloilyMaksidan;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.Father;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandad;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.CoffeeMaker;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.RepairKit;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.Window;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.senzors.SunSensor;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,28 +28,26 @@ public class Main {
          */
         var coffee3000 = new CoffeeMaker();
         var repairKit = new RepairKit();
-
         /*
             List of activities is passed to the person...
          */
-        var activitiesForGrandad = new ArrayList<Activity>();
-        activitiesForGrandad.add(coffee3000);
-        var me = new Grandad("Ilya", activitiesForGrandad);
+        var me = new Grandad("Ilya", List.of(
+                coffee3000
+        ));
 
-        var activitiesForFather = new ArrayList<Activity>();
-        activitiesForFather.add(coffee3000);
-        activitiesForFather.add(repairKit);
-        var otherMe = new Father("Dan", activitiesForFather);
+        var otherMe = new Father("Dan", List.of(
+                coffee3000, repairKit
+        ));
 
         /*
             Builders are provided for structures of house: rooms, floors and co on...
          */
         var kitchen = new RoomBuilder()
                 .setName("Kitchen")
-                .setEntities(me)
+                .setEntity(me)
                 .setActivity(coffee3000)
                 .setActivity(repairKit)
-                .setEntities(otherMe)
+                .setEntity(otherMe)
                 .getResult();
 
         var floor = new FloorBuilder()
@@ -60,18 +58,6 @@ public class Main {
 
         var windowInTheKitchen = new Window();
 
-        // TODO: add builder to house class.
-        var house = new House("Street Lane 69");
-        house.addFloor(floor);
-        house.initFloors();
-
-        // TODO: Нахуя?
-        me.setHouse(house);
-        otherMe.setHouse(house);
-
-        //TODO: Нахуя?
-        coffee3000.moveToTheRoom(kitchen);
-        repairKit.moveToTheRoom(kitchen);
 
         /*
             Sensors are EventManagers, that are responding to context changes.
@@ -81,7 +67,13 @@ public class Main {
         var sunSensor = new SunSensor("LightUp", "LightDown");
         sunSensor.subscribe("LightUp", windowInTheKitchen);
         sunSensor.subscribe("LightDown", windowInTheKitchen);
-        house.addSensors(sunSensor);
+
+        var house = new HouseBuilder()
+                .setAddress("Street Lane 69")
+                .addFloor(floor)
+                .initFloors()
+                .addSensor(sunSensor)
+                .getResult();
 
         /*
             World Class is a wrapper around house class to provide different simulations...

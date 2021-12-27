@@ -28,8 +28,12 @@ abstract public class Activity {
         this.durability = durability;
         this.deterioration = this.durability.getDeterioration();
 
-        if (this.durability == Durability.WEAK) this.manual = new ActivityManual(true);
-        else this.manual = new ActivityManual(false);
+        if (this.durability == Durability.WEAK) this.manual = new ActivityManual(house, true);
+        else this.manual = new ActivityManual(house, false);
+    }
+
+    public Room getRoom() {
+        return this.room;
     }
 
     public void interactWithActivity(LivingEntity entity) {
@@ -39,10 +43,11 @@ abstract public class Activity {
                 System.out.println(entity + " wanted to use " + this + " but this is already in use by " + isUsing);
                 entity.changeState();
             } else {
-                System.out.println(entity +" started using " + this);
+                System.out.println(entity + " started using " + this);
                 useActivityBy(entity);
             }
         } else {
+
             System.out.println(entity + " is moving to the room, where " + this + " is placed.");
         }
     }
@@ -52,7 +57,7 @@ abstract public class Activity {
     }
     public ActivityManual getManual() { return this.manual; }
 
-    public void moveToTheRoom(Room room) {
+    public void setRoom(Room room) {
         this.room = room;
         this.house = room.getFloor().getHouse();
     }
@@ -107,9 +112,9 @@ abstract public class Activity {
         return currentStep == activityLength;
     }
 
-    private void manageIdle() {
+    protected void manageIdle() {
 
-    }
+    };
 
     protected void manageStep() {
         currentStep++;

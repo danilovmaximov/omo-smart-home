@@ -24,7 +24,19 @@ public class Room {
 
     public Floor getFloor() { return this.floor; }
 
-    public void setActivity(Activity activity) { this.activities.add(activity); }
+    public void setActivity(Activity activity) {
+        this.activities.add(activity);
+        activity.setRoom(this);
+    }
+
+    public void setEntity(LivingEntity entity) {
+        this.entities.add(entity);
+        entity.setRoom(this);
+    }
+
+    public void removeEntity(LivingEntity entity) {
+        this.entities.remove(entity);
+    }
 
     public List<Activity> getActivities() {
         return activities;

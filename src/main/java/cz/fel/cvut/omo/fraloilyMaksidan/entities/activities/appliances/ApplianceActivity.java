@@ -1,21 +1,19 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.consumptions.Consumption;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.Durability;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public abstract class ApplianceActivity extends Activity implements Comparable<ApplianceActivity> {
-    private List<Consumption> consumptionTypes = new ArrayList<>();
+public abstract class ApplianceActivity extends Activity {
+    private final List<Consumption> consumptionTypesActive;
+    private final List<Consumption> consumptionTypesIdle;
 
-    public ApplianceActivity(String name, int activityLength, Durability durability, Consumption... consumptions) {
+    public ApplianceActivity(String name, int activityLength, Durability durability, List<Consumption> active, List<Consumption> idle) {
         super(name, activityLength, durability);
-        Collections.addAll(consumptionTypes, consumptions);
+        consumptionTypesActive = active;
+        consumptionTypesIdle = idle;
     }
 
     @Override
@@ -23,11 +21,14 @@ public abstract class ApplianceActivity extends Activity implements Comparable<A
         super.manageStep();
         context.getReports()
                 .getConsumptionReport()
-                .addConsumption(this, consumptionTypes);
+                .addConsumption(this, consumptionTypesActive);
     }
 
     @Override
-    public int compareTo(ApplianceActivity o) {
-        return this.toString().compareTo(o.toString());
+    protected void manageIdle() {
+        super.manageIdle();
+        context.getReports()
+                .getConsumptionReport()
+                .addConsumption(this, consumptionTypesIdle);
     }
 }

@@ -3,8 +3,8 @@ package cz.fel.cvut.omo.fraloilyMaksidan.house.floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
 public class FloorBuilder implements Builder {
-
     Floor floor = new Floor();
+
     @Override
     public void reset() {
         //TODO: Add reset

@@ -26,6 +26,9 @@ public class Floor {
         this.floorNumber = floorNumber;
     }
 
+    public int getRoomsNum() { return this.rooms.size(); }
+    public Room getRoom(int i) { return this.rooms.get(i); }
+
     public void initRooms() {
         for (Room room : rooms) {
             room.setFloor(this);
