@@ -14,9 +14,8 @@ public class World {
     public void startSimulation(int hours) {
         for(int i = 0; i < hours; ++i) {
             ChangeContext();
+            Context.moveEntities();
             house.step();
-            System.out.println();
-            System.out.println();
         }
     }
 

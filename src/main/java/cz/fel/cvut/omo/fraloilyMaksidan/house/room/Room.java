@@ -48,8 +48,7 @@ public class Room {
     }
 
     public void step() {
-        System.out.println("Step in room " + name);
-        Context.moveEntities();
+        System.out.println("================ Step in room " + name  + " =====================");
         activities.forEach(Activity::step);
     }
 
