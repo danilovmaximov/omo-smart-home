@@ -16,7 +16,6 @@ public class House {
     private SensorsStation station;
     private List<Floor> floors = new ArrayList<>();
     private List<EventManager> eventManagers = new ArrayList<>();
-    private List<Activity> brokenActivities = new ArrayList<>();
 
     public int getFloorsNum() { return this.floors.size(); }
     public Floor getFloor(int i) { return this.floors.get(i); }
@@ -40,14 +39,6 @@ public class House {
             f.step();
         }
         station.step();
-    }
-
-    public void addBrokenActivity(Activity activity) { this.brokenActivities.add(activity); }
-    public boolean hasSomethingBroken() { return !this.brokenActivities.isEmpty(); }
-    public Activity getBrokenActivity() {
-        Activity result = this.brokenActivities.get(0);
-        this.brokenActivities.remove(0);
-        return result;
     }
 
     @Override

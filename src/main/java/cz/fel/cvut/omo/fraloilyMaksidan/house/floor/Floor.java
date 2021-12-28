@@ -1,6 +1,5 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.floor;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.Configurable;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 
@@ -8,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.zip.CheckedOutputStream;
 
 public class Floor {
     private List<Room> rooms = new ArrayList<>();

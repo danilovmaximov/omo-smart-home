@@ -1,6 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.activities.staff;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
+import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 
 public class RepairKit extends Activity {
     private int curStep = 1;
@@ -14,25 +15,17 @@ public class RepairKit extends Activity {
     int curFloor, curRoom;
     @Override
     protected void manageStep() {
-        if (house.hasSomethingBroken() || curStep != 1) {
+        if (Context.hasSomethingBroken() || curStep != 1) {
             switch (curStep) {
                 case 1:  // get the activity
-                    activity = house.getBrokenActivity();
+                    activity = Context.getBrokenActivity();
                     curFloor = 0;
                     curRoom = 0;
                     curStep++;
                     break;
-                case 2:  // check every room for manual
-                    if (house.getFloor(curFloor).getRoom(curRoom) == manual.getRoom()) curStep++;
-                    else {
-                        if (curRoom + 1 == house.getFloor(curFloor).getRoomsNum()) {
-                            if (curFloor + 1 == house.getFloorsNum())
-                                throw new RuntimeException("Entity failed to find manual!");
-                            curRoom = 0;
-                            curFloor++;
-                        } else curRoom++;
-                        this.isUsing.setRoom(house.getFloor(curFloor).getRoom(curRoom));
-                    }
+                case 2:  // find manual
+
+
                     break;
                 case 3:  // get the manual
                     manual = this.activity.getManual();

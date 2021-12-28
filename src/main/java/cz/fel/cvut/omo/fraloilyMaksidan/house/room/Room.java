@@ -19,6 +19,7 @@ public class Room {
         this.name = name;
     }
 
+
     public void setFloor(Floor floor) { this.floor = floor; }
 
     public Floor getFloor() { return this.floor; }
@@ -46,8 +47,14 @@ public class Room {
     }
 
     public void step() {
-        entities.forEach(LivingEntity::step);
-        activities.forEach(Activity::step);
+        //entities.forEach(LivingEntity::step);
+        //activities.forEach(Activity::step);
+        for(LivingEntity e : entities) {
+            e.step();
+        }
+        for (Activity a : activities) {
+            a.step();
+        }
     }
 
     public String entitiesConfiguration() {

@@ -2,8 +2,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.EventActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Play;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Sleep;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
@@ -13,13 +12,10 @@ public class Baby extends LivingEntity {
     private EventManager eventManager;
     private Random r = new Random();
     private boolean isCrying = false;
-    private EventActivity generatedActivity = new BabyCry(r.nextInt(5), this);
+    private EventActivity generatedActivity;
 
-    public Baby(String name, int sleepStep, int playStep) {
-        super(name,
-                new Sleep(sleepStep),
-                new Play(playStep)
-        );
+    public Baby(String name, Activity... activities) {
+        super(name, activities);
         eventManager = new EventManager(name);
     }
 
@@ -32,7 +28,7 @@ public class Baby extends LivingEntity {
     }
 
     private boolean maybeItIsTimeToMakeSomeNoise() {
-        if(r.nextInt(10) == 7 && !isCrying) {
+        if (r.nextInt(10) == 7 && !isCrying) {
             this.isCrying = true;
         }
         return isCrying;
@@ -40,7 +36,11 @@ public class Baby extends LivingEntity {
 
     @Override
     public void step() {
-        if(maybeItIsTimeToMakeSomeNoise()) {
+        System.out.println(this + " current activity: " + currentActivity);
+        if(isCrying) {return;}
+        if (maybeItIsTimeToMakeSomeNoise()) {
+            generatedActivity = new BabyCry(4, this);
+            room.setActivity(generatedActivity);
             eventManager.notifySubscribers(name);
         } else {
             super.step();

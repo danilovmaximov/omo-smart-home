@@ -3,14 +3,12 @@ package cz.fel.cvut.omo.fraloilyMaksidan.activities.staff;
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
 abstract public class Activity {
     private final String name;
-    private final ActivityManual manual;
+    private ActivityManual manual;
     private Room room;
-    protected House house;
 
     private final Durability durability;
     private final int deterioration;
@@ -25,9 +23,6 @@ abstract public class Activity {
         this.activityLength = activityLength;
         this.durability = durability;
         this.deterioration = this.durability.getDeterioration();
-
-        if (this.durability == Durability.WEAK) this.manual = new ActivityManual(house, true);
-        else this.manual = new ActivityManual(house, false);
     }
 
     public Room getRoom() {
@@ -45,7 +40,6 @@ abstract public class Activity {
                 useActivityBy(entity);
             }
         } else {
-
             System.out.println(entity + " is moving to the room, where " + this + " is placed.");
         }
     }
@@ -57,14 +51,13 @@ abstract public class Activity {
 
     public void setRoom(Room room) {
         this.room = room;
-        this.house = room.getFloor().getHouse();
     }
 
-    public void fixUp() { this.condition = 100; }
+    public void fixUp() { this.condition = 80; }
     public void getNew() { this.condition = 100; }
 
     public void step() {
-        if(isIdle()) {
+        if (isIdle()) {
             System.out.println(this + " is idle.");
             manageIdle();
             return;
@@ -76,25 +69,23 @@ abstract public class Activity {
         }
         if (isFinished()) {
             System.out.println(isUsing + " finished with " + this + " in the " + room);
-            isUsing.nextActivity();
-            // TODO Change this.
             if (isBroken()) {
-                condition = 0;
+                this.condition = 0;
                 System.out.println(this + " has just broken, " + isUsing + " reports it");
-                isUsing.reportBreakage(this);
+                isUsing.reportBrokenActivity(this);
             }
-            //
+            isUsing.nextActivity();
             finishActivity();
-            System.out.println(this + "'s current condition is " + condition + "%");
+            if (this.durability != durability.UNBREAKABLE) {
+                System.out.println(this + "'s current condition is " + this.condition + "%");
+            }
         } else {
             System.out.println(isUsing + " uses " + this + " in the " + room);
             manageStep();
         }
     }
 
-    private boolean isIdle() {
-        return isUsing == null;
-    }
+    private boolean isIdle() { return isUsing == null; }
 
     private boolean inUseByOtherThen(LivingEntity entity) {
         return isUsing != null && isUsing != entity;

@@ -1,12 +1,28 @@
 package cz.fel.cvut.omo.fraloilyMaksidan;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Context {
     private static int lightLevel;
     private static int humidityLevel;
-    private static ReportsAPI reports;
+    private static ReportsAPI reports = new ReportsAPI();
     private static int windSpeed;
+
+    private static List<Activity> brokenActivities = new ArrayList<>();
+
+    public static Activity getBrokenActivity() {
+        Activity result = brokenActivities.get(0);
+        brokenActivities.remove(0);
+        return result;
+    }
+
+    public static void addBrokenActivity(Activity activity) { brokenActivities.add(activity); }
+    public static boolean hasSomethingBroken() { return !brokenActivities.isEmpty(); }
+
 
     public static int getLightLevel() {
         return lightLevel;

@@ -15,6 +15,8 @@ public class World {
         for(int i = 0; i < hours; ++i) {
             ChangeContext();
             house.step();
+            System.out.println();
+            System.out.println();
         }
     }
 
