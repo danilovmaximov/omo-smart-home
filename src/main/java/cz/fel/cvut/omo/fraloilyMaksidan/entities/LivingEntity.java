@@ -19,7 +19,6 @@ abstract public class LivingEntity {
     public LivingEntity(String name, Activity... activities) {
         this.name = name;
         Collections.addAll(this.activities, activities);
-        this.currentActivity = List.of(activities).get(0);
     }
 
     public void setRoom(Room room) {
@@ -38,6 +37,9 @@ abstract public class LivingEntity {
         System.out.println("======= Queue " + this + " =========");
         activities.forEach(activity -> System.out.print(activity + " "));
         System.out.println();
+        if(currentActivity == null) {
+            nextActivity();
+        }
         Room activityRoom = this.currentActivity.getRoom();
         if (activityRoom != room) {
             this.room.removeEntity(this);
@@ -49,10 +51,10 @@ abstract public class LivingEntity {
 
     public void nextActivity() {
         // check if null but may be checked before
+        currentActivity = activities.pollFirst();
         if (!(currentActivity instanceof EventActivity)) {
             activities.addLast(currentActivity);
         }
-        currentActivity = activities.pollFirst();
     }
 
     @Override
