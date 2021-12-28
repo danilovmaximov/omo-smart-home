@@ -11,4 +11,9 @@ public class EventActivity extends Activity {
         super(name, activityLength, Durability.UNBREAKABLE);
         this.caller = caller;
     }
+
+    public LivingEntity getCaller() {
+        return caller;
+    }
+
 }

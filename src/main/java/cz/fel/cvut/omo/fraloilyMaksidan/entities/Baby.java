@@ -28,17 +28,26 @@ public class Baby extends LivingEntity {
     }
 
     private boolean maybeItIsTimeToMakeSomeNoise() {
-        if (r.nextInt(10) == 7 && !isCrying) {
+        if (r.nextInt(5) == 1 && !isCrying) {
             this.isCrying = true;
         }
         return isCrying;
     }
 
+    public void calmDown() {
+        this.isCrying = false;
+        if(currentActivity != null) {
+            this.currentActivity.setBlocked(false);
+        }
+    }
+
     @Override
     public void step() {
-        System.out.println(this + " current activity: " + currentActivity);
-        if(isCrying) {return;}
+        if(isCrying) { return; }
         if (maybeItIsTimeToMakeSomeNoise()) {
+            if(currentActivity != null) {
+                currentActivity.setBlocked(true);
+            }
             generatedActivity = new BabyCry(4, this);
             room.setActivity(generatedActivity);
             eventManager.notifySubscribers(name);

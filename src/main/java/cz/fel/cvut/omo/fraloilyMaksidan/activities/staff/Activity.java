@@ -17,6 +17,7 @@ abstract public class Activity {
     private final int activityLength;
     private int currentStep = 0;
     protected LivingEntity isUsing;
+    private boolean blocked = false;
 
     public Activity(String name, int activityLength, Durability durability) {
         this.name = name;
@@ -57,6 +58,10 @@ abstract public class Activity {
     public void getNew() { this.condition = 100; }
 
     public void step() {
+        if(isBlocked()) {
+            System.out.println(isUsing + " is interrupted from " + this);
+            return;
+        }
         if (isIdle()) {
             System.out.println(this + " is idle.");
             manageIdle();
@@ -108,10 +113,18 @@ abstract public class Activity {
         currentStep++;
     }
 
-    private void finishActivity() {
+    protected void finishActivity() {
         currentStep = 0;
         isUsing = null;
         condition -= deterioration;
+    }
+
+    public boolean isBlocked() {
+        return blocked;
+    }
+
+    public void setBlocked(boolean blocked) {
+        this.blocked = blocked;
     }
 
     @Override

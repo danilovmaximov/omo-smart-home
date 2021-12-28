@@ -38,7 +38,6 @@ abstract public class LivingEntity {
             nextActivity();
         }
 
-        //TODO: Problematic
         Room activityRoom = this.currentActivity.getRoom();
         if (activityRoom != room) {
             this.room.removeEntity(this);
@@ -49,7 +48,6 @@ abstract public class LivingEntity {
     }
 
     public void nextActivity() {
-        // check if null but may be checked before
         currentActivity = activities.pollFirst();
         if (!(currentActivity instanceof EventActivity)) {
             activities.addLast(currentActivity);

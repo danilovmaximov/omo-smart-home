@@ -1,7 +1,5 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.Context;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.SensorsStation;

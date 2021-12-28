@@ -5,18 +5,20 @@ import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
 public class Window implements Subscriber {
-    boolean closedCurtain = false;
+    boolean closedShutters = false;
+    boolean closedWindow = false;
 
     @Override
     public void update(String event) {
         switch (event) {
-            case "LightUp" -> closedCurtain = true;
-            case "LightDown" -> closedCurtain = false;
+            case "LightUp" -> closedShutters = true;
+            case "LightDown" -> closedShutters = false;
         }
     }
 
     @Override
     public String toString() {
-        return "Window: isClosed " + closedCurtain;
+        return "Roll Shutters are closed: " + closedShutters + "," +
+               "Window is closed: " + closedWindow;
     }
 }
