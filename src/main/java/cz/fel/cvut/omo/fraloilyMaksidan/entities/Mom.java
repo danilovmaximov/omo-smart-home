@@ -1,5 +1,5 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
 import java.util.*;

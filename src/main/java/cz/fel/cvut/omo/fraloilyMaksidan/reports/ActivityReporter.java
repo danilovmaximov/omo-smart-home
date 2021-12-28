@@ -2,7 +2,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
 
 import java.util.HashMap;
 import java.util.Map;

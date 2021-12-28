@@ -1,10 +1,9 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.interactions.EventActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.CoffeeMaker;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.interactions.BabyCry;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Play;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Sleep;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.EventActivity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Play;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Sleep;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 

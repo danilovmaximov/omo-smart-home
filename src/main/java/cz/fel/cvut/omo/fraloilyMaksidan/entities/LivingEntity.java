@@ -1,7 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.interactions.EventActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.EventActivity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 

@@ -1,7 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.room;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
 
 public class RoomBuilder implements Builder{
     Room room = new Room();

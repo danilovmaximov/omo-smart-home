@@ -1,4 +1,4 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff;
+package cz.fel.cvut.omo.fraloilyMaksidan.activities.staff;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;

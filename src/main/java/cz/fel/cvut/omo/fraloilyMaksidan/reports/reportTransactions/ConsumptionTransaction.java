@@ -1,7 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.ApplianceActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.consumptions.Consumption;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.consumptions.Consumption;
 
 public class ConsumptionTransaction {
     private ApplianceActivity entity;

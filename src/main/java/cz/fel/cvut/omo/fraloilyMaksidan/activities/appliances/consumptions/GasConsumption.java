@@ -1,4 +1,4 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.consumptions;
+package cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.consumptions;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.ConsumptionType;
 

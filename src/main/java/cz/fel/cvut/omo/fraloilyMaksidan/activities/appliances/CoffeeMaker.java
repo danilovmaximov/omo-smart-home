@@ -1,7 +1,7 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances;
+package cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.consumptions.ElectricityConsumption;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.appliances.consumptions.WaterConsumption;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.consumptions.ElectricityConsumption;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.consumptions.WaterConsumption;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.Durability;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.interactions;
+package cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 
