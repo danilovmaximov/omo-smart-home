@@ -2,7 +2,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.consumptions.Consumption;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.ConsumptionType;
+import cz.fel.cvut.omo.fraloilyMaksidan.enums.ConsumptionType;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction;
 
 import java.util.ArrayList;

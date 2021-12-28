@@ -5,7 +5,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
 public class Window implements Subscriber {
-    private Context context = Context.getInstance();
     boolean closedCurtain = false;
 
     @Override

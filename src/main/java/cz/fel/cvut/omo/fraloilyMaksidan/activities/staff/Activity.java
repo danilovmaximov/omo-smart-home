@@ -2,7 +2,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.activities.staff;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.Durability;
+import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
@@ -19,8 +19,6 @@ abstract public class Activity {
     private final int activityLength;
     private int currentStep = 0;
     protected LivingEntity isUsing;
-
-    protected final Context context = Context.getInstance();
 
     public Activity(String name, int activityLength, Durability durability) {
         this.name = name;
@@ -104,7 +102,7 @@ abstract public class Activity {
 
     private void useActivityBy(LivingEntity entity) {
         this.isUsing = entity;
-        context.getReports().getActivityReporter().addToReports(entity, this);
+        Context.getReports().getActivityReporter().addToReports(entity, this);
     }
 
     private boolean isFinished() {

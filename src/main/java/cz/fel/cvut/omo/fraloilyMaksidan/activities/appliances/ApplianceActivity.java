@@ -1,8 +1,9 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.consumptions.Consumption;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.Durability;
+import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 
 import java.util.List;
 
@@ -19,7 +20,7 @@ public abstract class ApplianceActivity extends Activity {
     @Override
     protected void manageStep() {
         super.manageStep();
-        context.getReports()
+        Context.getReports()
                 .getConsumptionReport()
                 .addConsumption(this, consumptionTypesActive);
     }
@@ -27,7 +28,7 @@ public abstract class ApplianceActivity extends Activity {
     @Override
     protected void manageIdle() {
         super.manageIdle();
-        context.getReports()
+        Context.getReports()
                 .getConsumptionReport()
                 .addConsumption(this, consumptionTypesIdle);
     }

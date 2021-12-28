@@ -5,7 +5,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import java.util.*;
 
 public class EventManager {
-    Context context = Context.getInstance();
     Map<String, List<Subscriber>> subscribers = new HashMap<>();
 
     public EventManager(String... operations) {
@@ -25,7 +24,7 @@ public class EventManager {
 
     public void notifySubscribers(String event) {
         List<Subscriber> users = subscribers.get(event);
-        context.getReports().getEventReport().addToReports(this, event, users);
+        Context.getReports().getEventReport().addToReports(this, event, users);
         for(Subscriber s: users) {
             s.update(event);
         }

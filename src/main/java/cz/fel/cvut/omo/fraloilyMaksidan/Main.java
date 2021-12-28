@@ -18,9 +18,8 @@ public class Main {
             Configure context of application:
             Weather events, report classes...
          */
-        var context = Context.getInstance();
-        context.setLightLevel(95);
-        context.setHumidityLevel(95);
+        Context.setLightLevel(95);
+        Context.setHumidityLevel(95);
 
         /*
             New appliances is created as separate classes...
@@ -97,7 +96,7 @@ public class Main {
         /*
             Reports are used to deliver different info based on the demand;
          */
-        var reports = context.getReports();
+        var reports = Context.getReports();
         System.out.println();
         reports.getActivityReporter().EntityToActivityMapping();
         System.out.println();

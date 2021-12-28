@@ -1,6 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.activities.staff;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.enums.Durability;
+import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 
 public class RepairKit extends Activity {
     private int curStep = 1;
