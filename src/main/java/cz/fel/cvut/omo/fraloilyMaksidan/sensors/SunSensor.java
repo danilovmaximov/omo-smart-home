@@ -2,11 +2,14 @@ package cz.fel.cvut.omo.fraloilyMaksidan.sensors;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Iterable;
 
-public class SunSensor extends EventManager implements Iterable {
+public class SunSensor extends Sensor {
     String name = "SunSensor";
     boolean reportedUp;
+
     public SunSensor(String... operations) {
         super(operations);
+        this.name = name;
+        this.reportedUp = false;
     }
 
     @Override

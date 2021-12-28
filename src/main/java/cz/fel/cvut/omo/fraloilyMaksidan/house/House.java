@@ -3,6 +3,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.house;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.SensorsStation;
 
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ public class House {
     public void addFloor(Floor f) {
         this.floors.add(f);
     }
-    public void addSensor(EventManager... sensors) {
+    public void addSensor(Sensor... sensors) {
         this.station = new SensorsStation(sensors);
     }
 

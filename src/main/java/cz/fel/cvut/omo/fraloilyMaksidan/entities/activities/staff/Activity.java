@@ -41,7 +41,7 @@ abstract public class Activity {
         if(room.getEntities().contains(entity)) {
             if (inUseByOtherThen(entity)) {
                 System.out.println(entity + " wanted to use " + this + " but this is already in use by " + isUsing);
-                entity.changeState();
+                entity.nextActivity();
             } else {
                 System.out.println(entity + " started using " + this);
                 useActivityBy(entity);
@@ -73,12 +73,12 @@ abstract public class Activity {
         }
         if (isBroken()) {
             System.out.println(isUsing + " wanted to use " + this + " but it is broken");
-            isUsing.changeState();
+            isUsing.nextActivity();
             return;
         }
         if (isFinished()) {
             System.out.println(isUsing + " finished with " + this + " in the " + room);
-            isUsing.changeState();
+            isUsing.nextActivity();
             // TODO Change this.
             if (isBroken()) {
                 condition = 0;
@@ -88,7 +88,6 @@ abstract public class Activity {
             //
             finishActivity();
             System.out.println(this + "'s current condition is " + condition + "%");
-            return;
         } else {
             System.out.println(isUsing + " uses " + this + " in the " + room);
             manageStep();
@@ -114,7 +113,7 @@ abstract public class Activity {
 
     protected void manageIdle() {
 
-    };
+    }
 
     protected void manageStep() {
         currentStep++;

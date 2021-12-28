@@ -4,7 +4,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 
 import java.util.*;
 
-public abstract class EventManager {
+public class EventManager {
     Context context = Context.getInstance();
     Map<String, List<Subscriber>> subscribers = new HashMap<>();
 

@@ -9,7 +9,7 @@ public class Window implements Subscriber {
     boolean closedCurtain = false;
 
     @Override
-    public void update(String event, EventManager source) {
+    public void update(String event) {
         switch (event) {
             case "LightUp" -> closedCurtain = true;
             case "LightDown" -> closedCurtain = false;

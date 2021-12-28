@@ -1,27 +1,26 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
-
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
-import jdk.jfr.Event;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Mom extends LivingEntity implements Subscriber {
 
-    private Baby pizdiuk;
+    private final List<Baby>babies = new ArrayList<>();
 
     public Mom(String name, Activity... activities) {
-        super(name, List.of(activities));
+        super(name, activities);
     }
 
-    public void addBaby(Baby pizdiuk) {
-        this.pizdiuk = pizdiuk;
-        pizdiuk.addSupervisor(this);
+    public void addBabies(Baby... babies) {
+        Collections.addAll(this.babies, babies);
+        Arrays.stream(babies).forEach(baby -> baby.addSupervisor(this));
     }
 
     public void update(String event) {
-
+        var angryBaby = babies.stream()
+                .filter(baby -> event.equals(baby.toString()))
+                .toList().get(0);
+        this.addEmergentActivity(angryBaby.getGeneratedActivity());
     }
 }

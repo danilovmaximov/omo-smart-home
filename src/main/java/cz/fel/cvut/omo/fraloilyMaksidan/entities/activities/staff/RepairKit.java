@@ -50,7 +50,7 @@ public class RepairKit extends Activity {
         }
         else {
             System.out.println("Nothing to be fixed, father chills");
-            isUsing.changeState();
+            isUsing.nextActivity();
         }
     }
 }

@@ -1,36 +1,25 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.interactions.EventActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
-import java.util.List;
+import java.util.Collections;
+import java.util.Deque;
+import java.util.LinkedList;
 
 abstract public class LivingEntity {
-    private final String name;
-    private Activity activity;
+    protected final String name;
+    private Activity currentActivity;
     protected House house;
     protected Room room;
-    private final List<Activity> activities;
-    private int currentActivity = 0;
+    private final Deque<Activity> activities = new LinkedList<>();
 
-    public LivingEntity(String name, List<Activity> activities) {
+    public LivingEntity(String name, Activity... activities) {
         this.name = name;
-        this.activities = activities;
-        this.testInstance();
-        this.activity = activities.get(0);
-    }
-
-    private void testInstance() {
-        if(name.isEmpty()) {
-            throw new RuntimeException("Please add the name!");
-        }
-        if(this.activities.size() <= 0) {
-            throw new RuntimeException(
-                this.name +
-                " have nothing to do. Please add at least one activity"
-            );
-        }
+        Collections.addAll(this.activities, activities);
+        nextActivity();
     }
 
     public void setRoom(Room room) {
@@ -38,23 +27,29 @@ abstract public class LivingEntity {
         this.house = room.getFloor().getHouse();
     }
 
+    public void addEmergentActivity(EventActivity activity) {
+        this.activities.addFirst(activity);
+    }
+
     public void reportBreakage(Activity activity) { this.house.addBrokenActivity(activity); }
 
     public void step() {
-        Room activityRoom = this.activity.getRoom();
+        Room activityRoom = this.currentActivity.getRoom();
         if(activityRoom != room) {
             this.room.removeEntity(this);
             System.out.println(this + " moving from  " + room + " to " + activityRoom);
             activityRoom.setEntity(this);
         }
-        this.activity.interactWithActivity(this);
+        this.currentActivity.interactWithActivity(this);
     }
 
-    public void changeState() {
-        if(++this.currentActivity == this.activities.size()) {
-            currentActivity = 0;
+    public void nextActivity() {
+        Activity nextActivity = activities.poll();
+        // check if null but may be checked before
+        if(currentActivity != null && !(currentActivity instanceof EventActivity)) {
+            activities.add(currentActivity);
         }
-        this.activity = activities.get(currentActivity);
+        currentActivity = nextActivity;
     }
 
     @Override

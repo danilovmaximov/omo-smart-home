@@ -5,5 +5,5 @@ import cz.fel.cvut.omo.fraloilyMaksidan.entities.activities.staff.Activity;
 import java.util.List;
 
 public class Grandad extends LivingEntity {
-    public Grandad(String name, List<Activity> activities) { super(name, activities); }
+    public Grandad(String name, Activity...activities) { super(name, activities); }
 }
