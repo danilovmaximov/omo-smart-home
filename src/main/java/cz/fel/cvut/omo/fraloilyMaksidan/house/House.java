@@ -1,8 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.SensorsStation;
 
@@ -14,11 +13,7 @@ public class House {
 
     private String address;
     private SensorsStation station;
-    private List<Floor> floors = new ArrayList<>();
-    private List<EventManager> eventManagers = new ArrayList<>();
-
-    public int getFloorsNum() { return this.floors.size(); }
-    public Floor getFloor(int i) { return this.floors.get(i); }
+    private final List<Floor> floors = new ArrayList<>();
 
     public void setAddress(String address) { this.address = address; }
     public void addFloor(Floor f) {

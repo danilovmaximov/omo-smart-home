@@ -1,5 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.room;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
@@ -47,14 +48,9 @@ public class Room {
     }
 
     public void step() {
-        //entities.forEach(LivingEntity::step);
-        //activities.forEach(Activity::step);
-        for(LivingEntity e : entities) {
-            e.step();
-        }
-        for (Activity a : activities) {
-            a.step();
-        }
+        System.out.println("Step in room " + name);
+        Context.moveEntities();
+        activities.forEach(Activity::step);
     }
 
     public String entitiesConfiguration() {

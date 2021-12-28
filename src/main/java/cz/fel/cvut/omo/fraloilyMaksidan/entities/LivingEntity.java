@@ -34,12 +34,11 @@ abstract public class LivingEntity {
     }
 
     public void step() {
-        System.out.println("======= Queue " + this + " =========");
-        activities.forEach(activity -> System.out.print(activity + " "));
-        System.out.println();
         if(currentActivity == null) {
             nextActivity();
         }
+
+        //TODO: Problematic
         Room activityRoom = this.currentActivity.getRoom();
         if (activityRoom != room) {
             this.room.removeEntity(this);

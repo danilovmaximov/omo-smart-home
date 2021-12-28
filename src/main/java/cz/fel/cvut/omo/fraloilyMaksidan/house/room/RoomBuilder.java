@@ -1,5 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.room;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
 
@@ -25,6 +26,7 @@ public class RoomBuilder implements Builder{
 
     @Override
     public RoomBuilder setEntity(LivingEntity entity) {
+        Context.addEntity(entity);
         this.room.setEntity(entity);
         return this;
     }
