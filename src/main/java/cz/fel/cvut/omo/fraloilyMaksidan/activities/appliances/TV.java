@@ -5,14 +5,11 @@ import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 
 import java.util.List;
 
-public class CoffeeMaker extends ApplianceActivity {
-
-    public CoffeeMaker() {
-        super("CoffeeMaker3000",
-                2,
-                Durability.NORMAL,
-                3, 0 , 2,
-                1, 0, 0
+public class TV extends ApplianceActivity {
+    public TV(int activityLength) {
+        super("TV", activityLength, Durability.WEAK,
+            15, 0 ,0,
+                5, 0 ,0
         );
     }
 }

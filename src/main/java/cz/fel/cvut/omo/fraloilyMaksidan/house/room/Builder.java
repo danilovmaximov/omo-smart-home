@@ -1,7 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.room;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 
 public interface Builder {
     void reset();

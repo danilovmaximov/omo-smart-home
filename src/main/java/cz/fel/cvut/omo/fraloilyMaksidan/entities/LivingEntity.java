@@ -1,20 +1,17 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.EventActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
-import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 abstract public class LivingEntity {
     protected final String name;
     protected Activity currentActivity;
     protected Room room;
-    private final Deque<Activity> activities = new LinkedList<>();
+    protected final Deque<Activity> activities = new LinkedList<>();
 
     public LivingEntity(String name, Activity... activities) {
         this.name = name;

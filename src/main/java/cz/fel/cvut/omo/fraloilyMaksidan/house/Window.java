@@ -13,6 +13,8 @@ public class Window implements Subscriber {
         switch (event) {
             case "LightUp" -> closedShutters = true;
             case "LightDown" -> closedShutters = false;
+            case "OxygenLow" -> closedWindow = true;
+            case "OxygenHigh" -> closedWindow = false;
         }
     }
 

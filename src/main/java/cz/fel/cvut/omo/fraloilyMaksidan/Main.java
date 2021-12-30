@@ -1,8 +1,11 @@
 package cz.fel.cvut.omo.fraloilyMaksidan;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Play;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Sleep;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Play;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.RememberGoodTimes;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Sleep;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ElectricBicycle;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.TV;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Couch;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.Father;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandad;
@@ -10,10 +13,15 @@ import cz.fel.cvut.omo.fraloilyMaksidan.entities.Mom;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.CoffeeMaker;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.Humidifier;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.Window;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.Light;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.HumiditySensor;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.SunSensor;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.OxygenSensor;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.TempSensor;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,30 +30,53 @@ public class Main {
             Weather events, report classes...
          */
         Context.setLightLevel(95);
-        Context.setHumidityLevel(95);
+        Context.setHumidityLevel(65);
+        Context.setOxygenLevel(70);
+        Context.setTempLevel(20);
 
         /* New appliances is created as separate classes... */
         var coffee3000 = new CoffeeMaker();
         var repairKit = new RepairKit();
-        var sleepPizduk = new Sleep(4);
-        var playPizduk = new Play(5);
-        var dedUmer = new Sleep(8);
+        var bikeRound = new ElectricBicycle(3);
+        var restAtCouch = new Couch(2);
+        var watchTV = new TV(3);
+        var sleepBaby = new Sleep(4);
+        var playBaby = new Play(5);
+        var grandadNeedsSomeRest = new Sleep(8);
+        var rememberOldTimes = new RememberGoodTimes(10);
 
-        /* List of activities is passed to the person...*/
-        var me = new Grandad("Ilya",
-                coffee3000, dedUmer, repairKit
+        /* Activities are passed to the person...*/
+        var grandad = new Grandad("Billy Herrington",
+                coffee3000,
+                grandadNeedsSomeRest,
+                repairKit,
+                watchTV,
+                grandadNeedsSomeRest,
+                rememberOldTimes
         );
 
-        var otherMe = new Father("Dan",
-                coffee3000, repairKit
-        );
-
-        var mom = new Mom("Adriana",
+        var father = new Father("Van Darkholme",
+                coffee3000,
+                repairKit,
+                bikeRound,
+                restAtCouch,
+                watchTV,
+                watchTV,
+                watchTV,
                 coffee3000
         );
 
-        var babyBoy = new Baby("Pizduk",
-                sleepPizduk, playPizduk
+        var mom = new Mom("Dungeon master",
+                bikeRound,
+                coffee3000,
+                bikeRound,
+                bikeRound,
+                coffee3000,
+                restAtCouch
+        );
+
+        var babyBoy = new Baby("Slave",
+                sleepBaby, playBaby
         );
 
         mom.addBabies(babyBoy);
@@ -56,29 +87,36 @@ public class Main {
         /* Builders are provided for structures of house: rooms, floors and co on... */
         var kitchen = new RoomBuilder()
                 .setName("Kitchen")
-                .setActivity(playPizduk)
-                .setActivity(sleepPizduk)
-                .setActivity(coffee3000)
-                .setActivity(repairKit)
-                .setEntity(me)
-                .setEntity(otherMe)
-                .setEntity(mom)
-                .setEntity(babyBoy)
+                .setActivityAll(
+                    playBaby,
+                    sleepBaby,
+                    coffee3000,
+                    repairKit
+                )
+                .setEntityAll(
+                    grandad, father, mom, babyBoy
+                )
+                .getResult();
+
+        var grandadMemorialRoom = new RoomBuilder()
+                .setName("Hall of grandad's fame")
+                .setActivity(rememberOldTimes)
                 .getResult();
 
         var coffin = new RoomBuilder()
                 .setName("Coffin")
-                .setActivity(dedUmer)
+                .setActivity(grandadNeedsSomeRest)
                 .getResult();
 
         var floor = new FloorBuilder()
                 .setFloorNumber(1)
-                .addRoom(kitchen)
-                .addRoom(coffin)
+                .addRoomAll(kitchen, coffin, grandadMemorialRoom)
                 .initRooms()
                 .getResult();
 
-        var windowInTheKitchen = new Window();
+        var windows = new Window();
+        var lights = new Light();
+        var humidifier = new Humidifier();
 
         /*
             Sensors are EventManagers, that are responding to context changes.
@@ -86,14 +124,26 @@ public class Main {
             Based on light level window can change its internal state...
          */
         var sunSensor = new SunSensor("LightUp", "LightDown");
-        sunSensor.subscribe("LightUp", windowInTheKitchen);
-        sunSensor.subscribe("LightDown", windowInTheKitchen);
+        sunSensor.subscribe("LightUp", windows, lights);
+        sunSensor.subscribe("LightDown", windows, lights);
+
+        var oxygenSensor = new OxygenSensor("OxygenLow", "OxygenHigh");
+        oxygenSensor.subscribe("OxygenLow", windows);
+        oxygenSensor.subscribe("OxygenHigh", windows);
+
+        var humiditySensor = new HumiditySensor("AirIsDry", "AirIsWet");
+        humiditySensor.subscribe("AirIsDry", humidifier);
+        humiditySensor.subscribe("AirIsWet", humidifier);
+
+        // var insideTempSensor = new TempSensor("ItsCold", "ItsWarm");
+        // insideTempSensor.subscribe("ItsCold", father);
+        // insideTempSensor.subscribe("ItsWarm", father);
 
         var house = new HouseBuilder()
                 .setAddress("Street Lane 69")
-                .addFloor(floor)
+                .addFloorAll(floor)
                 .initFloors()
-                .addSensor(sunSensor)
+                .addSensors(sunSensor, oxygenSensor, humiditySensor)
                 .getResult();
 
         /*

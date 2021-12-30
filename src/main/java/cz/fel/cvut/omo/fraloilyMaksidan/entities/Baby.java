@@ -1,8 +1,8 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.EventActivity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 

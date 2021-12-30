@@ -1,13 +1,11 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.consumptions.Consumption;
+
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.ConsumptionType;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ConsumptionReport {
     private int gasPerUnitPrice = 10;
@@ -22,11 +20,12 @@ public class ConsumptionReport {
         this.waterPerUnitPrice = waterPrice;
     }
 
-    public void addConsumption(ApplianceActivity entity, List<Consumption> consumptions) {
-        consumptions.forEach(consumption -> reports.add(new ConsumptionTransaction(entity, consumption)));
+    public void addTransaction(ConsumptionTransaction transaction) {
+        reports.add(transaction);
     }
 
     public void getAllConsumptions() {
+        /*
         reports.stream()
                 .collect(Collectors.groupingBy(ConsumptionTransaction::getEntity))
                 .forEach((entity, listOfConsumption) -> {
@@ -36,13 +35,19 @@ public class ConsumptionReport {
                     System.out.printf("Gas consumption: %d\n", reducePriceByConsumption(listOfConsumption, ConsumptionType.GAS));
                 });
 
+         */
+
     }
 
     private int reducePriceByConsumption(List<ConsumptionTransaction> listOfConsumption, ConsumptionType type) {
+        /*
         return listOfConsumption.stream()
                 .filter(consumptionTransaction -> consumptionTransaction.getConsumption().getType() == type)
                 .map(consumptionTransaction -> consumptionTransaction.getConsumption())
                 .reduce(0, (subtotal, cons) -> subtotal + cons.getPerStep(), Integer::sum);
+
+         */
+        return 0;
     }
 
 }

@@ -1,7 +1,10 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.SunSensor;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor;
+
+import java.util.Arrays;
 
 public class HouseBuilder implements Builder {
     House house = new House();
@@ -24,14 +27,21 @@ public class HouseBuilder implements Builder {
     }
 
     @Override
+    public HouseBuilder addFloorAll(Floor... floors) {
+        Arrays.stream(floors).
+                forEach(floor -> house.addFloor(floor));
+        return this;
+    }
+
+    @Override
     public HouseBuilder initFloors() {
         house.initFloors();
         return this;
     }
 
     @Override
-    public HouseBuilder addSensor(SunSensor sensor) {
-        house.addSensor(sensor);
+    public HouseBuilder addSensors(Sensor... sensor) {
+        house.addSensors(sensor);
         return this;
     }
 

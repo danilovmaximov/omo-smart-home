@@ -27,15 +27,13 @@ public class Floor {
     public int getRoomsNum() { return this.rooms.size(); }
     public Room getRoom(int i) { return this.rooms.get(i); }
 
+    public List<Room> getRooms() {
+        return rooms;
+    }
+
     public void initRooms() {
         for (Room room : rooms) {
             room.setFloor(this);
-        }
-    }
-
-    public void step() {
-        for(Room r: rooms) {
-            r.step();
         }
     }
 

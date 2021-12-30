@@ -1,6 +1,7 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.activities.staff;
+package cz.fel.cvut.omo.fraloilyMaksidan.activities;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.ActivityManual;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
@@ -31,8 +32,8 @@ abstract public class Activity {
     }
 
     public void interactWithActivity(LivingEntity entity) {
-        if(isUsing == entity) {return;}
-        if(room.getEntities().contains(entity)) {
+        if (isUsing == entity) { return; }
+        if (room.getEntities().contains(entity)) {
             if (inUseByOtherThen(entity)) {
                 System.out.println(entity + " wanted to use " + this + " but this is already in use by " + isUsing);
                 entity.nextActivity();
@@ -68,6 +69,7 @@ abstract public class Activity {
             return;
         }
         if (isBroken()) {
+            finishActivity();
             System.out.println(isUsing + " wanted to use " + this + " but it is broken");
             isUsing.nextActivity();
             return;
@@ -96,7 +98,7 @@ abstract public class Activity {
         return isUsing != null && isUsing != entity;
     }
 
-    private void useActivityBy(LivingEntity entity) {
+    protected void useActivityBy(LivingEntity entity) {
         this.isUsing = entity;
         Context.getReports().getActivityReporter().addToReports(entity, this);
     }

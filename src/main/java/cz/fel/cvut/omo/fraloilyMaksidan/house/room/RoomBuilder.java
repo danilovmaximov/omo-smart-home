@@ -2,7 +2,9 @@ package cz.fel.cvut.omo.fraloilyMaksidan.house.room;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
+
+import java.util.Arrays;
 
 public class RoomBuilder implements Builder{
     Room room = new Room();
@@ -24,9 +26,20 @@ public class RoomBuilder implements Builder{
         return this;
     }
 
+    public RoomBuilder setActivityAll(Activity... activities) {
+        Arrays.stream(activities)
+                .forEach(activity -> this.room.setActivity(activity));
+        return this;
+    }
+
+    public RoomBuilder setEntityAll(LivingEntity... entities) {
+        Arrays.stream(entities)
+                .forEach(entity -> this.room.setEntity(entity));
+        return this;
+    }
+
     @Override
     public RoomBuilder setEntity(LivingEntity entity) {
-        Context.addEntity(entity);
         this.room.setEntity(entity);
         return this;
     }

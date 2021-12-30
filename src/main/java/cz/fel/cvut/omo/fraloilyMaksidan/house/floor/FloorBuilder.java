@@ -2,6 +2,8 @@ package cz.fel.cvut.omo.fraloilyMaksidan.house.floor;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
+import java.util.Arrays;
+
 public class FloorBuilder implements Builder {
     Floor floor = new Floor();
 
@@ -19,6 +21,13 @@ public class FloorBuilder implements Builder {
     @Override
     public FloorBuilder addRoom(Room room) {
         this.floor.addRoom(room);
+        return this;
+    }
+
+    @Override
+    public FloorBuilder addRoomAll(Room... rooms) {
+        Arrays.stream(rooms)
+                .forEach(room -> this.floor.addRoom(room));
         return this;
     }
 

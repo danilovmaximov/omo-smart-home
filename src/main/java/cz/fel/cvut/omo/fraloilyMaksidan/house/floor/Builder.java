@@ -7,6 +7,7 @@ public interface Builder {
 
     FloorBuilder setFloorNumber(int number);
     FloorBuilder addRoom(Room room);
+    FloorBuilder addRoomAll(Room... room);
     FloorBuilder initRooms();
     Floor getResult();
 }

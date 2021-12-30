@@ -1,7 +1,6 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions;
+package cz.fel.cvut.omo.fraloilyMaksidan.activities;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 
 public class EventActivity extends Activity {
