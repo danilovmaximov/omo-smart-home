@@ -21,6 +21,7 @@ public class Mom extends LivingEntity implements Subscriber {
         var angryBaby = babies.stream()
                 .filter(baby -> event.equals(baby.toString()))
                 .toList().get(0);
+
         this.addEmergentActivity(angryBaby.getGeneratedActivity());
     }
 }

@@ -1,7 +1,4 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
-
-import cz.fel.cvut.omo.fraloilyMaksidan.Context;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
 public class Window implements Subscriber {

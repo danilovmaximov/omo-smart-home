@@ -12,12 +12,12 @@ public class SunSensor extends Sensor {
 
     @Override
     public void step() {
-        int lightLevel = Context.getLightLevel();
-        if (lightLevel > 90 && !reportedUp) {
+        boolean isBright = Context.itsBright();
+        if (isBright && !reportedUp) {
             reportedUp = true;
             this.notifySubscribers("LightUp");
         }
-        if (lightLevel < 90 & reportedUp) {
+        if (!isBright & reportedUp) {
             reportedUp = false;
             this.notifySubscribers("LightDown");
         }

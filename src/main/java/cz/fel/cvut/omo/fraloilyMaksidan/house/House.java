@@ -2,7 +2,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.ApplianceActivity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor;
@@ -17,25 +17,18 @@ public class House {
     private String address;
     private SensorsStation station;
     private final List<Floor> floors = new ArrayList<>();
-    private List<Activity> activitiesInHouse = new ArrayList<>();
-    private List<LivingEntity> entitiesInHouse = new ArrayList<>();
-
-    public void initHouseContext() {
-        //sad but true
-        floors.forEach(floor -> {
-            floor.getRooms().forEach(room -> {
-                activitiesInHouse.addAll(room.getActivities());
-                entitiesInHouse.addAll(room.getEntities());
-            });
-        });
-    }
 
     public void doActivities() {
-        activitiesInHouse.forEach(Activity::step);
+        this.floors.stream().forEach(floor -> {
+            floor.getRooms().forEach(room -> {
+                room.getActivities().forEach(Activity::step);
+            });
+        });
+        //MapContext.getActivitiesInHouse().forEach(Activity::step);
     }
 
-    public void appendConsumption() {
-        activitiesInHouse.forEach(activity -> {
+    public void appendConsumptionAndGetContextChange() {
+        MapContext.getActivitiesInHouse().forEach(activity -> {
             if(activity instanceof ApplianceActivity a) {
                 Context.getReports().getConsumptionReport()
                         .addTransaction(a.getCurrentTransaction());
@@ -48,7 +41,7 @@ public class House {
     }
 
     public void moveEntities() {
-        entitiesInHouse.forEach(LivingEntity::step);
+        MapContext.getEntitiesInHouse().forEach(LivingEntity::step);
     }
 
     public void setAddress(String address) {

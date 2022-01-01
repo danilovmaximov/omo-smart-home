@@ -16,7 +16,7 @@ public class SensorsStation {
 
 
     public void step() {
-        for(Iterable m : sensors) {
+        for (Iterable m : sensors) {
             m.step();
         }
     }

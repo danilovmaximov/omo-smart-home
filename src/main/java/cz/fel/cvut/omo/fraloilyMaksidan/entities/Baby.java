@@ -36,7 +36,7 @@ public class Baby extends LivingEntity {
 
     public void calmDown() {
         this.isCrying = false;
-        if(currentActivity != null) {
+        if (currentActivity != null) {
             this.currentActivity.setBlocked(false);
         }
     }

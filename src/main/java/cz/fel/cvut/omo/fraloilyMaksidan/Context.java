@@ -1,7 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI;
 
 import java.util.ArrayList;
@@ -40,22 +39,13 @@ public class Context {
         Context.tempLevel = tempLevel;
     }
 
-    /* Light level context */
-    private static int lightLevel;
-    public static int getLightLevel() {
-        return lightLevel;
+    /* Light context */
+    private static boolean sunIsOut;
+    public static boolean itsBright() {
+        return sunIsOut;
     }
-    public static void setLightLevel(int lightLevel) {
-        Context.lightLevel = lightLevel;
-    }
-
-    /* Wind context */
-    private static int windSpeed;
-    public static int getWindSpeed() {
-        return windSpeed;
-    }
-    public static void setWindSpeed(int windSpeed) {
-        Context.windSpeed = windSpeed;
+    public static void setSun(boolean isOut) {
+        sunIsOut = isOut;
     }
 
     /* Humidity level context */

@@ -8,16 +8,16 @@ public class World {
 
     public World(House house) {
         this.house = house;
-        house.initHouseContext();
         Context.getReports().getHouseConfigurationReport().setHouse(house);
     }
 
     public void startSimulation(int hours) {
         for (int i = 0; i < hours; ++i) {
             ChangeContext();
+            System.out.println("========== Temp: " + Context.getTempLevel() + " ==========");
             house.moveEntities();
             house.doActivities();
-            house.appendConsumption();
+            house.appendConsumptionAndGetContextChange();
             house.activateSensors();
         }
     }

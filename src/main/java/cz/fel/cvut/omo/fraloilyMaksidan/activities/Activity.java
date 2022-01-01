@@ -25,6 +25,11 @@ abstract public class Activity {
         this.activityLength = activityLength;
         this.durability = durability;
         this.deterioration = this.durability.getDeterioration();
+        if (this.durability == Durability.WEAK || this.durability == Durability.NORMAL) {
+            this.manual = new ActivityManual(true);
+        } else {
+            this.manual = new ActivityManual(false);
+        }
     }
 
     public Room getRoom() {
@@ -55,33 +60,39 @@ abstract public class Activity {
         this.room = room;
     }
 
-    public void fixUp() { this.condition = 80; }
-    public void getNew() { this.condition = 100; }
+    public void fixUp() {
+        System.out.println(this + "is fixed");
+        this.condition = 80;
+    }
+    public void getNew() {
+        System.out.println(this + "was changed for new");
+        this.condition = 100;
+    }
 
     public void step() {
-        if(isBlocked()) {
+        if (isBlocked()) {
             System.out.println(isUsing + " is interrupted from " + this);
             return;
         }
         if (isIdle()) {
-            System.out.println(this + " is idle.");
             manageIdle();
             return;
         }
         if (isBroken()) {
+            isUsing.nextActivity();
             finishActivity();
             System.out.println(isUsing + " wanted to use " + this + " but it is broken");
-            isUsing.nextActivity();
             return;
         }
         if (isFinished()) {
             System.out.println(isUsing + " finished with " + this + " in the " + room);
+            isUsing.nextActivity();
+            condition -= deterioration;
             if (isBroken()) {
                 this.condition = 0;
                 System.out.println(this + " has just broken, " + isUsing + " reports it");
                 isUsing.reportBrokenActivity(this);
             }
-            isUsing.nextActivity();
             finishActivity();
             if (this.durability != durability.UNBREAKABLE) {
                 System.out.println(this + "'s current condition is " + this.condition + "%");
@@ -100,7 +111,7 @@ abstract public class Activity {
 
     protected void useActivityBy(LivingEntity entity) {
         this.isUsing = entity;
-        Context.getReports().getActivityReporter().addToReports(entity, this);
+        Context.getReports().getActivityReporter().addToReports(entity, this.toString(), "Done");
     }
 
     private boolean isFinished() {
@@ -118,7 +129,6 @@ abstract public class Activity {
     protected void finishActivity() {
         currentStep = 0;
         isUsing = null;
-        condition -= deterioration;
     }
 
     public boolean isBlocked() {

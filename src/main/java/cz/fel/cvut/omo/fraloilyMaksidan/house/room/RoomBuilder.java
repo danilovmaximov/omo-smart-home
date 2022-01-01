@@ -1,8 +1,8 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.room;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
 
 import java.util.Arrays;
 
@@ -22,25 +22,27 @@ public class RoomBuilder implements Builder{
 
     @Override
     public RoomBuilder setActivity(Activity activity) {
+        MapContext.addActivity(activity);
         this.room.setActivity(activity);
         return this;
     }
 
     public RoomBuilder setActivityAll(Activity... activities) {
         Arrays.stream(activities)
-                .forEach(activity -> this.room.setActivity(activity));
-        return this;
-    }
-
-    public RoomBuilder setEntityAll(LivingEntity... entities) {
-        Arrays.stream(entities)
-                .forEach(entity -> this.room.setEntity(entity));
+                .forEach(this::setActivity);
         return this;
     }
 
     @Override
     public RoomBuilder setEntity(LivingEntity entity) {
+        MapContext.addEntity(entity);
         this.room.setEntity(entity);
+        return this;
+    }
+
+    public RoomBuilder setEntityAll(LivingEntity... entities) {
+        Arrays.stream(entities)
+                .forEach(this::setEntity);
         return this;
     }
 
