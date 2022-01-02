@@ -1,53 +1,50 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.enums.ConsumptionType;
+import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionModel;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class ConsumptionReport {
-    private int gasPerUnitPrice = 10;
-    private int waterPerUnitPrice = 15;
-    private int electricityPerUnitPrice = 20;
 
-    List<ConsumptionTransaction> reports = new ArrayList<>();
+  List<ConsumptionTransaction> reports = new ArrayList<>();
 
-    public void setPricePerUnit(int gasPrice, int waterPrice, int electricityPrice) {
-        this.electricityPerUnitPrice = electricityPrice;
-        this.gasPerUnitPrice = gasPrice;
-        this.waterPerUnitPrice = waterPrice;
-    }
+  public void addTransaction(ConsumptionTransaction transaction) {
+    reports.add(transaction);
+  }
 
-    public void addTransaction(ConsumptionTransaction transaction) {
-        reports.add(transaction);
-    }
-
-    public void getAllConsumptions() {
-        /*
-        reports.stream()
-                .collect(Collectors.groupingBy(ConsumptionTransaction::getEntity))
-                .forEach((entity, listOfConsumption) -> {
-                    System.out.println("=================== " + entity +" ===================");
-                    System.out.printf("Electricity consumption: %d\n", reducePriceByConsumption(listOfConsumption, ConsumptionType.ELECTRICITY));
-                    System.out.printf("Water consumption: %d\n", reducePriceByConsumption(listOfConsumption, ConsumptionType.WATER));
-                    System.out.printf("Gas consumption: %d\n", reducePriceByConsumption(listOfConsumption, ConsumptionType.GAS));
-                });
-
-         */
-
-    }
-
-    private int reducePriceByConsumption(List<ConsumptionTransaction> listOfConsumption, ConsumptionType type) {
-        /*
-        return listOfConsumption.stream()
-                .filter(consumptionTransaction -> consumptionTransaction.getConsumption().getType() == type)
-                .map(consumptionTransaction -> consumptionTransaction.getConsumption())
-                .reduce(0, (subtotal, cons) -> subtotal + cons.getPerStep(), Integer::sum);
-
-         */
-        return 0;
-    }
-
+  // TODO: ugly, but works, cant do Collectors.reduce()
+  public Map<ApplianceActivity, ConsumptionModel> getAllConsumptions(int g, int w, int e) {
+    var newmap = new HashMap<ApplianceActivity, ConsumptionModel>();
+    reports.stream()
+        .collect(Collectors.groupingBy(ConsumptionTransaction::getActivity))
+        .forEach(
+            ((activity, transactions) -> {
+              var model = new ConsumptionModel(0, 0, 0);
+              for (ConsumptionTransaction t : transactions) {
+                model.electricity += t.getElectricity() * e;
+                model.gas += t.getGas() * g;
+                model.water += t.getWater() * w;
+              }
+              newmap.put(activity, model);
+            }));
+    return newmap;
+  }
 }
+
+/*
+Collectors.reducing(
+                    new ConsumptionModel(0, 0, 0),
+                    t -> new ConsumptionModel(t.getWater(), t.getGas(), t.getElectricity()),
+                    (prev, next) -> {
+                      prev.electricity += next.electricity;
+                      prev.gas += next.gas;
+                      prev.water += next.water;
+                      return prev;
+                    })*/

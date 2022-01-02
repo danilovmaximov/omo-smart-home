@@ -9,6 +9,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 abstract public class Activity {
     private final String name;
     private ActivityManual manual;
+    protected String standardRoom;
     private Room room;
 
     private final Durability durability;
@@ -32,8 +33,16 @@ abstract public class Activity {
         }
     }
 
+    public String getName() {
+        return this.name;
+    }
+
     public Room getRoom() {
         return this.room;
+    }
+
+    public String getStandardRoom() {
+        return this.standardRoom;
     }
 
     public void interactWithActivity(LivingEntity entity) {
@@ -111,7 +120,7 @@ abstract public class Activity {
 
     protected void useActivityBy(LivingEntity entity) {
         this.isUsing = entity;
-        Context.getReports().getActivityReporter().addToReports(entity, this.toString(), "Done");
+        Context.getReports().getActivityReporter().addToReports(entity, this.toString(), "Done", activityLength);
     }
 
     private boolean isFinished() {

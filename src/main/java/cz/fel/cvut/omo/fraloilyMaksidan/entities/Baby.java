@@ -3,9 +3,13 @@ package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 public class Baby extends LivingEntity {
@@ -14,8 +18,12 @@ public class Baby extends LivingEntity {
     private boolean isCrying = false;
     private EventActivity generatedActivity;
 
-    public Baby(String name, Activity... activities) {
-        super(name, activities);
+    private final static List<ExistingActivities> standardActivities = new ArrayList<ExistingActivities>(
+        Arrays.asList(ExistingActivities.SLEEP, ExistingActivities.PLAY)
+    );
+
+    public Baby(String name) {
+        super(name, standardActivities);
         eventManager = new EventManager(name);
     }
 

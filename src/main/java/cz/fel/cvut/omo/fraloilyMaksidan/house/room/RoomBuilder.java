@@ -5,6 +5,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class RoomBuilder implements Builder{
     Room room = new Room();
@@ -22,7 +23,7 @@ public class RoomBuilder implements Builder{
 
     @Override
     public RoomBuilder setActivity(Activity activity) {
-        MapContext.addActivity(activity);
+        // MapContext.addActivity(activity);
         this.room.setActivity(activity);
         return this;
     }
@@ -33,9 +34,15 @@ public class RoomBuilder implements Builder{
         return this;
     }
 
+    public RoomBuilder setActivityList(List<Activity> activities) {
+        activities.stream()
+            .forEach(this::setActivity);
+        return this;
+    }
+
     @Override
     public RoomBuilder setEntity(LivingEntity entity) {
-        MapContext.addEntity(entity);
+        // MapContext.addEntity(entity);
         this.room.setEntity(entity);
         return this;
     }

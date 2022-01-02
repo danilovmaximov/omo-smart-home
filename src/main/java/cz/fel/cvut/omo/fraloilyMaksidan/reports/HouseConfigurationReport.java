@@ -9,7 +9,7 @@ public class HouseConfigurationReport {
         this.house = house;
     }
 
-    public void getConfiguration() {
-        System.out.println(house);
+    public House getConfiguration() {
+        return house;
     }
 }

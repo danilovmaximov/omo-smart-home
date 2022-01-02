@@ -1,7 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI;
+import cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -58,11 +58,11 @@ public class Context {
     }
 
     /* Reports context */
-    private static ReportsAPI reports = new ReportsAPI();
-    public static ReportsAPI getReports() {
+    private static Reports reports = new Reports();
+    public static Reports getReports() {
         return reports;
     }
-    public static void setReports(ReportsAPI reports) {
+    public static void setReports(Reports reports) {
         Context.reports = reports;
     }
 }

@@ -4,8 +4,12 @@ import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity;
+import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
+import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 abstract public class LivingEntity {
@@ -14,9 +18,22 @@ abstract public class LivingEntity {
     protected Room room;
     protected final Deque<Activity> activities = new LinkedList<>();
 
+    public LivingEntity(String name, List<ExistingActivities> standard_activities) {
+        this.name = name;
+        for (ExistingActivities standardActivity : standard_activities) {
+            for (Activity existingActivity : MapContext.getActivitiesInHouse()) {
+                if (standardActivity.getName() == existingActivity.getName()) {
+                    this.activities.addFirst(existingActivity);
+                }
+            }
+        }
+        MapContext.addEntity(this);
+    }
+
     public LivingEntity(String name, Activity... activities) {
         this.name = name;
-        Collections.addAll(this.activities, activities);
+        Arrays.stream(activities).forEach(activity -> this.activities.addFirst(activity));
+        MapContext.addEntity(this);
     }
 
     public void setRoom(Room room) {

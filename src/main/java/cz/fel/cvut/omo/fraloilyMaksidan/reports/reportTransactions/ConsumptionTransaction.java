@@ -15,6 +15,7 @@ public class ConsumptionTransaction {
         this.water = water;
     }
 
+
     public ApplianceActivity getActivity() {
         return activity;
     }
@@ -29,5 +30,22 @@ public class ConsumptionTransaction {
 
     public int getWater() {
         return water;
+    }
+
+    public void setElectricity(int electricity) {
+        this.electricity = electricity;
+    }
+
+    public void setGas(int gas) {
+        this.gas = gas;
+    }
+
+    public void setWater(int water) {
+        this.water = water;
+    }
+
+    @Override
+    public String toString() {
+        return "tr: [" + gas + " " + water + " " +electricity + "]";
     }
 }

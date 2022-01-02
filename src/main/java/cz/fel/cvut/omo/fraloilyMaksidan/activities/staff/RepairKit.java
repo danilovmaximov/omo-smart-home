@@ -14,7 +14,8 @@ public class RepairKit extends Activity {
     private ActivityManual manual;
 
     public RepairKit() {
-        super("Fix-a-garbage", 3, Durability.UNBREAKABLE);
+        super("Repair kit", 3, Durability.UNBREAKABLE);
+        standardRoom = "Garage";
     }
 
     @Override

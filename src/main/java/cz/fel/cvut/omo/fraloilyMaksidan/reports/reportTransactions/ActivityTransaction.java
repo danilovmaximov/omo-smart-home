@@ -7,11 +7,17 @@ public class ActivityTransaction {
     private final LivingEntity entity;
     private final String activity;
     private String status;
+    private int length;
 
-    public ActivityTransaction(LivingEntity entity, String activity, String status) {
+    public ActivityTransaction(LivingEntity entity, String activity, String status, int length) {
         this.entity = entity;
         this.activity = activity;
         this.status = status;
+        this.length = length;
+    }
+
+    public int getLength() {
+        return length;
     }
 
     public LivingEntity getEntity() {
@@ -25,4 +31,6 @@ public class ActivityTransaction {
     public String getStatus() {
         return status;
     }
+
+
 }

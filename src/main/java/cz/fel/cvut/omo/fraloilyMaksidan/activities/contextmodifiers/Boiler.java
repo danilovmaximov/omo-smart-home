@@ -1,4 +1,4 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.house;
+package cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity;
@@ -6,9 +6,10 @@ import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 
 public class Boiler extends ContextModifierActivity {
 
-    public Boiler(int activityLength) {
-        super("Грею ссанину", activityLength, Durability.STRONG,
+    public Boiler() {
+        super("Boiler", 2, Durability.STRONG,
             5, 10, 30, 2, 0, 0);
+        standardRoom = "Garage";
     }
 
     @Override

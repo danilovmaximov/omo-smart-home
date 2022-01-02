@@ -11,5 +11,6 @@ public class CoffeeMaker extends ApplianceActivity {
                 3, 0 , 2,
                 1, 0, 0
         );
+        standardRoom = "Kitchen";
     }
 }
