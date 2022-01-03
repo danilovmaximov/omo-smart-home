@@ -1,8 +1,10 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 
+/**
+ * Used in reports to transfer information from an entity.
+ */
 public class ActivityTransaction {
     private final LivingEntity entity;
     private final String activity;

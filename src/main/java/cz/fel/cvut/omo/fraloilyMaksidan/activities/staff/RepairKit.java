@@ -4,7 +4,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 
-import java.beans.IntrospectionException;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +14,7 @@ public class RepairKit extends Activity {
 
     public RepairKit() {
         super("Repair kit", 3, Durability.UNBREAKABLE);
-        standardRoom = "Garage";
+        standardRoomName = "Garage";
     }
 
     @Override

@@ -7,9 +7,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModif
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
-import cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 abstract public class LivingEntity {
@@ -21,13 +19,17 @@ abstract public class LivingEntity {
     public LivingEntity(String name, List<ExistingActivities> standard_activities) {
         this.name = name;
         for (ExistingActivities standardActivity : standard_activities) {
-            for (Activity existingActivity : MapContext.getActivitiesInHouse()) {
+            for (Activity existingActivity : MapContext.getActivitiesInHouse().values()) {
                 if (standardActivity.getName() == existingActivity.getName()) {
                     this.activities.addFirst(existingActivity);
                 }
             }
         }
         MapContext.addEntity(this);
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     public LivingEntity(String name, Activity... activities) {

@@ -3,11 +3,11 @@ package cz.fel.cvut.omo.fraloilyMaksidan.sensors;
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 
 public class OxygenSensor extends Sensor {
-    String name = "Oxygen level sensor";
     boolean reportedClose = false;
 
     public OxygenSensor(String... operations) {
         super(operations);
+        this.name = "Oxygen level sensor";
     }
 
     @Override

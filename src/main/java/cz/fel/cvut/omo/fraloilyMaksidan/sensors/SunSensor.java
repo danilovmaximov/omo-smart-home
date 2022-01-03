@@ -3,11 +3,11 @@ package cz.fel.cvut.omo.fraloilyMaksidan.sensors;
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 
 public class SunSensor extends Sensor {
-    String name = "Sunlight sensor";
     boolean reportedUp = false;
 
     public SunSensor(String... operations) {
         super(operations);
+        this.name = "Sunlight sensor";
     }
 
     @Override

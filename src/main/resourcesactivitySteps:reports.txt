@@ -1,0 +1,22 @@
+{
+  "Billy Herrington" : {
+    "Remember old times" : 10
+  },
+  "Van Darkholme" : {
+    "Boiler" : 4,
+    "TV" : 12,
+    "CoffeeMaker3000" : 8,
+    "Repair kit" : 3,
+    "Couch" : 14
+  },
+  "Slave" : {
+    "Play" : 15,
+    "Sleep" : 16
+  },
+  "Dungeon master" : {
+    "CoffeeMaker3000" : 14,
+    "Crying baby" : 8,
+    "Couch" : 8,
+    "Electric bike" : 40
+  }
+}

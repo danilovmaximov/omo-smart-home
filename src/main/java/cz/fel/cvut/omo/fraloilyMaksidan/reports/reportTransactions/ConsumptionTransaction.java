@@ -2,6 +2,9 @@ package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 
+/**
+ * Used in reports to transfer information from an entity.
+ */
 public class ConsumptionTransaction {
     private ApplianceActivity activity;
     private int electricity;

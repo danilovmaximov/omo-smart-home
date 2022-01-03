@@ -2,6 +2,9 @@ package cz.fel.cvut.omo.fraloilyMaksidan;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 
+/**
+ * Simulation driver and context changer.
+ */
 public class World {
 
     private House house;
@@ -14,7 +17,6 @@ public class World {
     public void startSimulation(int hours) {
         for (int i = 0; i < hours; ++i) {
             ChangeContext();
-            System.out.println("========== Temp: " + Context.getTempLevel() + " ==========");
             house.moveEntities();
             house.doActivities();
             house.appendConsumptionAndGetContextChange();

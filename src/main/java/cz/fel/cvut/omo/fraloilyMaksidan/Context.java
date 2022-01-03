@@ -6,6 +6,10 @@ import cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *  Containes parameters as temperature, light level and so on.
+ *  Can be accessed from every place of application.
+ */
 public class Context {
     /* Broken activities context */
     private static List<Activity> brokenActivities = new ArrayList<>();

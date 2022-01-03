@@ -24,12 +24,11 @@ public class House {
                 room.getActivities().forEach(Activity::step);
             });
         });
-        //MapContext.getActivitiesInHouse().forEach(Activity::step);
     }
 
     public void appendConsumptionAndGetContextChange() {
-        MapContext.getActivitiesInHouse().forEach(activity -> {
-            if(activity instanceof ApplianceActivity a) {
+        MapContext.getActivitiesInHouse().values().forEach(activity -> {
+            if (activity instanceof ApplianceActivity a) {
                 Context.getReports().getConsumptionReport()
                         .addTransaction(a.getCurrentTransaction());
             }
@@ -41,7 +40,7 @@ public class House {
     }
 
     public void moveEntities() {
-        MapContext.getEntitiesInHouse().forEach(LivingEntity::step);
+        MapContext.getEntitiesInHouse().values().forEach(LivingEntity::step);
     }
 
     public void setAddress(String address) {
@@ -52,10 +51,24 @@ public class House {
         this.floors.add(f);
     }
 
+    public void addFloorAll(Floor... floors) {
+        Arrays.stream(floors).
+                forEach(floor -> this.addFloor(floor));
+    }
+
+    public void addFloorList(List<Floor> floors) {
+        floors.stream()
+                .forEach(floor -> this.addFloor(floor));
+    }
+
     public void addSensors(Sensor... sensors) {
-        for (Sensor sensor : sensors) {
-            this.station = new SensorsStation(sensor);
-        }
+        Arrays.stream(sensors)
+                .forEach(sensor -> this.station = new SensorsStation(sensor));
+    }
+
+    public void addSensorsList(List<Sensor> sensors) {
+        sensors.stream()
+                .forEach(sensor -> this.station = new SensorsStation(sensor));
     }
 
     public void initFloors() {

@@ -1,0 +1,5 @@
+House: {
+   address: Street Lane 69,
+   SensorsStation: { sensors: [Inside temperature sensor] },
+   floors=[{ name: floor, number: 1, rooms: [Garage, Kitchen, Living room], entitiesOnTheFloor: [Dungeon master][Van Darkholme][] }, { name: floor, number: 2, rooms: [Child's room, Bedroom], entitiesOnTheFloor: [][Slave] }]
+}

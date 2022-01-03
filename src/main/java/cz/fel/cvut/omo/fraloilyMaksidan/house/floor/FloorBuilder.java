@@ -27,14 +27,13 @@ public class FloorBuilder implements Builder {
 
     @Override
     public FloorBuilder addRoomAll(Room... rooms) {
-        Arrays.stream(rooms)
-                .forEach(room -> this.floor.addRoom(room));
+        floor.addRoomAll(rooms);
         return this;
     }
 
+    @Override
     public FloorBuilder addRoomList(List<Room> rooms) {
-        rooms.stream()
-            .forEach(room -> this.floor.addRoom(room));
+        floor.addRoomList(rooms);
         return this;
     }
 

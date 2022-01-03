@@ -8,6 +8,6 @@ public class Computer extends ApplianceActivity {
             15, 0, 0,
                 4, 0, 0
         );
-        standardRoom = "Office";
+        standardRoomName = "Office";
     }
 }

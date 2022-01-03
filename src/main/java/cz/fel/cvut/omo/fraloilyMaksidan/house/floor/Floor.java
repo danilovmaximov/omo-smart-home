@@ -20,12 +20,26 @@ public class Floor {
         this.rooms.add(room);
     }
 
+    public void addRoomAll(Room... rooms) {
+        Arrays.stream(rooms)
+                .forEach(room -> this.addRoom(room));
+    }
+
+    public void addRoomList(List<Room> rooms) {
+        rooms.stream()
+                .forEach(room -> this.addRoom(room));
+    }
+
     public void setFloorNumber(int floorNumber) {
         this.floorNumber = floorNumber;
     }
 
-    public int getRoomsNum() { return this.rooms.size(); }
+    public int getFloorNumber() {
+        return this.floorNumber;
+    }
+
     public Room getRoom(int i) { return this.rooms.get(i); }
+    public int getRoomsNum() { return this.rooms.size(); }
 
     public List<Room> getRooms() {
         return rooms;

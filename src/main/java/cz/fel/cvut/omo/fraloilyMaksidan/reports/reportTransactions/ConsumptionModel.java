@@ -1,5 +1,8 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 
+/**
+ * Used in reports coz i am dumb.
+ */
 public class ConsumptionModel {
   public int water;
   public int gas;

@@ -6,6 +6,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 public class Play extends Activity {
     public Play() {
         super("Play", 5, Durability.UNBREAKABLE);
-        standardRoom = "Child's room";
+        standardRoomName = "Child's room";
     }
 }

@@ -3,6 +3,9 @@ package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
 
+/**
+ * Used in reports to transfer information from an entity.
+ */
 public class EventTransaction {
   private EventManager manager;
   private String event;

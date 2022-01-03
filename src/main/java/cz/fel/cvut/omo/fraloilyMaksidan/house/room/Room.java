@@ -19,6 +19,9 @@ public class Room {
         this.name = name;
     }
 
+    public String getName() {
+        return this.name;
+    }
 
     public void setFloor(Floor floor) { this.floor = floor; }
 

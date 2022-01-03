@@ -8,6 +8,6 @@ public class ElectricBicycle extends ApplianceActivity {
             7, 0, 0,
                 1, 0, 0
         );
-        standardRoom = "Garage";
+        standardRoomName = "Garage";
     }
 }

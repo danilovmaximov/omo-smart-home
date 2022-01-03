@@ -6,6 +6,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 public class RememberGoodTimes extends Activity {
     public RememberGoodTimes() {
         super("Remember old times", 10, Durability.UNBREAKABLE);
-        standardRoom = "Hall of grandad's fame";
+        standardRoomName = "Hall of grandad's fame";
     }
 }

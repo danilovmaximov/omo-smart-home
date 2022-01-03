@@ -8,6 +8,6 @@ public class TV extends ApplianceActivity {
             15, 0 ,0,
                 5, 0 ,0
         );
-        standardRoom = "Living room";
+        standardRoomName = "Living room";
     }
 }

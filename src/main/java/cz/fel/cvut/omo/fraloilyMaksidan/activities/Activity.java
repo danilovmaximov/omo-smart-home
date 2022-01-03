@@ -6,10 +6,13 @@ import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
+/**
+ * Activity template. Derived classes could override particular methods to add functionality.
+ */
 abstract public class Activity {
     private final String name;
     private ActivityManual manual;
-    protected String standardRoom;
+    protected String standardRoomName;
     private Room room;
 
     private final Durability durability;
@@ -41,10 +44,14 @@ abstract public class Activity {
         return this.room;
     }
 
-    public String getStandardRoom() {
-        return this.standardRoom;
+    public String getStandardRoomName() {
+        return this.standardRoomName;
     }
 
+    /**
+     * @param entity
+     * Entity sets itself for the activity.
+     */
     public void interactWithActivity(LivingEntity entity) {
         if (isUsing == entity) { return; }
         if (room.getEntities().contains(entity)) {
@@ -81,19 +88,13 @@ abstract public class Activity {
     public void step() {
         if (isBlocked()) {
             System.out.println(isUsing + " is interrupted from " + this);
-            return;
-        }
-        if (isIdle()) {
+        } else if (isIdle()) {
             manageIdle();
-            return;
-        }
-        if (isBroken()) {
+        } else if (isBroken()) {
             isUsing.nextActivity();
             finishActivity();
             System.out.println(isUsing + " wanted to use " + this + " but it is broken");
-            return;
-        }
-        if (isFinished()) {
+        } else if (isFinished()) {
             System.out.println(isUsing + " finished with " + this + " in the " + room);
             isUsing.nextActivity();
             condition -= deterioration;
@@ -128,7 +129,7 @@ abstract public class Activity {
     }
 
     protected void manageIdle() {
-
+        // add
     }
 
     protected void manageStep() {

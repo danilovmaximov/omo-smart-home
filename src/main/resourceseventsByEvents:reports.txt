@@ -1,0 +1,11 @@
+{
+  "ItsCold" : {
+    "Van Darkholme" : 1
+  },
+  "Slave" : {
+    "Dungeon master" : 7
+  },
+  "ItsWarm" : {
+    "Van Darkholme" : 1
+  }
+}
