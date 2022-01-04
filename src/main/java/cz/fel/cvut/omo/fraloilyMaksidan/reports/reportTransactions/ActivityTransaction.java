@@ -5,18 +5,8 @@ import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 /**
  * Used in reports to transfer information from an entity.
  */
-public class ActivityTransaction {
-    private final LivingEntity entity;
-    private final String activity;
-    private final String status;
-    private final int length;
-
-    public ActivityTransaction(LivingEntity entity, String activity, String status, int length) {
-        this.entity = entity;
-        this.activity = activity;
-        this.status = status;
-        this.length = length;
-    }
+public record ActivityTransaction(LivingEntity entity,
+                                  String activity, String status, int length) {
 
     public int getLength() {
         return length;

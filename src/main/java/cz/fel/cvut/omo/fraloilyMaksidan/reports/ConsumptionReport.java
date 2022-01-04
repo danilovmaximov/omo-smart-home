@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@SuppressWarnings("GrazieInspection")
 public class ConsumptionReport {
 
   final List<ConsumptionTransaction> reports = new ArrayList<>();

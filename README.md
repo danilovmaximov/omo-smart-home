@@ -34,12 +34,12 @@ Information about environment context such as temperature and light level
 is provided via Context static class in order to make it accessible for
 entities.
 
-Same principle is applied for MapContext, it is used to get information about position of different entities, activities and rooms in the house.
+Same principle is applied to MapContext, it is used to get information about position of different entities, activities and rooms in the house.
 
 Configuration can be made directly in java class through Configurator class or loaded from 
 json (example in default prefix path ./resources/json/).
 ```java
- World w1 = Configurator.loadHouseFromConfig("testConfig.json");
+  World w1 = Configurator.loadHouseFromConfig("testConfig.json");
 ```
 
 Main driver of the application is a World class object:
@@ -52,11 +52,41 @@ It moves entities, invokes activities, gathers consumptions and context changes,
 House is modeled as expected: it contains floors, floors contains rooms and so on.
 Each room have list of available activities and persons.
 
-ReportsAPI contains methods to get reports to terminal or files.
-Prefix in configurable in order to save it to different colactions.
+LivingEntities is a base class for all actors in the application.
 
-Events, consumptions, actions reporters (reports package) have Lists of transactions.
+Activity is a base class for ConsumingActivity(have consumption).
+ConsumingActivity is a base class for both ContextModifierActivity and 
+ApplianceActivity. Those are derived in order to change logic of appending 
+consumption transactions.
+
+ReportsAPI contains methods to get reports to terminal or files.
+Prefix in configurable in order to save it to different directories.
+
+Reporters (reports package) have lists of transactions.
 Transactions mapped, reduced, filtered and so on in order to get needed information.
+
+Simulation uses steps to manage actions in the application.
+
+### Step
+```java
+ public void startSimulation(int hours) {
+        for (int i = 0; i < hours; ++i) {
+            ChangeContext(); // Changes temperature, humidity... 
+            house.moveEntities(); // Entities moves to room, assigned to activities
+            house.doActivities(); // Steps in activities: activity state changes
+            house.appendConsumptionAndGetContextChange(); // Gathering transactions.
+            house.activateSensors(); // Sensors detect context.
+        }
+    }
+```
+### Events
+Event could be sent to house structure(window, lights), entity(father triggered to on/off boiler),
+from entity to entity for engagement(baby to mother).
+
+### JSON parsing
+Jackson library is used.
+
+
 
 
 

@@ -25,8 +25,7 @@ public class EventManager {
 
     public void subscribe(String eventType, Subscriber... subs) {
         List<Subscriber> users = subscribers.get(eventType);
-        Arrays.stream(subs)
-                .forEach(users::add);
+        users.addAll(Arrays.asList(subs));
     }
 
     public void notifySubscribers(String event) {
