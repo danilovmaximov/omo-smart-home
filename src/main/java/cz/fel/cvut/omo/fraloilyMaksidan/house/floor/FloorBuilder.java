@@ -3,16 +3,10 @@ package cz.fel.cvut.omo.fraloilyMaksidan.house.floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class FloorBuilder implements Builder {
-    Floor floor = new Floor();
-
-    @Override
-    public void reset() {
-        //TODO: Add reset
-    }
+    final Floor floor = new Floor();
 
     @Override
     public FloorBuilder setFloorNumber(int number) {

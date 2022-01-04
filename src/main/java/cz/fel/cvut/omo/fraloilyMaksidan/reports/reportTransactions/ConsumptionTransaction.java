@@ -1,13 +1,12 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 
 /**
  * Used in reports to transfer information from an entity.
  */
 public class ConsumptionTransaction {
-    private ConsumingActivity activity;
+    private final ConsumingActivity activity;
     private int electricity;
     private int gas;
     private int water;

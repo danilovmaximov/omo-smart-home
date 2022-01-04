@@ -211,7 +211,7 @@ public class Configurator {
                 .map(entity -> (Baby) entity)
                 .toList();
         mothers.forEach(
-                mother -> babies.forEach(baby -> mother.addBabies(baby))
+                mother -> babies.forEach(mother::addBabies)
         );
 
         List<Grandmother> grannys = MapContext.getEntitiesInHouse().values().stream()
@@ -228,10 +228,10 @@ public class Configurator {
                 .toList();
 
         grannys.forEach(
-                granny -> cats.forEach(cat -> granny.addCats(cat))
+                granny -> cats.forEach(granny::addCats)
         );
         cats.forEach(
-                cat -> dogs.forEach(dog -> cat.addDogs(dog))
+                cat -> dogs.forEach(cat::addDogs)
         );
     }
 

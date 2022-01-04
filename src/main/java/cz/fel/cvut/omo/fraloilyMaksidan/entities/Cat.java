@@ -9,7 +9,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.Subscriber;
 import java.util.*;
 
 public class Cat extends LivingEntity implements Subscriber {
-    private EventManager eventManager;
+    private final EventManager eventManager;
     private EventActivity generatedActivity;
     private boolean justPissed = false;
     private final List<Dog> dogs = new ArrayList<>();
@@ -46,7 +46,6 @@ public class Cat extends LivingEntity implements Subscriber {
     @Override
     public void step() {
         if (justPissed) {
-            return;
         } else if (wannaPee()) {
             if (currentActivity != null) {
                 currentActivity.setBlocked(true);

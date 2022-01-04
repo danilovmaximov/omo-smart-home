@@ -1,0 +1,83 @@
+{
+    "address": "Spirit lane, 69",
+    "floors": [
+      {
+        "floorNumber": "1",
+        "rooms": [ "Garage", "Kitchen", "Living room", "Sports room", "Outside" ]
+      },
+      {
+        "floorNumber": "2",
+        "rooms": [ "Child's room", "Hall of fame", "Aquarium"]
+      },
+      {
+        "floorNumber": "3",
+        "rooms" : [ "Bedroom", "Geek's dungeon"]
+      }
+    ],
+    "activities" : [
+      { "name": "CoffeeMaker3000", "room": "Kitchen" },
+      { "name": "Computer", "room": "Geek's dungeon" },
+      { "name": "Couch", "room": "Living room" },
+      { "name": "Electric bike", "room": "Sports room" },
+      { "name": "TV", "room": "Living room" },
+      { "name": "Repair kit", "room": "Garage" },
+      { "name": "Play", "room": "Child's room" },
+      { "name": "Sleep", "room": "Bedroom" },
+      { "name": "Remember good times", "room": "Hall of fame" },
+      { "name": "Boiler", "room": "Garage" },
+      { "name": "Car", "room": "Garage" },
+      { "name": "Audio system", "room": "Geek's dungeon" },
+      { "name": "Kitchen stove", "room": "Kitchen" },
+      { "name": "Washing machine", "room": "Garage" },
+      { "name": "Treadmill", "room": "Sports room" },
+      { "name": "Skis", "room": "Sports room" },
+      { "name": "Hum", "room": "Kitchen" },
+      { "name": "Jump around", "room": "Living room" },
+      { "name": "Wash", "room": "Geek's dungeon" },
+      { "name": "Bark", "room": "Outside" },
+      { "name": "Chase the tail", "room": "Bedroom" },
+      { "name": "Play ball", "room": "Outside" },
+      { "name": "Bloop", "room": "Aquarium" },
+      { "name": "Drip", "room": "Aquarium" },
+      { "name": "Splash", "room": "Aquarium" },
+      { "name": "Walk", "room": "Outside"}
+    ],
+    "entities": [
+      {
+        "name": "Nursultan" , "type": "Father",
+        "activities":  [ "CoffeeMaker3000", "Computer", "Electric bike", "Couch", "Car", "Treadmill" ]
+      },
+      {
+        "name": "Azamat", "type": "Grandfather",
+        "activities": [ "CoffeeMaker3000", "Sleep", "Remember good times", "TV", "Skis", "Couch", "Skis" ]
+      },
+      {
+        "name": "Uazipa", "type": "Mother",
+        "activities": [ "Electric bike", "Couch", "CoffeeMaker3000", "Sleep", "TV", "Skis", "Washing machine" ]
+      },
+      {
+        "name": "Erkezhan", "type": "Baby",
+        "activities": [ "Play", "Sleep", "Computer", "Walk", "TV", "Couch" ]
+      },
+      {
+        "name": "Gulmaria", "type": "Baby",
+        "activities": [ "Sleep", "Couch", "Play", "Walk", "TV" ]
+      },
+      {
+        "name": "Gulshat", "type": "Grandmother",
+        "activities": [ "Couch", "Kitchen stove", "Skis", "Audio system", "Treadmill", "Couch", "Sleep", "Remember good times" ]
+      },
+      {
+        "name": "Murka", "type": "Cat",
+        "activities": [ "Hum", "Jump around", "Wash", "Couch", "Walk" ]
+      },
+      {
+        "name": "Sharik", "type": "Dog",
+        "activities": [ "Bark", "Couch", "Chase the tail", "Play ball", "Walk" ]
+      },
+      {
+        "name": "Bublya", "type": "Fishy",
+        "activities": [ "Bloop", "Drip", "Splash" ]
+      }
+    ]
+}

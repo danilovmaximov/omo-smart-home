@@ -1,6 +1,5 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.floor;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 
@@ -33,7 +32,7 @@ public class Floor {
     }
 
     public void addRoomList(List<Room> rooms) {
-        rooms.stream()
+        rooms
                 .forEach(this::addRoom);
     }
 

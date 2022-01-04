@@ -7,8 +7,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 import java.util.List;
 
 public interface Builder {
-    void reset();
-
     RoomBuilder setName(String name);
     RoomBuilder setFloor(Floor floor);
     RoomBuilder setFloorByNum(int floorNum);

@@ -1,10 +1,10 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
 public class Reports {
-    ActivityReporter activityReporter = new ActivityReporter();
-    EventReport eventReport = new EventReport();
-    HouseConfigurationReport houseConfigurationReport = new HouseConfigurationReport();
-    ConsumptionReport consumptionReport = new ConsumptionReport();
+    final ActivityReporter activityReporter = new ActivityReporter();
+    final EventReport eventReport = new EventReport();
+    final HouseConfigurationReport houseConfigurationReport = new HouseConfigurationReport();
+    final ConsumptionReport consumptionReport = new ConsumptionReport();
 
     public ActivityReporter getActivityReporter() {
         return activityReporter;

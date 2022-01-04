@@ -1,10 +1,8 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor;
@@ -22,11 +20,7 @@ public class House {
     private final List<Floor> floors = new ArrayList<>();
 
     public void doActivities() {
-        this.floors.stream().forEach(floor -> {
-            floor.getRooms().forEach(room -> {
-                room.getActivities().forEach(Activity::step);
-            });
-        });
+        this.floors.forEach(floor -> floor.getRooms().forEach(room -> room.getActivities().forEach(Activity::step)));
     }
 
     public void appendConsumptionAndGetContextChange() {
@@ -56,12 +50,12 @@ public class House {
 
     public void addFloorAll(Floor... floors) {
         Arrays.stream(floors).
-                forEach(floor -> this.addFloor(floor));
+                forEach(this::addFloor);
     }
 
     public void addFloorList(List<Floor> floors) {
-        floors.stream()
-                .forEach(floor -> this.addFloor(floor));
+        floors
+                .forEach(this::addFloor);
     }
 
     public void addSensors(Sensor... sensors) {
@@ -70,7 +64,7 @@ public class House {
     }
 
     public void addSensorsList(List<Sensor> sensors) {
-        sensors.stream()
+        sensors
                 .forEach(sensor -> this.station = new SensorsStation(sensor));
     }
 

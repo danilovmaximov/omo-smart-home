@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class ActivityReporter {
 
-  List<ActivityTransaction> transactions = new ArrayList<>();
+  final List<ActivityTransaction> transactions = new ArrayList<>();
 
   public void addToReports(LivingEntity entity, String activity, String status, int length) {
     transactions.add(new ActivityTransaction(entity, activity, status, length));

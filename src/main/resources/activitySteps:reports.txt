@@ -1,72 +1,70 @@
 {
+  "Uazipa" : {
+    "TV" : 15,
+    "Sleep" : 32,
+    "CoffeeMaker3000" : 24,
+    "Skis" : 40,
+    "Washing machine" : 56,
+    "Couch" : 8,
+    "Crying baby" : 12,
+    "Electric bike" : 32
+  },
   "Murka" : {
-    "Walk" : 30,
-    "Hum" : 18,
+    "Walk" : 60,
+    "Hum" : 20,
     "Animal fight" : 10,
     "Jump around" : 25,
-    "Wash" : 26,
-    "Couch" : 18
+    "Wash" : 18,
+    "Couch" : 6
   },
-  "Nursultan" : {
-    "Boiler" : 4,
-    "CoffeeMaker3000" : 8,
-    "Car" : 60,
-    "Computer" : 5,
-    "Couch" : 2,
-    "Repair kit" : 18,
-    "Treadmill" : 40,
-    "Electric bike" : 24
+  "Erkezhan" : {
+    "Play" : 5,
+    "TV" : 9,
+    "Computer" : 25,
+    "Couch" : 4
   },
   "Bublya" : {
     "Bloop" : 16,
     "Drip" : 17,
     "Splash" : 17
   },
-  "Azamat" : {
-    "TV" : 3,
-    "Sleep" : 8,
-    "CoffeeMaker3000" : 4,
-    "Skis" : 40,
-    "Remember good times" : 20
+  "Sharik" : {
+    "Walk" : 30,
+    "Play ball" : 8,
+    "Bark" : 2,
+    "Couch" : 2,
+    "Chase the tail" : 12
   },
   "Gulmaria" : {
-    "Walk" : 30,
-    "Play" : 20,
-    "TV" : 12,
-    "Sleep" : 8,
-    "Couch" : 2
-  },
-  "Erkezhan" : {
-    "Play" : 15,
+    "Play" : 25,
     "TV" : 9,
-    "Computer" : 25,
-    "Couch" : 6
+    "Sleep" : 16
   },
   "Gulshat" : {
     "Clean up" : 8,
-    "Audio system" : 32,
-    "Sleep" : 24,
+    "Audio system" : 24,
+    "Sleep" : 16,
     "Skis" : 20,
-    "Remember good times" : 60,
-    "Couch" : 10,
+    "Remember good times" : 40,
+    "Couch" : 14,
     "Treadmill" : 30,
-    "Kitchen stove" : 36
+    "Kitchen stove" : 42
   },
-  "Uazipa" : {
-    "TV" : 21,
-    "Sleep" : 40,
-    "CoffeeMaker3000" : 10,
+  "Azamat" : {
+    "TV" : 6,
+    "CoffeeMaker3000" : 4,
     "Skis" : 40,
-    "Washing machine" : 35,
-    "Couch" : 6,
-    "Crying baby" : 12,
-    "Electric bike" : 32
+    "Remember good times" : 20,
+    "Couch" : 4
   },
-  "Sharik" : {
-    "Walk" : 30,
-    "Play ball" : 12,
-    "Bark" : 4,
+  "Nursultan" : {
+    "Boiler" : 4,
+    "CoffeeMaker3000" : 2,
+    "Car" : 60,
+    "Computer" : 10,
+    "Repair kit" : 18,
     "Couch" : 2,
-    "Chase the tail" : 12
+    "Treadmill" : 30,
+    "Electric bike" : 16
   }
 }

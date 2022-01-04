@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Dog extends LivingEntity {
-    private EventManager eventManager;
+    private final EventManager eventManager;
     private EventActivity generatedActivity;
     boolean isFighting = false;
 
@@ -41,7 +41,6 @@ public class Dog extends LivingEntity {
     @Override
     public void step() {
         if (isFighting) {
-            return;
         } else if (fightingIsFun()) {
             if (currentActivity != null) {
                 currentActivity.setBlocked(true);

@@ -1,7 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionModel;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction;
@@ -12,15 +11,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@SuppressWarnings("GrazieInspection")
 public class ConsumptionReport {
 
-  List<ConsumptionTransaction> reports = new ArrayList<>();
+  final List<ConsumptionTransaction> reports = new ArrayList<>();
 
   public void addTransaction(ConsumptionTransaction transaction) {
     reports.add(transaction);
   }
 
-  // TODO: ugly, but works, cant do Collectors.reduce()
+  //  ugly, but works, cannot do Collectors.reduce()
   public Map<ConsumingActivity, ConsumptionModel> getAllConsumptions(int g, int w, int e) {
     var newmap = new HashMap<ConsumingActivity, ConsumptionModel>();
     reports.stream()

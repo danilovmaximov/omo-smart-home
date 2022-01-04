@@ -1,0 +1,2651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>cz.fel.cvut.omo.fraloilyMaksidan</OriginalElement>
+  <nodes>
+    <node x="1886.971153245951" y="1479.0">cz.fel.cvut.omo.fraloilyMaksidan.house.House</node>
+    <node x="5897.862367353354" y="200.0">cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor</node>
+    <node x="2237.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Splash</node>
+    <node x="5790.277816791515" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog</node>
+    <node x="5662.527816791515" y="1600.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandmother</node>
+    <node x="618.0" y="1913.0">cz.fel.cvut.omo.fraloilyMaksidan.enums</node>
+    <node x="422.0" y="1913.0">cz.fel.cvut.omo.fraloilyMaksidan.parsing</node>
+    <node x="4616.577496878897" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ElectricBicycle</node>
+    <node x="1117.25" y="764.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ActivityTransaction</node>
+    <node x="2972.570700686687" y="1016.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.ActivityManual</node>
+    <node x="5049.215316791515" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Car</node>
+    <node x="2597.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.ChaseTheTail</node>
+    <node x="2859.570700686687" y="200.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.Boiler</node>
+    <node x="5015.340316791515" y="663.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity</node>
+    <node x="3174.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.JumpAround</node>
+    <node x="4239.666666666667" y="1600.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity</node>
+    <node x="4200.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.Father</node>
+    <node x="3435.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.RememberGoodTimes</node>
+    <node x="3765.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.Wash</node>
+    <node x="5979.715316791515" y="1479.0">cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder</node>
+    <node x="1333.096153245951" y="99.0">cz.fel.cvut.omo.fraloilyMaksidan.Context</node>
+    <node x="3335.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Drip</node>
+    <node x="6163.965316791515" y="1600.0">cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder</node>
+    <node x="3566.5774968788974" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.AudioSystem</node>
+    <node x="3921.5774968788974" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Treadmill</node>
+    <node x="2102.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit</node>
+    <node x="1583.7500000000002" y="371.0">cz.fel.cvut.omo.fraloilyMaksidan.sensors.HumiditySensor</node>
+    <node x="5984.215316791515" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.house.room.Builder</node>
+    <node x="4364.577496878897" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.CoffeeMaker</node>
+    <node x="2766.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity</node>
+    <node x="4526.577496878897" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.TV</node>
+    <node x="2355.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.PlayBall</node>
+    <node x="5432.652816791515" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby</node>
+    <node x="1794.6875000000002" y="1600.0">cz.fel.cvut.omo.fraloilyMaksidan.house.Builder</node>
+    <node x="4223.577496878897" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Computer</node>
+    <node x="863.0" y="845.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport</node>
+    <node x="3280.070700686687" y="200.0">cz.fel.cvut.omo.fraloilyMaksidan.house.Light</node>
+    <node x="3071.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.Hum</node>
+    <node x="0.0" y="1913.0">cz.fel.cvut.omo.fraloilyMaksidan.resources</node>
+    <node x="215.0" y="1913.0">cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer</node>
+    <node x="6176.965316791515" y="663.0">cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Builder</node>
+    <node x="4900.75" y="1762.0">cz.fel.cvut.omo.fraloilyMaksidan.Configurator</node>
+    <node x="3094.320700686687" y="99.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity</node>
+    <node x="1259.75" y="371.0">cz.fel.cvut.omo.fraloilyMaksidan.sensors.OxygenSensor</node>
+    <node x="2481.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Couch</node>
+    <node x="4990.840316791515" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Skis</node>
+    <node x="3048.383200686687" y="1841.0">cz.fel.cvut.omo.fraloilyMaksidan.Main</node>
+    <node x="3665.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Play</node>
+    <node x="3874.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Bloop</node>
+    <node x="0.0" y="1600.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI</node>
+    <node x="1777.846153245951" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder</node>
+    <node x="5673.97333021223" y="482.0">cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room</node>
+    <node x="5123.840316791515" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.Fishy</node>
+    <node x="1803.408653245951" y="200.0">cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor</node>
+    <node x="3730.5774968788974" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.WashingMachine</node>
+    <node x="5398.91083021223" y="482.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity</node>
+    <node x="2366.8611501248483" y="0.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction</node>
+    <node x="5414.652816791515" y="764.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry</node>
+    <node x="150.0" y="1600.0">cz.fel.cvut.omo.fraloilyMaksidan.World</node>
+    <node x="1145.75" y="845.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter</node>
+    <node x="3985.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Walk</node>
+    <node x="5757.277816791515" y="764.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.AnimalFight</node>
+    <node x="3484.320700686687" y="371.0">cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext</node>
+    <node x="865.0" y="764.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionModel</node>
+    <node x="4089.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Sleep</node>
+    <node x="426.0" y="764.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.EventTransaction</node>
+    <node x="1855.6875000000002" y="371.0">cz.fel.cvut.omo.fraloilyMaksidan.sensors.SensorsStation</node>
+    <node x="2969.166666666667" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.Bark</node>
+    <node x="5726.777816791515" y="1479.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat</node>
+    <node x="602.0" y="845.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.HouseConfigurationReport</node>
+    <node x="3146.570700686687" y="1127.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity</node>
+    <node x="263.0" y="371.0">cz.fel.cvut.omo.fraloilyMaksidan.sensors.TempSensor</node>
+    <node x="4058.5774968788974" y="1681.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.KitchenStove</node>
+    <node x="5231.840316791515" y="1298.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandfather</node>
+    <node x="5392.652816791515" y="1479.0">cz.fel.cvut.omo.fraloilyMaksidan.entities.Mother</node>
+    <node x="3385.070700686687" y="200.0">cz.fel.cvut.omo.fraloilyMaksidan.house.Window</node>
+    <node x="444.0" y="845.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.EventReport</node>
+    <node x="809.0" y="1913.0">cz.fel.cvut.omo.fraloilyMaksidan.Loader</node>
+    <node x="5598.590316791515" y="764.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.CleanUp</node>
+    <node x="3512.070700686687" y="200.0">cz.fel.cvut.omo.fraloilyMaksidan.house.Humidifier</node>
+    <node x="641.6111501248479" y="1016.0">cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports</node>
+    <node x="3656.070700686687" y="200.0">cz.fel.cvut.omo.fraloilyMaksidan.activities.BreakageManager</node>
+    <node x="1434.75" y="371.0">cz.fel.cvut.omo.fraloilyMaksidan.sensors.SunSensor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="35.0" y="-13.5" />
+      <point x="5005.75" y="1740.0" />
+      <point x="6318.840316791515" y="1740.0" />
+      <point x="6318.840316791515" y="601.0" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ActivityTransaction" relationship="TO_MANY">
+      <point x="-55.0" y="-13.5" />
+      <point x="1173.25" y="818.0" />
+      <point x="1163.75" y="818.0" />
+      <point x="-46.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="1845.1875000000002" y="1548.0" />
+      <point x="1810.7500000000002" y="1548.0" />
+      <point x="1810.7500000000002" y="349.0" />
+      <point x="1853.908653245951" y="349.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandmother" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" relationship="TO_MANY">
+      <point x="48.0" y="-13.5" />
+      <point x="5782.527816791515" y="1578.0" />
+      <point x="5763.777816791515" y="1578.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.TV" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="4561.577496878897" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="TO_ONE">
+      <point x="27.75" y="-13.5" />
+      <point x="5791.527816791515" y="1457.0" />
+      <point x="5854.777816791515" y="1457.0" />
+      <point x="5854.777816791515" y="1417.0" />
+      <point x="5939.215316791515" y="1417.0" />
+      <point x="5939.215316791515" y="551.0" />
+      <point x="5499.077496878897" y="551.0" />
+      <point x="5499.077496878897" y="531.0" />
+      <point x="5517.244163545564" y="531.0" />
+      <point x="47.333333333333485" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandfather" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="GENERALIZATION">
+      <point x="-33.75" y="-13.5" />
+      <point x="5265.590316791515" y="1216.0" />
+      <point x="5222.715316791515" y="1216.0" />
+      <point x="5222.715316791515" y="742.0" />
+      <point x="5393.590316791515" y="742.0" />
+      <point x="5393.590316791515" y="722.0" />
+      <point x="5125.340316791515" y="722.0" />
+      <point x="44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" relationship="DEPENDENCY">
+      <point x="21.0" y="-13.5" />
+      <point x="3111.383200686687" y="1820.0" />
+      <point x="6148.78583021223" y="1820.0" />
+      <point x="6148.78583021223" y="1810.0" />
+      <point x="262.7628199126175" y="1810.0" />
+      <point x="262.7628199126175" y="450.0" />
+      <point x="3557.320700686687" y="450.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandmother" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" relationship="DEPENDENCY">
+      <point x="-48.0" y="-13.5" />
+      <point x="5686.527816791515" y="1578.0" />
+      <point x="5562.215316791515" y="1578.0" />
+      <point x="5562.215316791515" y="1528.0" />
+      <point x="5739.111150124849" y="1528.0" />
+      <point x="-24.666666666666686" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.OxygenSensor" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="1337.25" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="1851.346153245951" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Play" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3092.2024968788974" y="1730.0" />
+      <point x="3092.2024968788974" y="1407.0" />
+      <point x="3705.166666666667" y="1407.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.HouseConfigurationReport" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="DEPENDENCY">
+      <point x="-80.33333333333348" y="13.5" />
+      <point x="642.1666666666665" y="944.0" />
+      <point x="137.25" y="944.0" />
+      <point x="137.25" y="984.0" />
+      <point x="2036.1875000000002" y="984.0" />
+      <point x="2036.1875000000002" y="1447.0" />
+      <point x="2075.721153245951" y="1447.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="32.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="21.0" y="-13.5" />
+      <point x="3111.383200686687" y="1820.0" />
+      <point x="6148.78583021223" y="1820.0" />
+      <point x="6148.78583021223" y="1810.0" />
+      <point x="6347.090316791515" y="1810.0" />
+      <point x="6347.090316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Drip" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3375.166666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder" relationship="DEPENDENCY">
+      <point x="-25.25" y="13.5" />
+      <point x="6202.215316791515" y="722.0" />
+      <point x="6221.965316791515" y="722.0" />
+      <point x="6221.965316791515" y="1528.0" />
+      <point x="6204.090316791515" y="1528.0" />
+      <point x="6204.090316791515" y="1578.0" />
+      <point x="6181.215316791515" y="1578.0" />
+      <point x="-51.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Splash" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="2286.166666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="CREATE">
+      <point x="51.75" y="-13.5" />
+      <point x="6284.715316791515" y="1578.0" />
+      <point x="6299.465316791515" y="1578.0" />
+      <point x="6299.465316791515" y="309.0" />
+      <point x="5970.362367353354" y="309.0" />
+      <point x="29.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction" relationship="TO_MANY">
+      <point x="64.33333333333331" y="-13.5" />
+      <point x="1023.8333333333335" y="818.0" />
+      <point x="1064.5" y="818.0" />
+      <point x="1064.5" y="68.0" />
+      <point x="2391.383200686687" y="68.0" />
+      <point x="2391.383200686687" y="48.0" />
+      <point x="2481.3611501248483" y="48.0" />
+      <point x="-1.4210854715202004E-14" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.Bark" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3010.166666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Father" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3388.7024968788974" y="1730.0" />
+      <point x="3388.7024968788974" y="1457.0" />
+      <point x="4248.166666666667" y="1457.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.JumpAround" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3244.666666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="-47.333333333333485" y="13.5" />
+      <point x="5422.577496878897" y="531.0" />
+      <point x="5427.014996878897" y="531.0" />
+      <point x="5427.014996878897" y="621.0" />
+      <point x="3241.445700686687" y="621.0" />
+      <point x="3241.445700686687" y="1105.0" />
+      <point x="3235.820700686687" y="1105.0" />
+      <point x="38.25" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.TempSensor" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="-35.5" y="-13.5" />
+      <point x="298.5" y="349.0" />
+      <point x="308.7628199126175" y="349.0" />
+      <point x="308.7628199126175" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.World" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="TO_ONE">
+      <point x="23.0" y="-13.5" />
+      <point x="219.0" y="1548.0" />
+      <point x="1769.2500000000002" y="1548.0" />
+      <point x="1769.2500000000002" y="1538.0" />
+      <point x="1902.971153245951" y="1538.0" />
+      <point x="-32.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Car" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="5086.715316791515" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="DEPENDENCY">
+      <point x="35.0" y="-13.5" />
+      <point x="5005.75" y="1740.0" />
+      <point x="6318.590316791515" y="1740.0" />
+      <point x="6318.590316791515" y="1538.0" />
+      <point x="1934.9711532459514" y="1538.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="5954.340316791515" y="1730.0" />
+      <point x="5954.340316791515" y="1437.0" />
+      <point x="5503.486150124849" y="1437.0" />
+      <point x="28.333333333333314" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" relationship="TO_ONE">
+      <point x="0.0" y="13.5" />
+      <point x="2481.3611501248483" y="48.0" />
+      <point x="2391.383200686687" y="48.0" />
+      <point x="2391.383200686687" y="68.0" />
+      <point x="2962.070700686687" y="68.0" />
+      <point x="2962.070700686687" y="1226.0" />
+      <point x="2857.666666666667" y="1226.0" />
+      <point x="0.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction" relationship="TO_ONE">
+      <point x="0.0" y="-13.5" />
+      <point x="2857.666666666667" y="1226.0" />
+      <point x="2962.070700686687" y="1226.0" />
+      <point x="2962.070700686687" y="68.0" />
+      <point x="2391.383200686687" y="68.0" />
+      <point x="2391.383200686687" y="48.0" />
+      <point x="2481.3611501248483" y="48.0" />
+      <point x="-1.4210854715202004E-14" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.Hum" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3112.666666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder" relationship="DEPENDENCY">
+      <point x="-25.25" y="13.5" />
+      <point x="1819.9375000000002" y="1659.0" />
+      <point x="1832.971153245951" y="1659.0" />
+      <point x="-18.375" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2076.604166666667" y="601.0" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="0.0" y="13.5" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5742.22333021223" y="319.0" />
+      <point x="22.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.World" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="-23.0" y="-13.5" />
+      <point x="173.0" y="1578.0" />
+      <point x="183.2628199126175" y="1578.0" />
+      <point x="183.2628199126175" y="1548.0" />
+      <point x="131.75" y="1548.0" />
+      <point x="131.75" y="944.0" />
+      <point x="120.75" y="944.0" />
+      <point x="120.75" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="22.75" y="-13.5" />
+      <point x="5742.22333021223" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="57.33333333333337" y="-13.5" />
+      <point x="4383.0" y="1578.0" />
+      <point x="4531.244163545564" y="1578.0" />
+      <point x="4531.244163545564" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" relationship="DEPENDENCY">
+      <point x="27.5" y="13.5" />
+      <point x="5497.152816791515" y="818.0" />
+      <point x="5475.152816791515" y="818.0" />
+      <point x="5475.152816791515" y="1186.0" />
+      <point x="5494.152816791515" y="1186.0" />
+      <point x="5494.152816791515" y="1276.0" />
+      <point x="5485.777816791515" y="1276.0" />
+      <point x="10.625" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="-9.875" y="-13.5" />
+      <point x="5819.902816791515" y="1276.0" />
+      <point x="5824.277816791515" y="1276.0" />
+      <point x="5824.277816791515" y="1186.0" />
+      <point x="5901.777816791515" y="1186.0" />
+      <point x="5901.777816791515" y="601.0" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.OxygenSensor" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="GENERALIZATION">
+      <point x="38.75" y="-13.5" />
+      <point x="1376.0" y="349.0" />
+      <point x="1318.0961532459514" y="349.0" />
+      <point x="1318.0961532459514" y="299.0" />
+      <point x="1820.2419865792842" y="299.0" />
+      <point x="-33.66666666666674" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.AudioSystem" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3638.5774968788974" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.SunSensor" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="GENERALIZATION">
+      <point x="-32.25" y="-13.5" />
+      <point x="1467.0" y="349.0" />
+      <point x="1318.0961532459514" y="349.0" />
+      <point x="1318.0961532459514" y="299.0" />
+      <point x="1820.2419865792842" y="299.0" />
+      <point x="-33.66666666666674" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Bloop" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3919.666666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="TO_MANY">
+      <point x="-44.0" y="13.5" />
+      <point x="5037.340316791515" y="712.0" />
+      <point x="3219.945700686687" y="712.0" />
+      <point x="3219.945700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1105.0" />
+      <point x="3210.320700686687" y="1105.0" />
+      <point x="12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="6147.090316791515" y="1730.0" />
+      <point x="6147.090316791515" y="1427.0" />
+      <point x="5856.111150124849" y="1427.0" />
+      <point x="26.33333333333333" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Couch" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="2529.166666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.HouseConfigurationReport" relationship="TO_ONE">
+      <point x="26.5" y="-13.5" />
+      <point x="721.1111501248479" y="994.0" />
+      <point x="936.5128199126175" y="994.0" />
+      <point x="936.5128199126175" y="954.0" />
+      <point x="1138.8461532459514" y="954.0" />
+      <point x="1138.8461532459514" y="914.0" />
+      <point x="802.8333333333335" y="914.0" />
+      <point x="80.33333333333348" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandmother" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="-48.0" y="-13.5" />
+      <point x="5686.527816791515" y="1578.0" />
+      <point x="5562.215316791515" y="1578.0" />
+      <point x="5561.965316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Mother" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="5443.152816791515" y="1447.0" />
+      <point x="5388.340316791515" y="1447.0" />
+      <point x="5388.340316791515" y="742.0" />
+      <point x="5393.590316791515" y="742.0" />
+      <point x="5393.590316791515" y="722.0" />
+      <point x="5125.340316791515" y="722.0" />
+      <point x="44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport" relationship="CREATE">
+      <point x="-26.5" y="-13.5" />
+      <point x="668.1111501248479" y="994.0" />
+      <point x="574.7628199126175" y="994.0" />
+      <point x="574.7628199126175" y="934.0" />
+      <point x="895.1666666666665" y="934.0" />
+      <point x="-64.33333333333331" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter" relationship="TO_ONE">
+      <point x="26.5" y="-13.5" />
+      <point x="721.1111501248479" y="994.0" />
+      <point x="936.5128199126175" y="994.0" />
+      <point x="936.5128199126175" y="924.0" />
+      <point x="1228.25" y="924.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Context" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" relationship="CREATE">
+      <point x="-35.333333333333485" y="13.5" />
+      <point x="1350.7628199126175" y="158.0" />
+      <point x="415.5" y="158.0" />
+      <point x="415.5" y="934.0" />
+      <point x="574.7628199126175" y="934.0" />
+      <point x="574.7628199126175" y="994.0" />
+      <point x="668.1111501248479" y="994.0" />
+      <point x="-26.5" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="CREATE">
+      <point x="55.125" y="-13.5" />
+      <point x="1906.471153245951" y="1659.0" />
+      <point x="2123.721153245951" y="1659.0" />
+      <point x="2123.721153245951" y="1578.0" />
+      <point x="1966.971153245951" y="1578.0" />
+      <point x="32.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.Humidifier" relationship="TO_ONE">
+      <point x="45.33333333333337" y="-13.5" />
+      <point x="3597.6540340200204" y="349.0" />
+      <point x="3579.070700686687" y="349.0" />
+      <point x="3579.070700686687" y="249.0" />
+      <point x="3605.070700686687" y="249.0" />
+      <point x="31.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="13.5" />
+      <point x="5469.91083021223" y="531.0" />
+      <point x="5488.577496878897" y="531.0" />
+      <point x="5488.577496878897" y="571.0" />
+      <point x="4995.529034020021" y="571.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="-33.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ElectricBicycle" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="4693.577496878897" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="DEPENDENCY">
+      <point x="-33.0" y="-13.5" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="4995.529034020021" y="571.0" />
+      <point x="5488.577496878897" y="571.0" />
+      <point x="5488.577496878897" y="531.0" />
+      <point x="5469.91083021223" y="531.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.AnimalFight" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="-33.5" y="-13.5" />
+      <point x="5790.777816791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandfather" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="33.75" y="-13.5" />
+      <point x="5333.090316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Fishy" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="22.0" y="-13.5" />
+      <point x="5189.840316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="TO_MANY">
+      <point x="0.0" y="-13.5" />
+      <point x="1934.971153245951" y="1457.0" />
+      <point x="1924.471153245951" y="1457.0" />
+      <point x="1924.471153245951" y="1447.0" />
+      <point x="2025.1875000000002" y="1447.0" />
+      <point x="2025.1875000000002" y="329.0" />
+      <point x="5864.72333021223" y="329.0" />
+      <point x="5864.72333021223" y="289.0" />
+      <point x="5912.362367353354" y="289.0" />
+      <point x="-29.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.Wash" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3809.666666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="TO_ONE">
+      <point x="0.0" y="-13.5" />
+      <point x="2159.666666666667" y="1266.0" />
+      <point x="2838.320700686687" y="1266.0" />
+      <point x="2838.320700686687" y="1216.0" />
+      <point x="3163.570700686687" y="1216.0" />
+      <point x="-34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.KitchenStove" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="4131.077496878897" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.TempSensor" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="334.0" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Builder" relationship="REALIZATION">
+      <point x="-17.75" y="-13.5" />
+      <point x="6032.965316791515" y="1447.0" />
+      <point x="6059.965316791515" y="1447.0" />
+      <point x="25.25" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.RememberGoodTimes" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3540.166666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.OxygenSensor" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="-38.75" y="-13.5" />
+      <point x="1298.5" y="339.0" />
+      <point x="1307.5961532459514" y="339.0" />
+      <point x="1307.5961532459514" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="10.625" y="-13.5" />
+      <point x="5485.777816791515" y="1276.0" />
+      <point x="5494.152816791515" y="1276.0" />
+      <point x="5494.152816791515" y="1186.0" />
+      <point x="5535.152816791515" y="1186.0" />
+      <point x="5535.152816791515" y="601.0" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ActivityTransaction" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="1228.25" y="818.0" />
+      <point x="1256.75" y="818.0" />
+      <point x="46.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" relationship="DEPENDENCY">
+      <point x="-33.0" y="-13.5" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="4995.529034020021" y="450.0" />
+      <point x="3557.320700686687" y="450.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="34.0" y="13.5" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3557.320700686687" y="450.0" />
+      <point x="4995.529034020021" y="450.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="-33.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Computer" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="4284.077496878897" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="6227.465316791515" y="531.0" />
+      <point x="5719.47333021223" y="531.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" relationship="TO_MANY">
+      <point x="27.75" y="-13.5" />
+      <point x="5791.527816791515" y="1457.0" />
+      <point x="5854.777816791515" y="1457.0" />
+      <point x="5854.777816791515" y="1417.0" />
+      <point x="5829.777816791515" y="1417.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="TO_ONE">
+      <point x="17.25" y="-13.5" />
+      <point x="6250.215316791515" y="1568.0" />
+      <point x="6288.465316791515" y="1568.0" />
+      <point x="6288.465316791515" y="329.0" />
+      <point x="5864.72333021223" y="329.0" />
+      <point x="5864.72333021223" y="289.0" />
+      <point x="5912.362367353354" y="289.0" />
+      <point x="-29.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport" relationship="DEPENDENCY">
+      <point x="32.5" y="-13.5" />
+      <point x="97.5" y="1578.0" />
+      <point x="64.76281991261749" y="1578.0" />
+      <point x="64.76281991261749" y="974.0" />
+      <point x="1685.346153245951" y="974.0" />
+      <point x="1685.346153245951" y="904.0" />
+      <point x="1023.8333333333335" y="904.0" />
+      <point x="64.33333333333331" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="61.0" y="-13.5" />
+      <point x="2918.666666666667" y="1276.0" />
+      <point x="3136.070700686687" y="1276.0" />
+      <point x="3136.070700686687" y="1226.0" />
+      <point x="3197.570700686687" y="1226.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.ActivityManual" relationship="DEPENDENCY">
+      <point x="-38.33333333333326" y="-13.5" />
+      <point x="2121.333333333334" y="1276.0" />
+      <point x="2816.570700686687" y="1276.0" />
+      <point x="2816.570700686687" y="1226.0" />
+      <point x="2827.070700686687" y="1226.0" />
+      <point x="2827.070700686687" y="1095.0" />
+      <point x="2998.070700686687" y="1095.0" />
+      <point x="-51.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2076.604166666667" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="DEPENDENCY">
+      <point x="0.0" y="13.5" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="2076.604166666667" y="319.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="32.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" relationship="GENERALIZATION">
+      <point x="-57.33333333333337" y="-13.5" />
+      <point x="4268.333333333334" y="1578.0" />
+      <point x="3866.8044865792845" y="1578.0" />
+      <point x="3866.8044865792845" y="1347.0" />
+      <point x="2903.416666666667" y="1347.0" />
+      <point x="45.75" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.BreakageManager" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="3552.320700686687" y="339.0" />
+      <point x="3317.570700686687" y="339.0" />
+      <point x="3317.570700686687" y="259.0" />
+      <point x="3685.9040340200204" y="259.0" />
+      <point x="-59.66666666666663" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1447.0" />
+      <point x="2071.104166666667" y="1447.0" />
+      <point x="2071.104166666667" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="TO_MANY">
+      <point x="-30.33333333333303" y="13.5" />
+      <point x="5689.139996878897" y="541.0" />
+      <point x="5017.029034020021" y="541.0" />
+      <point x="5017.029034020021" y="611.0" />
+      <point x="3230.445700686687" y="611.0" />
+      <point x="3230.445700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1105.0" />
+      <point x="3210.320700686687" y="1105.0" />
+      <point x="12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="TO_ONE">
+      <point x="33.0" y="-13.5" />
+      <point x="5114.340316791515" y="631.0" />
+      <point x="5011.779034020021" y="631.0" />
+      <point x="5011.779034020021" y="561.0" />
+      <point x="5017.029034020021" y="561.0" />
+      <point x="5017.029034020021" y="541.0" />
+      <point x="5689.139996878897" y="541.0" />
+      <point x="-30.333333333333258" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI" relationship="CREATE">
+      <point x="-21.0" y="-13.5" />
+      <point x="3069.383200686687" y="1820.0" />
+      <point x="75.26281991261749" y="1820.0" />
+      <point x="75.26281991261749" y="1810.0" />
+      <point x="65.0" y="1810.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="TO_ONE">
+      <point x="47.333333333333485" y="13.5" />
+      <point x="5517.244163545564" y="531.0" />
+      <point x="5499.077496878897" y="531.0" />
+      <point x="5499.077496878897" y="581.0" />
+      <point x="5011.779034020021" y="581.0" />
+      <point x="5011.779034020021" y="631.0" />
+      <point x="5114.340316791515" y="631.0" />
+      <point x="33.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Fishy" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="GENERALIZATION">
+      <point x="-22.0" y="-13.5" />
+      <point x="5145.840316791515" y="1216.0" />
+      <point x="5102.840316791515" y="1216.0" />
+      <point x="5102.840316791515" y="742.0" />
+      <point x="5393.590316791515" y="742.0" />
+      <point x="5393.590316791515" y="722.0" />
+      <point x="5125.340316791515" y="722.0" />
+      <point x="44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Mother" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" relationship="DEPENDENCY">
+      <point x="-33.66666666666666" y="-13.5" />
+      <point x="5409.486150124849" y="1457.0" />
+      <point x="5377.590316791515" y="1457.0" />
+      <point x="5377.590316791515" y="1437.0" />
+      <point x="5446.819483458182" y="1437.0" />
+      <point x="-28.333333333333343" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.Boiler" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity" relationship="GENERALIZATION">
+      <point x="23.0" y="-13.5" />
+      <point x="2928.570700686687" y="158.0" />
+      <point x="3136.070700686687" y="158.0" />
+      <point x="3136.070700686687" y="148.0" />
+      <point x="3148.570700686687" y="148.0" />
+      <point x="-54.25" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandmother" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="5734.527816791515" y="1568.0" />
+      <point x="5572.965316791515" y="1568.0" />
+      <point x="5572.965316791515" y="742.0" />
+      <point x="5393.590316791515" y="742.0" />
+      <point x="5393.590316791515" y="722.0" />
+      <point x="5125.340316791515" y="722.0" />
+      <point x="44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="9.25" y="-13.5" />
+      <point x="5773.027816791515" y="1457.0" />
+      <point x="5758.402816791515" y="1457.0" />
+      <point x="5758.402816791515" y="1427.0" />
+      <point x="5659.590316791515" y="1427.0" />
+      <point x="5659.590316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" relationship="DEPENDENCY">
+      <point x="21.0" y="-13.5" />
+      <point x="3111.383200686687" y="1820.0" />
+      <point x="6148.78583021223" y="1820.0" />
+      <point x="6148.78583021223" y="1810.0" />
+      <point x="4970.75" y="1810.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Treadmill" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3980.0774968788974" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="CREATE">
+      <point x="53.25" y="-13.5" />
+      <point x="6103.965316791515" y="1457.0" />
+      <point x="6127.715316791515" y="1457.0" />
+      <point x="6127.715316791515" y="541.0" />
+      <point x="5749.806663545563" y="541.0" />
+      <point x="30.333333333333258" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="-12.75" y="-13.5" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3173.570700686687" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Context" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="0.0" y="13.5" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="3173.570700686687" y="168.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="-12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="TO_MANY">
+      <point x="-34.0" y="13.5" />
+      <point x="3518.320700686687" y="430.0" />
+      <point x="3547.320700686687" y="430.0" />
+      <point x="3547.320700686687" y="460.0" />
+      <point x="3206.570700686687" y="460.0" />
+      <point x="3206.570700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1105.0" />
+      <point x="3210.320700686687" y="1105.0" />
+      <point x="12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Walk" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="4027.166666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Skis" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="-20.0" y="-13.5" />
+      <point x="5010.840316791515" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1447.0" />
+      <point x="2036.1875000000002" y="1447.0" />
+      <point x="2036.1875000000002" y="349.0" />
+      <point x="1853.908653245951" y="349.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.Boiler" relationship="DEPENDENCY">
+      <point x="-45.33333333333337" y="-13.5" />
+      <point x="3506.987367353354" y="349.0" />
+      <point x="3269.570700686687" y="349.0" />
+      <point x="3269.570700686687" y="279.0" />
+      <point x="3259.070700686687" y="279.0" />
+      <point x="3259.070700686687" y="259.0" />
+      <point x="2928.570700686687" y="259.0" />
+      <point x="23.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="10.625" y="-13.5" />
+      <point x="5485.777816791515" y="1276.0" />
+      <point x="5494.152816791515" y="1276.0" />
+      <point x="5494.152816791515" y="1216.0" />
+      <point x="5377.340316791515" y="1216.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" relationship="DEPENDENCY">
+      <point x="-51.75" y="-13.5" />
+      <point x="6181.215316791515" y="1578.0" />
+      <point x="6204.090316791515" y="1578.0" />
+      <point x="6204.090316791515" y="1528.0" />
+      <point x="6166.465316791515" y="1528.0" />
+      <point x="6166.465316791515" y="450.0" />
+      <point x="3557.320700686687" y="450.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Treadmill" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3980.0774968788974" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1447.0" />
+      <point x="2036.1875000000002" y="1447.0" />
+      <point x="2036.1875000000002" y="974.0" />
+      <point x="1685.346153245951" y="974.0" />
+      <point x="1685.346153245951" y="904.0" />
+      <point x="1023.8333333333335" y="904.0" />
+      <point x="64.33333333333331" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="TO_MANY">
+      <point x="-29.0" y="13.5" />
+      <point x="5912.362367353354" y="289.0" />
+      <point x="5864.72333021223" y="289.0" />
+      <point x="5864.72333021223" y="329.0" />
+      <point x="5731.22333021223" y="329.0" />
+      <point x="5731.22333021223" y="460.0" />
+      <point x="5696.72333021223" y="460.0" />
+      <point x="-22.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity" relationship="DEPENDENCY">
+      <point x="-33.0" y="-13.5" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="4995.529034020021" y="158.0" />
+      <point x="3269.570700686687" y="158.0" />
+      <point x="3269.570700686687" y="148.0" />
+      <point x="3257.070700686687" y="148.0" />
+      <point x="54.25" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Splash" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2286.166666666667" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.AnimalFight" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="GENERALIZATION">
+      <point x="33.5" y="-13.5" />
+      <point x="5857.777816791515" y="722.0" />
+      <point x="5829.277816791515" y="722.0" />
+      <point x="5829.277816791515" y="621.0" />
+      <point x="5427.014996878897" y="621.0" />
+      <point x="5427.014996878897" y="531.0" />
+      <point x="5422.577496878897" y="531.0" />
+      <point x="-47.333333333333485" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Computer" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="4284.077496878897" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" relationship="DEPENDENCY">
+      <point x="64.33333333333348" y="13.5" />
+      <point x="1023.8333333333335" y="904.0" />
+      <point x="1685.346153245951" y="904.0" />
+      <point x="1685.346153245951" y="974.0" />
+      <point x="2849.070700686687" y="974.0" />
+      <point x="2849.070700686687" y="1256.0" />
+      <point x="2796.666666666667" y="1256.0" />
+      <point x="-61.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="21.0" y="-13.5" />
+      <point x="3111.383200686687" y="1820.0" />
+      <point x="6148.78583021223" y="1820.0" />
+      <point x="6148.78583021223" y="1810.0" />
+      <point x="6347.090316791515" y="1810.0" />
+      <point x="6347.090316791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="-38.33333333333326" y="-13.5" />
+      <point x="2121.333333333334" y="1276.0" />
+      <point x="2816.570700686687" y="1276.0" />
+      <point x="2816.570700686687" y="1226.0" />
+      <point x="2813.737367353354" y="1226.0" />
+      <point x="2813.737367353354" y="299.0" />
+      <point x="2097.221153245951" y="299.0" />
+      <point x="2097.221153245951" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.HumiditySensor" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="41.0" y="-13.5" />
+      <point x="1706.7500000000002" y="349.0" />
+      <point x="1653.846153245951" y="349.0" />
+      <point x="1653.846153245951" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.HouseConfigurationReport" relationship="CREATE">
+      <point x="-26.5" y="-13.5" />
+      <point x="668.1111501248479" y="994.0" />
+      <point x="574.7628199126175" y="994.0" />
+      <point x="574.7628199126175" y="934.0" />
+      <point x="722.5" y="934.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="-51.75" y="-13.5" />
+      <point x="6181.215316791515" y="1578.0" />
+      <point x="6204.090316791515" y="1578.0" />
+      <point x="6204.090316791515" y="1528.0" />
+      <point x="6166.465316791515" y="1528.0" />
+      <point x="6166.465316791515" y="601.0" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter" relationship="DEPENDENCY">
+      <point x="32.5" y="-13.5" />
+      <point x="97.5" y="1578.0" />
+      <point x="64.76281991261749" y="1578.0" />
+      <point x="64.76281991261749" y="964.0" />
+      <point x="1934.971153245951" y="964.0" />
+      <point x="1934.971153245951" y="894.0" />
+      <point x="1283.25" y="894.0" />
+      <point x="55.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.World" relationship="CREATE">
+      <point x="-21.0" y="-13.5" />
+      <point x="3069.383200686687" y="1820.0" />
+      <point x="75.26281991261749" y="1820.0" />
+      <point x="75.26281991261749" y="1810.0" />
+      <point x="196.0" y="1810.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="TO_MANY">
+      <point x="45.33333333333337" y="-13.5" />
+      <point x="3597.6540340200204" y="349.0" />
+      <point x="3579.070700686687" y="349.0" />
+      <point x="3579.070700686687" y="269.0" />
+      <point x="2046.6875000000002" y="269.0" />
+      <point x="2046.6875000000002" y="259.0" />
+      <point x="1887.5753199126177" y="259.0" />
+      <point x="33.66666666666674" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder" relationship="DEPENDENCY">
+      <point x="-25.25" y="13.5" />
+      <point x="6009.465316791515" y="1417.0" />
+      <point x="6034.715316791515" y="1417.0" />
+      <point x="6034.715316791515" y="1457.0" />
+      <point x="5997.465316791515" y="1457.0" />
+      <point x="-53.25" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1447.0" />
+      <point x="2811.916666666667" y="1447.0" />
+      <point x="-45.75" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="38.333333333333485" y="-13.5" />
+      <point x="2198.0000000000005" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction" relationship="DEPENDENCY">
+      <point x="-64.33333333333331" y="-13.5" />
+      <point x="895.1666666666665" y="818.0" />
+      <point x="737.0" y="818.0" />
+      <point x="737.0" y="78.0" />
+      <point x="2229.883200686687" y="78.0" />
+      <point x="2229.883200686687" y="58.0" />
+      <point x="2405.027816791515" y="58.0" />
+      <point x="-76.33333333333333" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ElectricBicycle" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="-38.5" y="-13.5" />
+      <point x="4655.077496878897" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter" relationship="DEPENDENCY">
+      <point x="-12.75" y="-13.5" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3173.570700686687" y="964.0" />
+      <point x="1934.971153245951" y="964.0" />
+      <point x="1934.971153245951" y="894.0" />
+      <point x="1283.25" y="894.0" />
+      <point x="55.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.JumpAround" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2883.445700686687" y="1730.0" />
+      <point x="2883.445700686687" y="1377.0" />
+      <point x="3244.666666666667" y="1377.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="5818.277816791515" y="1730.0" />
+      <point x="5818.277816791515" y="1578.0" />
+      <point x="5788.444483458181" y="1578.0" />
+      <point x="24.666666666666686" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="35.0" y="-13.5" />
+      <point x="5005.75" y="1740.0" />
+      <point x="6318.840316791515" y="1740.0" />
+      <point x="6318.840316791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Mother" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="-33.66666666666666" y="-13.5" />
+      <point x="5409.486150124849" y="1457.0" />
+      <point x="5377.590316791515" y="1457.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Father" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="-24.0" y="-13.5" />
+      <point x="4224.166666666667" y="1276.0" />
+      <point x="3530.070700686687" y="1276.0" />
+      <point x="3530.070700686687" y="1226.0" />
+      <point x="5377.340316791515" y="1226.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.SensorsStation" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="TO_MANY">
+      <point x="39.75" y="-13.5" />
+      <point x="1974.9375000000002" y="299.0" />
+      <point x="2046.6875000000002" y="299.0" />
+      <point x="2046.6875000000002" y="259.0" />
+      <point x="1887.5753199126177" y="259.0" />
+      <point x="33.66666666666674" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="TO_MANY">
+      <point x="45.33333333333337" y="-13.5" />
+      <point x="3597.6540340200204" y="349.0" />
+      <point x="3579.070700686687" y="349.0" />
+      <point x="3579.070700686687" y="299.0" />
+      <point x="5864.72333021223" y="299.0" />
+      <point x="5864.72333021223" y="289.0" />
+      <point x="5912.362367353354" y="289.0" />
+      <point x="-29.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.CleanUp" relationship="CREATE">
+      <point x="-9.25" y="-13.5" />
+      <point x="5754.527816791515" y="1447.0" />
+      <point x="5648.590316791515" y="1447.0" />
+      <point x="5648.590316791515" y="818.0" />
+      <point x="5626.340316791515" y="818.0" />
+      <point x="-27.75" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="6034.715316791515" y="601.0" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ElectricBicycle" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="38.5" y="-13.5" />
+      <point x="4732.077496878897" y="1659.0" />
+      <point x="4980.340316791515" y="1659.0" />
+      <point x="4980.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" relationship="DEPENDENCY">
+      <point x="-76.33333333333326" y="13.5" />
+      <point x="2405.027816791515" y="58.0" />
+      <point x="2229.883200686687" y="58.0" />
+      <point x="2229.883200686687" y="78.0" />
+      <point x="2849.070700686687" y="78.0" />
+      <point x="2849.070700686687" y="1256.0" />
+      <point x="2796.666666666667" y="1256.0" />
+      <point x="-61.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction" relationship="DEPENDENCY">
+      <point x="-61.0" y="-13.5" />
+      <point x="2796.666666666667" y="1256.0" />
+      <point x="2849.070700686687" y="1256.0" />
+      <point x="2849.070700686687" y="78.0" />
+      <point x="2229.883200686687" y="78.0" />
+      <point x="2229.883200686687" y="58.0" />
+      <point x="2405.027816791515" y="58.0" />
+      <point x="-76.33333333333333" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Skis" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="5030.840316791515" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1447.0" />
+      <point x="2036.1875000000002" y="1447.0" />
+      <point x="2036.1875000000002" y="1105.0" />
+      <point x="721.1111501248479" y="1105.0" />
+      <point x="26.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.Hum" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2873.445700686687" y="1730.0" />
+      <point x="2873.445700686687" y="1367.0" />
+      <point x="3112.666666666667" y="1367.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.EventReport" relationship="CREATE">
+      <point x="-26.5" y="-13.5" />
+      <point x="668.1111501248479" y="994.0" />
+      <point x="574.7628199126175" y="994.0" />
+      <point x="574.7628199126175" y="934.0" />
+      <point x="513.0" y="934.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.EventReport" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.EventTransaction" relationship="TO_MANY">
+      <point x="34.5" y="-13.5" />
+      <point x="547.5" y="818.0" />
+      <point x="556.5" y="818.0" />
+      <point x="43.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" relationship="TO_ONE">
+      <point x="-32.5" y="-13.5" />
+      <point x="32.5" y="1578.0" />
+      <point x="42.76281991261749" y="1578.0" />
+      <point x="42.76281991261749" y="1095.0" />
+      <point x="668.1111501248479" y="1095.0" />
+      <point x="-26.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.CleanUp" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="-27.75" y="-13.5" />
+      <point x="5626.340316791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="21.0" y="-13.5" />
+      <point x="3111.383200686687" y="1820.0" />
+      <point x="6148.78583021223" y="1820.0" />
+      <point x="6148.78583021223" y="1810.0" />
+      <point x="6347.090316791515" y="1810.0" />
+      <point x="6347.090316791515" y="601.0" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="54.25" y="13.5" />
+      <point x="3257.070700686687" y="148.0" />
+      <point x="3269.570700686687" y="148.0" />
+      <point x="3269.570700686687" y="158.0" />
+      <point x="3173.570700686687" y="158.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="-12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Father" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="GENERALIZATION">
+      <point x="24.0" y="-13.5" />
+      <point x="4272.166666666667" y="1216.0" />
+      <point x="3574.320700686687" y="1216.0" />
+      <point x="3574.320700686687" y="742.0" />
+      <point x="5393.590316791515" y="742.0" />
+      <point x="5393.590316791515" y="722.0" />
+      <point x="5125.340316791515" y="722.0" />
+      <point x="44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" relationship="DEPENDENCY">
+      <point x="35.0" y="-13.5" />
+      <point x="5005.75" y="1740.0" />
+      <point x="6318.840316791515" y="1740.0" />
+      <point x="6318.840316791515" y="450.0" />
+      <point x="3557.320700686687" y="450.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.Humidifier" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="3552.320700686687" y="339.0" />
+      <point x="3317.570700686687" y="339.0" />
+      <point x="3317.570700686687" y="259.0" />
+      <point x="3543.070700686687" y="259.0" />
+      <point x="-31.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="35.0" y="-13.5" />
+      <point x="5005.75" y="1740.0" />
+      <point x="6318.840316791515" y="1740.0" />
+      <point x="6318.840316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="TO_ONE">
+      <point x="17.75" y="-13.5" />
+      <point x="6068.465316791515" y="1447.0" />
+      <point x="6116.715316791515" y="1447.0" />
+      <point x="6116.715316791515" y="611.0" />
+      <point x="5017.029034020021" y="611.0" />
+      <point x="5017.029034020021" y="541.0" />
+      <point x="5689.139996878897" y="541.0" />
+      <point x="-30.333333333333258" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2076.604166666667" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.CleanUp" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="GENERALIZATION">
+      <point x="27.75" y="-13.5" />
+      <point x="5681.840316791515" y="722.0" />
+      <point x="5659.090316791515" y="722.0" />
+      <point x="5659.090316791515" y="621.0" />
+      <point x="5427.014996878897" y="621.0" />
+      <point x="5427.014996878897" y="531.0" />
+      <point x="5422.577496878897" y="531.0" />
+      <point x="-47.333333333333485" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.EventReport" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.EventTransaction" relationship="CREATE">
+      <point x="-34.5" y="-13.5" />
+      <point x="478.5" y="818.0" />
+      <point x="469.5" y="818.0" />
+      <point x="-43.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="TO_ONE">
+      <point x="-22.75" y="-13.5" />
+      <point x="5696.72333021223" y="460.0" />
+      <point x="5731.22333021223" y="460.0" />
+      <point x="5731.22333021223" y="329.0" />
+      <point x="5864.72333021223" y="329.0" />
+      <point x="5864.72333021223" y="289.0" />
+      <point x="5912.362367353354" y="289.0" />
+      <point x="-29.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="6050.715316791515" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.RememberGoodTimes" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3004.7024968788974" y="1730.0" />
+      <point x="3004.7024968788974" y="1397.0" />
+      <point x="3540.166666666667" y="1397.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="GENERALIZATION">
+      <point x="-29.625" y="-13.5" />
+      <point x="5800.152816791515" y="1226.0" />
+      <point x="5735.777816791515" y="1226.0" />
+      <point x="5735.777816791515" y="742.0" />
+      <point x="5393.590316791515" y="742.0" />
+      <point x="5393.590316791515" y="722.0" />
+      <point x="5125.340316791515" y="722.0" />
+      <point x="44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.cat.Wash" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3149.4524968788974" y="1730.0" />
+      <point x="3149.4524968788974" y="1417.0" />
+      <point x="3809.666666666667" y="1417.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.SunSensor" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="32.25" y="-13.5" />
+      <point x="1531.5" y="339.0" />
+      <point x="1583.1250000000002" y="339.0" />
+      <point x="1583.1250000000002" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionModel" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="6034.715316791515" y="1196.0" />
+      <point x="5377.340316791515" y="1196.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.WashingMachine" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3816.0774968788974" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity" relationship="DEPENDENCY">
+      <point x="-45.33333333333337" y="-13.5" />
+      <point x="3506.987367353354" y="349.0" />
+      <point x="3269.570700686687" y="349.0" />
+      <point x="3269.570700686687" y="148.0" />
+      <point x="3257.070700686687" y="148.0" />
+      <point x="54.25" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.CoffeeMaker" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="4435.577496878897" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="6227.465316791515" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.AnimalFight" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" relationship="DEPENDENCY">
+      <point x="-33.5" y="13.5" />
+      <point x="5790.777816791515" y="1186.0" />
+      <point x="5824.277816791515" y="1186.0" />
+      <point x="5824.277816791515" y="1276.0" />
+      <point x="5819.902816791515" y="1276.0" />
+      <point x="-9.875" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2159.666666666667" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.HumiditySensor" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="1665.7500000000002" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="3202.820700686687" y="78.0" />
+      <point x="3517.945700686687" y="78.0" />
+      <point x="3517.945700686687" y="58.0" />
+      <point x="2557.694483458182" y="58.0" />
+      <point x="76.33333333333331" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.TV" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="4561.577496878897" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.HumiditySensor" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="GENERALIZATION">
+      <point x="-41.0" y="-13.5" />
+      <point x="1624.7500000000002" y="349.0" />
+      <point x="1318.0961532459514" y="349.0" />
+      <point x="1318.0961532459514" y="299.0" />
+      <point x="1820.2419865792842" y="299.0" />
+      <point x="-33.66666666666674" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.AudioSystem" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3638.5774968788974" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="6034.715316791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="-27.5" y="-13.5" />
+      <point x="5442.152816791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.Builder" relationship="REALIZATION">
+      <point x="18.375" y="-13.5" />
+      <point x="25.25" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="DEPENDENCY">
+      <point x="32.5" y="-13.5" />
+      <point x="97.5" y="1578.0" />
+      <point x="64.76281991261749" y="1578.0" />
+      <point x="64.76281991261749" y="1558.0" />
+      <point x="1934.971153245951" y="1558.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="DEPENDENCY">
+      <point x="-9.875" y="-13.5" />
+      <point x="5819.902816791515" y="1276.0" />
+      <point x="5824.277816791515" y="1276.0" />
+      <point x="5824.277816791515" y="1186.0" />
+      <point x="5746.777816791515" y="1186.0" />
+      <point x="5746.777816791515" y="561.0" />
+      <point x="5488.577496878897" y="561.0" />
+      <point x="5488.577496878897" y="531.0" />
+      <point x="5469.91083021223" y="531.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.ActivityManual" relationship="TO_ONE">
+      <point x="0.0" y="-13.5" />
+      <point x="2159.666666666667" y="1266.0" />
+      <point x="2838.320700686687" y="1266.0" />
+      <point x="2838.070700686687" y="1105.0" />
+      <point x="3049.070700686687" y="1105.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Car" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="18.75" y="-13.5" />
+      <point x="5105.465316791515" y="1659.0" />
+      <point x="5097.340316791515" y="1659.0" />
+      <point x="5097.340316791515" y="1649.0" />
+      <point x="5113.340316791515" y="1649.0" />
+      <point x="5113.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.EventReport" relationship="DEPENDENCY">
+      <point x="32.5" y="-13.5" />
+      <point x="97.5" y="1578.0" />
+      <point x="64.76281991261749" y="1578.0" />
+      <point x="64.76281991261749" y="1548.0" />
+      <point x="53.76281991261749" y="1548.0" />
+      <point x="53.76281991261749" y="954.0" />
+      <point x="467.0" y="954.0" />
+      <point x="-46.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.Window" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="3552.320700686687" y="339.0" />
+      <point x="3317.570700686687" y="339.0" />
+      <point x="3317.570700686687" y="259.0" />
+      <point x="3411.820700686687" y="259.0" />
+      <point x="-26.75" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Play" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3705.166666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="0.0" y="13.5" />
+      <point x="5719.47333021223" y="591.0" />
+      <point x="4995.529034020021" y="591.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="-33.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="-33.0" y="-13.5" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="4995.529034020021" y="591.0" />
+      <point x="5719.47333021223" y="591.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="DEPENDENCY">
+      <point x="-51.75" y="-13.5" />
+      <point x="6181.215316791515" y="1578.0" />
+      <point x="6204.090316791515" y="1578.0" />
+      <point x="6204.090316791515" y="1548.0" />
+      <point x="1934.971153245951" y="1548.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.SensorsStation" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="DEPENDENCY">
+      <point x="-39.75" y="-13.5" />
+      <point x="1895.4375000000002" y="349.0" />
+      <point x="1853.908653245951" y="349.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Builder" relationship="REALIZATION">
+      <point x="-17.25" y="-13.5" />
+      <point x="6215.715316791515" y="1578.0" />
+      <point x="6232.965316791515" y="1578.0" />
+      <point x="6232.965316791515" y="722.0" />
+      <point x="6252.715316791515" y="722.0" />
+      <point x="25.25" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.Light" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="3552.320700686687" y="339.0" />
+      <point x="3317.570700686687" y="339.0" />
+      <point x="3317.570700686687" y="259.0" />
+      <point x="3301.320700686687" y="259.0" />
+      <point x="-21.25" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2076.604166666667" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="TO_MANY">
+      <point x="-30.33333333333303" y="13.5" />
+      <point x="5689.139996878897" y="541.0" />
+      <point x="5017.029034020021" y="541.0" />
+      <point x="5017.029034020021" y="561.0" />
+      <point x="5011.779034020021" y="561.0" />
+      <point x="5011.779034020021" y="631.0" />
+      <point x="5114.340316791515" y="631.0" />
+      <point x="33.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.World" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="DEPENDENCY">
+      <point x="-23.0" y="-13.5" />
+      <point x="173.0" y="1578.0" />
+      <point x="183.2628199126175" y="1578.0" />
+      <point x="183.2628199126175" y="1568.0" />
+      <point x="1934.971153245951" y="1568.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ElectricBicycle" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="38.5" y="-13.5" />
+      <point x="4732.077496878897" y="1659.0" />
+      <point x="4980.340316791515" y="1659.0" />
+      <point x="4980.340316791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.PlayBall" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="2408.166666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="GENERALIZATION">
+      <point x="-31.875" y="-13.5" />
+      <point x="5443.277816791515" y="1226.0" />
+      <point x="5404.152816791515" y="1226.0" />
+      <point x="5404.152816791515" y="742.0" />
+      <point x="5393.590316791515" y="742.0" />
+      <point x="5393.590316791515" y="722.0" />
+      <point x="5125.340316791515" y="722.0" />
+      <point x="44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="TO_ONE">
+      <point x="-29.0" y="13.5" />
+      <point x="5912.362367353354" y="289.0" />
+      <point x="5864.72333021223" y="289.0" />
+      <point x="5864.72333021223" y="329.0" />
+      <point x="2025.1875000000002" y="329.0" />
+      <point x="2025.1875000000002" y="1447.0" />
+      <point x="1924.471153245951" y="1447.0" />
+      <point x="1924.471153245951" y="1457.0" />
+      <point x="1934.971153245951" y="1457.0" />
+      <point x="0.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.SensorsStation" relationship="CREATE">
+      <point x="-32.0" y="-13.5" />
+      <point x="1902.971153245951" y="1457.0" />
+      <point x="1913.471153245951" y="1457.0" />
+      <point x="1913.471153245951" y="440.0" />
+      <point x="1895.4375000000002" y="440.0" />
+      <point x="-39.75" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Context" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="TO_MANY">
+      <point x="35.333333333333485" y="13.5" />
+      <point x="1421.4294865792845" y="158.0" />
+      <point x="1396.096153245951" y="158.0" />
+      <point x="1396.096153245951" y="178.0" />
+      <point x="3184.570700686687" y="178.0" />
+      <point x="3184.570700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1105.0" />
+      <point x="3210.320700686687" y="1105.0" />
+      <point x="12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.ActivityManual" relationship="CREATE">
+      <point x="-38.25" y="-13.5" />
+      <point x="3159.320700686687" y="1105.0" />
+      <point x="3100.070700686687" y="1105.0" />
+      <point x="51.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="TO_MANY">
+      <point x="-34.0" y="13.5" />
+      <point x="3518.320700686687" y="430.0" />
+      <point x="3547.320700686687" y="430.0" />
+      <point x="3547.320700686687" y="440.0" />
+      <point x="5731.22333021223" y="440.0" />
+      <point x="5731.22333021223" y="460.0" />
+      <point x="5696.72333021223" y="460.0" />
+      <point x="-22.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="TO_ONE">
+      <point x="29.625" y="-13.5" />
+      <point x="5859.402816791515" y="1226.0" />
+      <point x="5923.777816791515" y="1226.0" />
+      <point x="5923.777816791515" y="551.0" />
+      <point x="5499.077496878897" y="551.0" />
+      <point x="5499.077496878897" y="531.0" />
+      <point x="5517.244163545564" y="531.0" />
+      <point x="47.333333333333485" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Car" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="-18.75" y="-13.5" />
+      <point x="5067.965316791515" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.sensors.TempSensor" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="GENERALIZATION">
+      <point x="35.5" y="-13.5" />
+      <point x="369.5" y="349.0" />
+      <point x="1318.0961532459514" y="349.0" />
+      <point x="1318.0961532459514" y="299.0" />
+      <point x="1820.2419865792842" y="299.0" />
+      <point x="-33.66666666666674" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="-53.25" y="-13.5" />
+      <point x="5997.465316791515" y="1457.0" />
+      <point x="6034.715316791515" y="1457.0" />
+      <point x="6034.715316791515" y="1417.0" />
+      <point x="6095.715316791515" y="1417.0" />
+      <point x="6095.715316791515" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Mother" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="5443.152816791515" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.SunSensor" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="1499.25" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Father" target="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" relationship="DEPENDENCY">
+      <point x="-24.0" y="-13.5" />
+      <point x="4224.166666666667" y="1276.0" />
+      <point x="3530.070700686687" y="1276.0" />
+      <point x="3530.070700686687" y="1176.0" />
+      <point x="3557.320700686687" y="1176.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="DEPENDENCY">
+      <point x="10.625" y="-13.5" />
+      <point x="5485.777816791515" y="1276.0" />
+      <point x="5494.152816791515" y="1276.0" />
+      <point x="5494.152816791515" y="1186.0" />
+      <point x="5535.152816791515" y="1186.0" />
+      <point x="5535.152816791515" y="561.0" />
+      <point x="5488.577496878897" y="561.0" />
+      <point x="5488.577496878897" y="531.0" />
+      <point x="5469.91083021223" y="531.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.Bark" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2856.9711532459514" y="1730.0" />
+      <point x="2856.9711532459514" y="1357.0" />
+      <point x="3010.166666666667" y="1357.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="6034.715316791515" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="55.0" y="-13.5" />
+      <point x="1283.25" y="818.0" />
+      <point x="1326.25" y="818.0" />
+      <point x="1326.25" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Walk" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3268.2024968788974" y="1730.0" />
+      <point x="3268.2024968788974" y="1437.0" />
+      <point x="4027.166666666667" y="1437.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Sleep" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3326.9524968788974" y="1730.0" />
+      <point x="3326.9524968788974" y="1447.0" />
+      <point x="4134.666666666667" y="1447.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Bloop" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="3209.4524968788974" y="1730.0" />
+      <point x="3209.4524968788974" y="1427.0" />
+      <point x="3919.666666666667" y="1427.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="TO_ONE">
+      <point x="12.75" y="-13.5" />
+      <point x="3210.320700686687" y="1105.0" />
+      <point x="3195.570700686687" y="1105.0" />
+      <point x="3195.570700686687" y="1065.0" />
+      <point x="3219.945700686687" y="1065.0" />
+      <point x="3219.945700686687" y="712.0" />
+      <point x="5037.340316791515" y="712.0" />
+      <point x="-44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="TO_ONE">
+      <point x="-44.0" y="13.5" />
+      <point x="5037.340316791515" y="712.0" />
+      <point x="3219.945700686687" y="712.0" />
+      <point x="3219.945700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1065.0" />
+      <point x="3195.570700686687" y="1105.0" />
+      <point x="3210.320700686687" y="1105.0" />
+      <point x="12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="-53.25" y="-13.5" />
+      <point x="5997.465316791515" y="1457.0" />
+      <point x="6034.715316791515" y="1457.0" />
+      <point x="6034.715316791515" y="1417.0" />
+      <point x="5973.715316791515" y="1417.0" />
+      <point x="5973.715316791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="-33.0" y="-13.5" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="4995.529034020021" y="168.0" />
+      <point x="1386.0961532459514" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Couch" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2529.166666666667" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" relationship="DEPENDENCY">
+      <point x="9.25" y="-13.5" />
+      <point x="5773.027816791515" y="1457.0" />
+      <point x="5758.402816791515" y="1457.0" />
+      <point x="5758.402816791515" y="1427.0" />
+      <point x="5803.444483458181" y="1427.0" />
+      <point x="-26.333333333333332" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="DEPENDENCY">
+      <point x="-18.375" y="-13.5" />
+      <point x="1832.971153245951" y="1659.0" />
+      <point x="1819.9375000000002" y="1659.0" />
+      <point x="1819.9375000000002" y="1649.0" />
+      <point x="1780.2500000000002" y="1649.0" />
+      <point x="1780.2500000000002" y="349.0" />
+      <point x="1853.908653245951" y="349.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Fishy" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="5167.840316791515" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Mother" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" relationship="TO_MANY">
+      <point x="33.66666666666666" y="-13.5" />
+      <point x="5476.819483458182" y="1457.0" />
+      <point x="5475.152816791515" y="1457.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ActivityTransaction" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="TO_ONE">
+      <point x="-46.5" y="-13.5" />
+      <point x="1163.75" y="722.0" />
+      <point x="3219.945700686687" y="722.0" />
+      <point x="3219.945700686687" y="712.0" />
+      <point x="5037.340316791515" y="712.0" />
+      <point x="-44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="TO_ONE">
+      <point x="-34.0" y="13.5" />
+      <point x="3518.320700686687" y="430.0" />
+      <point x="3547.320700686687" y="430.0" />
+      <point x="3547.320700686687" y="460.0" />
+      <point x="2025.1875000000002" y="460.0" />
+      <point x="2025.1875000000002" y="1447.0" />
+      <point x="1924.471153245951" y="1447.0" />
+      <point x="1924.471153245951" y="1457.0" />
+      <point x="1934.971153245951" y="1457.0" />
+      <point x="0.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.ChaseTheTail" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="2671.666666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.Boiler" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="-23.0" y="-13.5" />
+      <point x="2882.570700686687" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.CleanUp" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" relationship="DEPENDENCY">
+      <point x="27.749999999999773" y="13.5" />
+      <point x="5681.840316791515" y="818.0" />
+      <point x="5659.590316791515" y="818.0" />
+      <point x="5659.590316791515" y="1427.0" />
+      <point x="5758.402816791515" y="1427.0" />
+      <point x="5758.402816791515" y="1457.0" />
+      <point x="5773.027816791515" y="1457.0" />
+      <point x="9.25" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.PlayBall" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2408.166666666667" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="34.0" y="13.5" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3557.320700686687" y="430.0" />
+      <point x="5742.22333021223" y="430.0" />
+      <point x="22.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" target="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" relationship="DEPENDENCY">
+      <point x="22.75" y="-13.5" />
+      <point x="5742.22333021223" y="430.0" />
+      <point x="3557.320700686687" y="430.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="TO_ONE">
+      <point x="31.875" y="-13.5" />
+      <point x="5507.027816791515" y="1226.0" />
+      <point x="5546.152816791515" y="1226.0" />
+      <point x="5546.152816791515" y="551.0" />
+      <point x="5499.077496878897" y="551.0" />
+      <point x="5499.077496878897" y="531.0" />
+      <point x="5517.244163545564" y="531.0" />
+      <point x="47.333333333333485" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="9.25" y="-13.5" />
+      <point x="5773.027816791515" y="1457.0" />
+      <point x="5758.402816791515" y="1457.0" />
+      <point x="5758.402816791515" y="1427.0" />
+      <point x="5720.090316791515" y="1427.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="DEPENDENCY">
+      <point x="-12.75" y="-13.5" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3173.570700686687" y="601.0" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="0.0" y="13.5" />
+      <point x="5719.47333021223" y="601.0" />
+      <point x="3173.570700686687" y="601.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="-12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="6232.965316791515" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="DEPENDENCY">
+      <point x="9.25" y="-13.5" />
+      <point x="5773.027816791515" y="1457.0" />
+      <point x="5758.402816791515" y="1457.0" />
+      <point x="5758.402816791515" y="1427.0" />
+      <point x="5720.090316791515" y="1427.0" />
+      <point x="5720.090316791515" y="561.0" />
+      <point x="5488.577496878897" y="561.0" />
+      <point x="5488.577496878897" y="531.0" />
+      <point x="5469.91083021223" y="531.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.EventReport" relationship="TO_ONE">
+      <point x="26.5" y="-13.5" />
+      <point x="721.1111501248479" y="994.0" />
+      <point x="936.5128199126175" y="994.0" />
+      <point x="936.5128199126175" y="924.0" />
+      <point x="559.0" y="924.0" />
+      <point x="46.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="-53.25" y="-13.5" />
+      <point x="5997.465316791515" y="1457.0" />
+      <point x="6034.715316791515" y="1457.0" />
+      <point x="6034.715316791515" y="1417.0" />
+      <point x="5973.715316791515" y="1417.0" />
+      <point x="5973.715316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1236.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="35.0" y="-13.5" />
+      <point x="5005.75" y="1740.0" />
+      <point x="6318.840316791515" y="1740.0" />
+      <point x="6318.840316791515" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="TO_ONE">
+      <point x="-55.125" y="-13.5" />
+      <point x="1796.221153245951" y="1659.0" />
+      <point x="1769.2500000000002" y="1659.0" />
+      <point x="1769.2500000000002" y="1538.0" />
+      <point x="1902.971153245951" y="1538.0" />
+      <point x="-32.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.RepairKit" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="-38.33333333333326" y="-13.5" />
+      <point x="2121.333333333334" y="1276.0" />
+      <point x="2816.570700686687" y="1276.0" />
+      <point x="2816.570700686687" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Cat" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="GENERALIZATION">
+      <point x="-27.75" y="-13.5" />
+      <point x="5736.027816791515" y="1457.0" />
+      <point x="5588.090316791515" y="1457.0" />
+      <point x="5588.090316791515" y="742.0" />
+      <point x="5393.590316791515" y="742.0" />
+      <point x="5393.590316791515" y="722.0" />
+      <point x="5125.340316791515" y="722.0" />
+      <point x="44.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.Sleep" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="4134.666666666667" y="1246.0" />
+      <point x="3197.570700686687" y="1246.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="-45.33333333333337" y="-13.5" />
+      <point x="3506.987367353354" y="349.0" />
+      <point x="3269.570700686687" y="349.0" />
+      <point x="3269.570700686687" y="309.0" />
+      <point x="5950.862367353354" y="309.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor" relationship="DEPENDENCY">
+      <point x="-45.33333333333337" y="-13.5" />
+      <point x="3506.987367353354" y="349.0" />
+      <point x="3269.570700686687" y="349.0" />
+      <point x="3269.570700686687" y="289.0" />
+      <point x="1853.908653245951" y="289.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandmother" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="5734.527816791515" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="-12.75" y="-13.5" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3173.570700686687" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="0.0" y="13.5" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="3173.570700686687" y="732.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="-12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="TO_MANY">
+      <point x="-34.0" y="13.5" />
+      <point x="3518.320700686687" y="430.0" />
+      <point x="3547.320700686687" y="430.0" />
+      <point x="3547.320700686687" y="460.0" />
+      <point x="5006.529034020021" y="460.0" />
+      <point x="5006.529034020021" y="551.0" />
+      <point x="5011.779034020021" y="551.0" />
+      <point x="5011.779034020021" y="631.0" />
+      <point x="5114.340316791515" y="631.0" />
+      <point x="33.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="1845.1875000000002" y="1578.0" />
+      <point x="1934.971153245951" y="1578.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.Boiler" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="1758.2500000000002" y="1730.0" />
+      <point x="1758.2500000000002" y="309.0" />
+      <point x="2882.570700686687" y="309.0" />
+      <point x="-23.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.Light" relationship="TO_ONE">
+      <point x="45.33333333333337" y="-13.5" />
+      <point x="3597.6540340200204" y="349.0" />
+      <point x="3579.070700686687" y="349.0" />
+      <point x="3579.070700686687" y="249.0" />
+      <point x="3343.820700686687" y="249.0" />
+      <point x="21.25" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="-9.875" y="-13.5" />
+      <point x="5819.902816791515" y="1276.0" />
+      <point x="5824.277816791515" y="1276.0" />
+      <point x="5824.277816791515" y="1206.0" />
+      <point x="5377.340316791515" y="1206.0" />
+      <point x="5377.340316791515" y="1186.0" />
+      <point x="3231.570700686687" y="1186.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.KitchenStove" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="4131.077496878897" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room" relationship="TO_ONE">
+      <point x="12.75" y="-13.5" />
+      <point x="3210.320700686687" y="1105.0" />
+      <point x="3195.570700686687" y="1105.0" />
+      <point x="3195.570700686687" y="1065.0" />
+      <point x="3230.445700686687" y="1065.0" />
+      <point x="3230.445700686687" y="611.0" />
+      <point x="5017.029034020021" y="611.0" />
+      <point x="5017.029034020021" y="541.0" />
+      <point x="5689.139996878897" y="541.0" />
+      <point x="-30.333333333333258" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry" relationship="CREATE">
+      <point x="-10.625" y="-13.5" />
+      <point x="5464.152816791515" y="818.0" />
+      <point x="5442.152816791515" y="818.0" />
+      <point x="-27.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.BreakageManager" relationship="TO_ONE">
+      <point x="45.33333333333337" y="-13.5" />
+      <point x="3597.6540340200204" y="349.0" />
+      <point x="3579.070700686687" y="349.0" />
+      <point x="3579.070700686687" y="249.0" />
+      <point x="3745.570700686687" y="249.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.CoffeeMaker" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="4435.577496878897" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ActivityReporter" relationship="CREATE">
+      <point x="-26.5" y="-13.5" />
+      <point x="668.1111501248479" y="994.0" />
+      <point x="574.7628199126175" y="994.0" />
+      <point x="574.7628199126175" y="934.0" />
+      <point x="1173.25" y="934.0" />
+      <point x="-55.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.Context" relationship="DEPENDENCY">
+      <point x="21.0" y="-13.5" />
+      <point x="3111.383200686687" y="1820.0" />
+      <point x="6148.78583021223" y="1820.0" />
+      <point x="6148.78583021223" y="1810.0" />
+      <point x="252.5" y="1810.0" />
+      <point x="252.5" y="168.0" />
+      <point x="1386.096153245951" y="168.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="DEPENDENCY">
+      <point x="34.0" y="13.5" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3557.320700686687" y="450.0" />
+      <point x="2076.604166666667" y="450.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="32.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.house.Window" relationship="TO_ONE">
+      <point x="45.33333333333337" y="-13.5" />
+      <point x="3597.6540340200204" y="349.0" />
+      <point x="3579.070700686687" y="349.0" />
+      <point x="3579.070700686687" y="249.0" />
+      <point x="3465.320700686687" y="249.0" />
+      <point x="26.75" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" relationship="DEPENDENCY">
+      <point x="32.0" y="-13.5" />
+      <point x="1966.971153245951" y="1457.0" />
+      <point x="2075.721153245951" y="1457.0" />
+      <point x="2076.604166666667" y="450.0" />
+      <point x="3557.320700686687" y="450.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="34.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity" relationship="GENERALIZATION">
+      <point x="-54.25" y="13.5" />
+      <point x="3148.570700686687" y="148.0" />
+      <point x="3136.070700686687" y="148.0" />
+      <point x="3136.070700686687" y="1276.0" />
+      <point x="2918.666666666667" y="1276.0" />
+      <point x="61.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.Car" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="18.75" y="-13.5" />
+      <point x="5105.465316791515" y="1659.0" />
+      <point x="5097.340316791515" y="1659.0" />
+      <point x="5097.340316791515" y="1649.0" />
+      <point x="5081.340316791515" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Father" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.Boiler" relationship="DEPENDENCY">
+      <point x="-24.0" y="-13.5" />
+      <point x="4224.166666666667" y="1276.0" />
+      <point x="3530.070700686687" y="1276.0" />
+      <point x="3530.070700686687" y="1176.0" />
+      <point x="3259.070700686687" y="1176.0" />
+      <point x="3259.070700686687" y="259.0" />
+      <point x="2928.570700686687" y="259.0" />
+      <point x="23.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Main" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="21.0" y="-13.5" />
+      <point x="3111.383200686687" y="1820.0" />
+      <point x="6148.78583021223" y="1820.0" />
+      <point x="6148.78583021223" y="1810.0" />
+      <point x="6347.090316791515" y="1810.0" />
+      <point x="6347.090316791515" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.fish.Drip" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2917.2024968788974" y="1730.0" />
+      <point x="2917.2024968788974" y="1387.0" />
+      <point x="3375.166666666667" y="1387.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.actions.dog.ChaseTheTail" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="2671.666666666667" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.HouseConfigurationReport" target="cz.fel.cvut.omo.fraloilyMaksidan.house.House" relationship="TO_ONE">
+      <point x="80.33333333333348" y="13.5" />
+      <point x="802.8333333333335" y="914.0" />
+      <point x="1138.8461532459514" y="914.0" />
+      <point x="1138.8461532459514" y="944.0" />
+      <point x="1924.471153245951" y="944.0" />
+      <point x="1924.471153245951" y="1457.0" />
+      <point x="1934.971153245951" y="1457.0" />
+      <point x="0.0" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.HouseBuilder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="-18.375" y="-13.5" />
+      <point x="1832.971153245951" y="1659.0" />
+      <point x="1819.9375000000002" y="1659.0" />
+      <point x="1819.9375000000002" y="1649.0" />
+      <point x="2087.604166666667" y="1649.0" />
+      <point x="2087.604166666667" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ActivityTransaction" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="46.5" y="-13.5" />
+      <point x="1256.75" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.Dog" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.AnimalFight" relationship="CREATE">
+      <point x="9.875" y="-13.5" />
+      <point x="5839.652816791515" y="1216.0" />
+      <point x="5912.777816791515" y="1216.0" />
+      <point x="5912.777816791515" y="818.0" />
+      <point x="5857.777816791515" y="818.0" />
+      <point x="33.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.HouseConfigurationReport" relationship="DEPENDENCY">
+      <point x="32.5" y="-13.5" />
+      <point x="97.5" y="1578.0" />
+      <point x="64.76281991261749" y="1578.0" />
+      <point x="64.76281991261749" y="1548.0" />
+      <point x="53.76281991261749" y="1548.0" />
+      <point x="53.76281991261749" y="984.0" />
+      <point x="137.25" y="984.0" />
+      <point x="137.25" y="944.0" />
+      <point x="642.1666666666665" y="944.0" />
+      <point x="-80.33333333333348" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.BreakageManager" relationship="DEPENDENCY">
+      <point x="-33.0" y="-13.5" />
+      <point x="5048.340316791515" y="641.0" />
+      <point x="4995.529034020021" y="641.0" />
+      <point x="4995.529034020021" y="289.0" />
+      <point x="3805.237367353354" y="289.0" />
+      <point x="59.66666666666674" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.Skis" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity" relationship="DEPENDENCY">
+      <point x="20.0" y="-13.5" />
+      <point x="5050.840316791515" y="732.0" />
+      <point x="5081.340316791515" y="732.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" relationship="DEPENDENCY">
+      <point x="-12.75" y="-13.5" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3173.570700686687" y="1085.0" />
+      <point x="721.1111501248479" y="1085.0" />
+      <point x="26.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.House" target="cz.fel.cvut.omo.fraloilyMaksidan.sensors.SensorsStation" relationship="TO_ONE">
+      <point x="0.0" y="-13.5" />
+      <point x="1934.971153245951" y="1457.0" />
+      <point x="1924.471153245951" y="1457.0" />
+      <point x="1924.471153245951" y="440.0" />
+      <point x="1974.9375000000002" y="440.0" />
+      <point x="39.75" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Configurator" target="cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandfather" relationship="CREATE">
+      <point x="-35.0" y="-13.5" />
+      <point x="4935.75" y="1740.0" />
+      <point x="3508.541666666667" y="1740.0" />
+      <point x="3508.541666666667" y="1730.0" />
+      <point x="5299.340316791515" y="1730.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" relationship="DEPENDENCY">
+      <point x="32.5" y="-13.5" />
+      <point x="97.5" y="1578.0" />
+      <point x="64.76281991261749" y="1578.0" />
+      <point x="64.76281991261749" y="1105.0" />
+      <point x="721.1111501248479" y="1105.0" />
+      <point x="26.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity" relationship="GENERALIZATION">
+      <point x="27.5" y="-13.5" />
+      <point x="5497.152816791515" y="722.0" />
+      <point x="5474.652816791515" y="722.0" />
+      <point x="5474.652816791515" y="621.0" />
+      <point x="5427.014996878897" y="621.0" />
+      <point x="5427.014996878897" y="531.0" />
+      <point x="5422.577496878897" y="531.0" />
+      <point x="-47.333333333333485" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.World" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.HouseConfigurationReport" relationship="DEPENDENCY">
+      <point x="-23.0" y="-13.5" />
+      <point x="173.0" y="1578.0" />
+      <point x="183.2628199126175" y="1578.0" />
+      <point x="183.2628199126175" y="1548.0" />
+      <point x="191.0" y="1548.0" />
+      <point x="191.0" y="984.0" />
+      <point x="137.25" y="984.0" />
+      <point x="137.25" y="944.0" />
+      <point x="642.1666666666665" y="944.0" />
+      <point x="-80.33333333333348" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.ConsumptionReport" relationship="TO_ONE">
+      <point x="26.5" y="-13.5" />
+      <point x="721.1111501248479" y="994.0" />
+      <point x="936.5128199126175" y="994.0" />
+      <point x="936.5128199126175" y="924.0" />
+      <point x="959.5" y="924.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.Builder" target="cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor" relationship="DEPENDENCY">
+      <point x="0.0" y="-13.5" />
+      <point x="1845.1875000000002" y="319.0" />
+      <point x="5950.862367353354" y="319.0" />
+      <point x="5950.862367353354" y="299.0" />
+      <point x="5941.362367353354" y="299.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" relationship="DEPENDENCY">
+      <point x="34.0" y="13.5" />
+      <point x="3586.320700686687" y="420.0" />
+      <point x="3557.320700686687" y="420.0" />
+      <point x="3557.320700686687" y="450.0" />
+      <point x="3173.570700686687" y="450.0" />
+      <point x="3173.570700686687" y="1105.0" />
+      <point x="3184.820700686687" y="1105.0" />
+      <point x="-12.75" y="-13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.staff.ActivityManual" relationship="TO_ONE">
+      <point x="12.75" y="-13.5" />
+      <point x="3210.320700686687" y="1105.0" />
+      <point x="3195.570700686687" y="1105.0" />
+      <point x="3195.570700686687" y="1075.0" />
+      <point x="3049.070700686687" y="1075.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.WashingMachine" target="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" relationship="GENERALIZATION">
+      <point x="0.0" y="-13.5" />
+      <point x="3816.0774968788974" y="1649.0" />
+      <point x="4325.666666666667" y="1649.0" />
+      <point x="0.0" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.World" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" relationship="DEPENDENCY">
+      <point x="-23.0" y="-13.5" />
+      <point x="173.0" y="1578.0" />
+      <point x="183.2628199126175" y="1578.0" />
+      <point x="183.2628199126175" y="1548.0" />
+      <point x="191.0" y="1548.0" />
+      <point x="191.0" y="1105.0" />
+      <point x="721.1111501248479" y="1105.0" />
+      <point x="26.5" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction" relationship="CREATE">
+      <point x="0.0" y="-13.5" />
+      <point x="4325.666666666667" y="1568.0" />
+      <point x="4482.994163545564" y="1568.0" />
+      <point x="4482.994163545564" y="78.0" />
+      <point x="3517.945700686687" y="78.0" />
+      <point x="3517.945700686687" y="58.0" />
+      <point x="2557.694483458182" y="58.0" />
+      <point x="76.33333333333331" y="13.5" />
+    </edge>
+    <edge source="cz.fel.cvut.omo.fraloilyMaksidan.Context" target="cz.fel.cvut.omo.fraloilyMaksidan.reports.Reports" relationship="TO_ONE">
+      <point x="35.333333333333485" y="13.5" />
+      <point x="1421.4294865792845" y="158.0" />
+      <point x="1396.096153245951" y="158.0" />
+      <point x="1396.096153245951" y="178.0" />
+      <point x="1106.75" y="178.0" />
+      <point x="1106.75" y="924.0" />
+      <point x="936.5128199126175" y="924.0" />
+      <point x="936.5128199126175" y="994.0" />
+      <point x="721.1111501248479" y="994.0" />
+      <point x="26.5" y="-13.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.69481783919598" showDependencies="true" x="4387.876779821905" y="1305.6186773945667" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

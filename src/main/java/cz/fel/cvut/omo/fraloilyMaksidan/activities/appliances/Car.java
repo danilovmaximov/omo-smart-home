@@ -1,10 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.Configurator;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
-import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
 public class Car extends ApplianceActivity {
     public Car() {

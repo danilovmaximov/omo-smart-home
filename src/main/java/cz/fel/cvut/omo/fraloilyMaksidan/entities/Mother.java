@@ -9,7 +9,7 @@ public class Mother extends LivingEntity implements Subscriber {
 
     public Mother(String name, List<Activity> activities) {
         super(name, activities);
-    };
+    }
 
     public void addBabies(Baby... babies) {
         Collections.addAll(this.babies, babies);

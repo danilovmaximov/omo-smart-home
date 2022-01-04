@@ -6,7 +6,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.Subscriber;
 import java.util.*;
 
 public class Grandmother extends LivingEntity implements Subscriber {
-    List<Cat> cats = new ArrayList<>();
+    final List<Cat> cats = new ArrayList<>();
 
     public Grandmother(String name, List<Activity> activities) {
         super(name, activities);

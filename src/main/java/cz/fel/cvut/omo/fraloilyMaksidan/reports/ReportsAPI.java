@@ -14,6 +14,7 @@ import java.nio.file.Paths;
  * ReportsAPI used to get information about house configuration,
  * events, resource consumption and activities around the house.
  */
+@SuppressWarnings("ClassCanBeRecord")
 public class ReportsAPI {
     private final Reports reports;
     private static String relative = "./src/main/resources/";
@@ -143,8 +144,6 @@ public class ReportsAPI {
 
     /**
      * Uses Jackson dependancy.
-     * @param filename
-     * @param map
      */
     private void printJSONtoFile(String filename, Object map) {
         try {
@@ -156,8 +155,6 @@ public class ReportsAPI {
 
     /**
      * Uses Jackson dependancy.
-     * @param border
-     * @param toPrint
      */
     private void printAsJSON(String border, Object toPrint) {
         System.out.println(border);

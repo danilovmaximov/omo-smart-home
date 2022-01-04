@@ -8,8 +8,8 @@ import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 public class ActivityTransaction {
     private final LivingEntity entity;
     private final String activity;
-    private String status;
-    private int length;
+    private final String status;
+    private final int length;
 
     public ActivityTransaction(LivingEntity entity, String activity, String status, int length) {
         this.entity = entity;

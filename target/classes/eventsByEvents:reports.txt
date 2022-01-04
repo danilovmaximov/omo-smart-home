@@ -1,0 +1,23 @@
+{
+  "Sharik" : {
+    "Murka" : 34
+  },
+  "Murka" : {
+    "Gulshat" : 26
+  },
+  "Erkezhan" : {
+    "Uazipa" : 18
+  },
+  "New breakage" : {
+    "Nursultan" : 5
+  },
+  "Its cold" : {
+    "Nursultan" : 1
+  },
+  "Its warm" : {
+    "Nursultan" : 1
+  },
+  "Gulmaria" : {
+    "Uazipa" : 17
+  }
+}

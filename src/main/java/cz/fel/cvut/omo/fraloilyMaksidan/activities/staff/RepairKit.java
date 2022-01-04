@@ -20,33 +20,32 @@ public class RepairKit extends Activity {
     @Override
     protected void manageStep() {
         if (Context.hasSomethingBroken() || curStep != 1) {
-            switch (curStep) {
-                case 1:  // get the activity
-                    activity = Context.getBrokenActivity();
-                    curStep++;
-                    break;
-                case 2:  // find manual
-                    try {
-                        Random r = new Random();
-                        System.out.println("Looking for manual...");
-                        TimeUnit.SECONDS.sleep(r.nextInt(0, 5));
-                    }
-                    catch (InterruptedException e) {
-                        System.out.println("Interruption while looking for manual");
-                    }
-                    manual = this.activity.getManual();
-                    curStep++;
-                    break;
-                case 3:  // repair or buy new activity
-                    if (manual.findOutIfRepairable()) {
-                        activity.fixUp();
-                    } else {
-                        activity.getNew();
-                    }
-                    curStep = 1;
-                    finishActivity();
-                    break;
+          switch (curStep) {
+            case 1 -> {  // get the activity
+              activity = Context.getBrokenActivity();
+              curStep++;
             }
+            case 2 -> {  // find manual
+              try {
+                Random r = new Random();
+                System.out.println("Looking for manual...");
+                TimeUnit.SECONDS.sleep(r.nextInt(0, 5));
+              } catch (InterruptedException e) {
+                System.out.println("Interruption while looking for manual");
+              }
+              manual = this.activity.getManual();
+              curStep++;
+            }
+            case 3 -> {  // repair or buy new activity
+              if (manual.findOutIfRepairable()) {
+                activity.fixUp();
+              } else {
+                activity.getNew();
+              }
+              curStep = 1;
+              finishActivity();
+            }
+          }
         }
         else {
             System.out.println("Nothing to be fixed, father chills");

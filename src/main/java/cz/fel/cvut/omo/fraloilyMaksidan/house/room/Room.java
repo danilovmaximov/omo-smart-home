@@ -13,8 +13,8 @@ import java.util.List;
 public class Room {
     private String name;
     private Floor floor;
-    private List<Activity> activities = new ArrayList<>();
-    private List<LivingEntity> entities = new ArrayList<>();
+    private final List<Activity> activities = new ArrayList<>();
+    private final List<LivingEntity> entities = new ArrayList<>();
 
     public void setName(String name) {
         this.name = name;
@@ -47,7 +47,7 @@ public class Room {
     }
 
     public void setActivityList(List<Activity> activities) {
-        activities.stream()
+        activities
                 .forEach(this::setActivity);
     }
 

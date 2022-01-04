@@ -1,0 +1,5 @@
+House: {
+   address: Spirit lane, 69,
+   SensorsStation: { sensors: [Inside temperature sensor] },
+   floors=[{ name: floor, number: 1, rooms: [Garage, Kitchen, Living room, Sports room, Outside], entitiesOnTheFloor: [][Murka, Nursultan][][Azamat, Uazipa][Erkezhan] }, { name: floor, number: 2, rooms: [Child's room, Hall of fame, Aquarium], entitiesOnTheFloor: [][Gulshat][Bublya] }, { name: floor, number: 3, rooms: [Bedroom, Geek's dungeon], entitiesOnTheFloor: [Sharik, Gulmaria][] }]
+}

@@ -24,8 +24,9 @@ public class World {
         }
     }
 
+    @SuppressWarnings("EmptyMethod")
     private void ChangeContext() {
-
+        //Strategy
     }
 
     public House getHouse() {

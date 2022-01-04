@@ -4,7 +4,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.ContextModifierActivity;
-import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 

@@ -2,20 +2,12 @@ package cz.fel.cvut.omo.fraloilyMaksidan.house.room;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 public class RoomBuilder implements Builder{
-    Room room = new Room();
-
-    @Override
-    public void reset() {
-        //TODO: reset all
-    }
+    final Room room = new Room();
 
     @Override
     public RoomBuilder setName(String name) {

@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.Random;
 
 public class Baby extends LivingEntity {
-    private EventManager eventManager;
-    private Random r = new Random();
+    private final EventManager eventManager;
+    private final Random r = new Random();
     private boolean isCrying = false;
     private EventActivity generatedActivity;
 

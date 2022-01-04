@@ -6,8 +6,6 @@ import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor;
 import java.util.List;
 
 public interface Builder {
-    void reset();
-
     HouseBuilder setAddress(String address);
     HouseBuilder addFloor(Floor floor);
     HouseBuilder addFloorAll(Floor... floors);

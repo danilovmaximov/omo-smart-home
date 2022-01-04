@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class EventReport {
-  List<EventTransaction> reports = new ArrayList<>();
+  final List<EventTransaction> reports = new ArrayList<>();
 
   public void addToReports(EventManager manager, String event, List<Subscriber> users) {
     users.forEach(user -> reports.add(new EventTransaction(manager, event, user)));
@@ -20,22 +20,6 @@ public class EventReport {
             Collectors.groupingBy(
                 EventTransaction::getManager,
                 Collectors.groupingBy(EventTransaction::getEvent, Collectors.counting())));
-    /*
-    //TODO: Make smarter.
-    var users = reports.stream()
-            .collect(Collectors.groupingBy(EventTransaction::getManager));
-    users.forEach((Manager, transactions) -> {
-        System.out.println("Source " + Manager + ":");
-        transactions.stream()
-                .collect(Collectors.groupingBy(EventTransaction::getEvent))
-                .forEach((event, mapped) -> {
-                    System.out.print("  Event " + event + " send to: [ ");
-                    mapped.forEach(entry -> System.out.print(entry.getUser() + " "));
-                    System.out.println("]");
-                });
-    });
-
-     */
   }
 
   public Map<String, Map<Subscriber, Long>> eventsByEventOnly() {
@@ -45,7 +29,5 @@ public class EventReport {
                 EventTransaction::getEvent,
                 Collectors.groupingBy(EventTransaction::getUser, Collectors.counting())));
   }
-
-  public void eventsByTargetOnly() {}
 
 }

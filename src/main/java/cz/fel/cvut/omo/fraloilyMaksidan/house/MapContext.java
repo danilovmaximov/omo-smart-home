@@ -20,16 +20,16 @@ import java.util.HashMap;
 public class MapContext {
     private static House house;
 
-    private static Map<String, Activity> activitiesInHouse = new HashMap<>();
-    private static Map<String, LivingEntity> entitiesInHouse = new HashMap<>();
-    private static Map<String, Room> roomsInHouse = new HashMap<>();
-    private static Map<Integer, Floor> floorsInHouse = new HashMap<>();
-    private static Map<String, Sensor> sensorsInHouse = new HashMap<>();
+    private static final Map<String, Activity> activitiesInHouse = new HashMap<>();
+    private static final Map<String, LivingEntity> entitiesInHouse = new HashMap<>();
+    private static final Map<String, Room> roomsInHouse = new HashMap<>();
+    private static final Map<Integer, Floor> floorsInHouse = new HashMap<>();
+    private static final Map<String, Sensor> sensorsInHouse = new HashMap<>();
 
-    private static Window houseWindows = new Window();
-    private static Light houseLights = new Light();
-    private static Humidifier houseHumidifier = new Humidifier();
-    private static BreakageManager breakageManager = new BreakageManager("New breakage");
+    private static final Window houseWindows = new Window();
+    private static final Light houseLights = new Light();
+    private static final Humidifier houseHumidifier = new Humidifier();
+    private static final BreakageManager breakageManager = new BreakageManager("New breakage");
 
     public static void addActivity(Activity activity) {
         activitiesInHouse.put(activity.getName(), activity);

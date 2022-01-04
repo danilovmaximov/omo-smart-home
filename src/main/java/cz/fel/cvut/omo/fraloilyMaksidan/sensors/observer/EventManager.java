@@ -9,8 +9,8 @@ import java.util.*;
  * Observer implementation.
  */
 public class EventManager {
-    private String name;
-    Map<String, List<Subscriber>> subscribers = new HashMap<>();
+    private final String name;
+    final Map<String, List<Subscriber>> subscribers = new HashMap<>();
 
     public EventManager(String name, String... operations) {
         this.name = name;
@@ -26,7 +26,7 @@ public class EventManager {
     public void subscribe(String eventType, Subscriber... subs) {
         List<Subscriber> users = subscribers.get(eventType);
         Arrays.stream(subs)
-                .forEach(sub -> users.add(sub));
+                .forEach(users::add);
     }
 
     public void notifySubscribers(String event) {

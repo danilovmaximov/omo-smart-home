@@ -11,7 +11,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
  */
 abstract public class Activity {
     private final String name;
-    private ActivityManual manual;
+    private final ActivityManual manual;
     protected String standardRoomName;
     private Room room;
 
@@ -108,7 +108,7 @@ abstract public class Activity {
                 isUsing.reportBrokenActivity(this);
             }
             finishActivity();
-            if (this.durability != durability.UNBREAKABLE) {
+            if (this.durability != Durability.UNBREAKABLE) {
                 System.out.println(this + "'s current condition is " + this.condition + "%");
             }
         } else {

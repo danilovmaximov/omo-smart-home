@@ -1,8 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.Configurator;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
-import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
 
 public class ElectricBicycle extends ApplianceActivity {
     public ElectricBicycle() {

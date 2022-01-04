@@ -9,7 +9,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
  * is obtained subscriber, then it is added to a subscribers' task queue.
  */
 public abstract class EventActivity extends Activity {
-    private LivingEntity caller;
+    private final LivingEntity caller;
 
     public EventActivity(String name, int activityLength, LivingEntity caller) {
         super(name, activityLength, Durability.UNBREAKABLE);

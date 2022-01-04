@@ -1,10 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.activities.staff;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
-import java.util.Random;
-
+@SuppressWarnings("ClassCanBeRecord")
 public class ActivityManual {
     private final boolean isRepairable;
 

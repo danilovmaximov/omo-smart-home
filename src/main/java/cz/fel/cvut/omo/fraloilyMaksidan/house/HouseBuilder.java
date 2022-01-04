@@ -5,12 +5,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Sensor;
 import java.util.List;
 
 public class HouseBuilder implements Builder {
-    House house = new House();
-
-    @Override
-    public void reset() {
-        // TODO: implement this
-    }
+    final House house = new House();
 
     @Override
     public HouseBuilder setAddress(String address) {

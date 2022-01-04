@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Context {
     /* Broken activities context */
-    private static List<Activity> brokenActivities = new ArrayList<>();
+    private static final List<Activity> brokenActivities = new ArrayList<>();
     public static boolean hasSomethingBroken() {
         return !brokenActivities.isEmpty();
     }
