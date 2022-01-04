@@ -1,6 +1,7 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.BreakageManager;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers.Boiler;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 
@@ -13,7 +14,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 /**
- * Containes information about current house state.
+ * Contains information about current house state.
  * Used to obtain current situation for changing searching, location change and so on.
  */
 public class MapContext {
@@ -28,6 +29,7 @@ public class MapContext {
     private static Window houseWindows = new Window();
     private static Light houseLights = new Light();
     private static Humidifier houseHumidifier = new Humidifier();
+    private static BreakageManager breakageManager = new BreakageManager("New breakage");
 
     public static void addActivity(Activity activity) {
         activitiesInHouse.put(activity.getName(), activity);
@@ -82,6 +84,10 @@ public class MapContext {
 
     public static Humidifier getHouseHumidifier() {
         return houseHumidifier;
+    }
+
+    public static BreakageManager getBreakageManager() {
+        return breakageManager;
     }
 
     public static House getHouse() {

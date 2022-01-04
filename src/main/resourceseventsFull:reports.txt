@@ -1,9 +1,0 @@
-{
-  "cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager@6a1aab78" : {
-    "Slave" : 7
-  },
-  "Inside temperature sensor" : {
-    "ItsCold" : 1,
-    "ItsWarm" : 1
-  }
-}

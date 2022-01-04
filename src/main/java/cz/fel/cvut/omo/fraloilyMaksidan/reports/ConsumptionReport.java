@@ -1,5 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionModel;
@@ -20,8 +21,8 @@ public class ConsumptionReport {
   }
 
   // TODO: ugly, but works, cant do Collectors.reduce()
-  public Map<ApplianceActivity, ConsumptionModel> getAllConsumptions(int g, int w, int e) {
-    var newmap = new HashMap<ApplianceActivity, ConsumptionModel>();
+  public Map<ConsumingActivity, ConsumptionModel> getAllConsumptions(int g, int w, int e) {
+    var newmap = new HashMap<ConsumingActivity, ConsumptionModel>();
     reports.stream()
         .collect(Collectors.groupingBy(ConsumptionTransaction::getActivity))
         .forEach(

@@ -1,5 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.floor;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 
 import java.util.Arrays;
@@ -40,6 +41,12 @@ public class FloorBuilder implements Builder {
     @Override
     public FloorBuilder initRooms() {
         this.floor.initRooms();
+        return this;
+    }
+
+    @Override
+    public FloorBuilder setToHouse() {
+        MapContext.getHouse().addFloor(this.floor);
         return this;
     }
 

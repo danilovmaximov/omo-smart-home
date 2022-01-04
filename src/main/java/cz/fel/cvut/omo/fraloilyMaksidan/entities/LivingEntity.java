@@ -15,16 +15,11 @@ abstract public class LivingEntity {
     protected Activity currentActivity;
     protected Room room;
     protected final Deque<Activity> activities = new LinkedList<>();
+    protected boolean isAway = false;
 
-    public LivingEntity(String name, List<ExistingActivities> standard_activities) {
+    public LivingEntity(String name, List<Activity> activities) {
         this.name = name;
-        for (ExistingActivities standardActivity : standard_activities) {
-            for (Activity existingActivity : MapContext.getActivitiesInHouse().values()) {
-                if (standardActivity.getName() == existingActivity.getName()) {
-                    this.activities.addFirst(existingActivity);
-                }
-            }
-        }
+        activities.forEach(this.activities::addFirst);
         MapContext.addEntity(this);
     }
 
@@ -32,18 +27,17 @@ abstract public class LivingEntity {
         return this.name;
     }
 
-    public LivingEntity(String name, Activity... activities) {
-        this.name = name;
-        Arrays.stream(activities).forEach(activity -> this.activities.addFirst(activity));
-        MapContext.addEntity(this);
-    }
-
     public void setRoom(Room room) {
         this.room = room;
     }
 
+    public void setAway(boolean isAway) {
+        this.isAway = isAway;
+    }
+
     public void reportBrokenActivity(Activity activity) {
         Context.addBrokenActivity(activity);
+        MapContext.getBreakageManager().notifyBreakage();
     }
 
     public void addEmergentActivity(Activity activity) {
@@ -51,8 +45,14 @@ abstract public class LivingEntity {
     }
 
     public void step() {
-        if(currentActivity == null) {
+        if (currentActivity == null) {
             nextActivity();
+        }
+        if (currentActivity == null) {
+            System.out.println("Ну привет ебать");
+            for (Activity activity : activities) {
+                System.out.println("   " + activity);
+            }
         }
 
         Room activityRoom = this.currentActivity.getRoom();

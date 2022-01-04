@@ -1,17 +1,18 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 
 /**
  * Used in reports to transfer information from an entity.
  */
 public class ConsumptionTransaction {
-    private ApplianceActivity activity;
+    private ConsumingActivity activity;
     private int electricity;
     private int gas;
     private int water;
 
-    public ConsumptionTransaction(ApplianceActivity activity, int electricity, int gas, int water) {
+    public ConsumptionTransaction(ConsumingActivity activity, int electricity, int gas, int water) {
         this.activity = activity;
         this.electricity = electricity;
         this.gas = gas;
@@ -19,7 +20,7 @@ public class ConsumptionTransaction {
     }
 
 
-    public ApplianceActivity getActivity() {
+    public ConsumingActivity getActivity() {
         return activity;
     }
 

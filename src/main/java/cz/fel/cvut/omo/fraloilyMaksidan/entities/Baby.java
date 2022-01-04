@@ -3,12 +3,9 @@ package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.EventActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.interactions.BabyCry;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
-import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.EventManager;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.Subscriber;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -18,13 +15,9 @@ public class Baby extends LivingEntity {
     private boolean isCrying = false;
     private EventActivity generatedActivity;
 
-    private final static List<ExistingActivities> standardActivities = new ArrayList<ExistingActivities>(
-        Arrays.asList(ExistingActivities.SLEEP, ExistingActivities.PLAY)
-    );
-
-    public Baby(String name) {
-        super(name, standardActivities);
-        eventManager = new EventManager(name);
+    public Baby(String name, List<Activity> activities) {
+        super(name, activities);
+        eventManager = new EventManager("Baby cries", name);
     }
 
     public EventActivity getGeneratedActivity() {
@@ -51,12 +44,12 @@ public class Baby extends LivingEntity {
 
     @Override
     public void step() {
-        if(isCrying) { return; }
+        if (isCrying) { return; }
         if (maybeItIsTimeToMakeSomeNoise()) {
             if(currentActivity != null) {
                 currentActivity.setBlocked(true);
             }
-            generatedActivity = new BabyCry(4, this);
+            generatedActivity = new BabyCry(this);
             room.setActivity(generatedActivity);
             eventManager.notifySubscribers(name);
         } else {

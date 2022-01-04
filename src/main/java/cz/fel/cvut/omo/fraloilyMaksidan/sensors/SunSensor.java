@@ -5,9 +5,8 @@ import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 public class SunSensor extends Sensor {
     boolean reportedUp = false;
 
-    public SunSensor(String... operations) {
-        super(operations);
-        this.name = "Sunlight sensor";
+    public SunSensor(String name, String... operations) {
+        super(name, operations);
     }
 
     @Override

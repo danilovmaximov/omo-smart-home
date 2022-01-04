@@ -1,10 +1,8 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.reports;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.EventTransaction;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.EventManager;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.EventManager;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.Subscriber;
 
 import java.util.*;
 import java.util.stream.Collectors;

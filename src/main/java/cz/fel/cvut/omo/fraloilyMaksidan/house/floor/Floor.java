@@ -1,5 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house.floor;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.House;
 
@@ -9,12 +10,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Floor {
-    private List<Room> rooms = new ArrayList<>();
+    private final  List<Room> rooms = new ArrayList<>();
     private int floorNumber;
     private House house;
 
-    public void setHouse(House house) { this.house = house; }
+    public void setHouse(House house) {
+        this.house = house;
+    }
     public House getHouse() { return this.house; }
+
+    public void removeRoom(Room room) {
+        this.rooms.remove(room);
+    }
 
     public void addRoom(Room room) {
         this.rooms.add(room);
@@ -22,12 +29,12 @@ public class Floor {
 
     public void addRoomAll(Room... rooms) {
         Arrays.stream(rooms)
-                .forEach(room -> this.addRoom(room));
+                .forEach(this::addRoom);
     }
 
     public void addRoomList(List<Room> rooms) {
         rooms.stream()
-                .forEach(room -> this.addRoom(room));
+                .forEach(this::addRoom);
     }
 
     public void setFloorNumber(int floorNumber) {

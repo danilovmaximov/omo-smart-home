@@ -12,5 +12,6 @@ public interface Builder {
     FloorBuilder addRoomAll(Room... rooms);
     FloorBuilder addRoomList(List<Room> rooms);
     FloorBuilder initRooms();
+    FloorBuilder setToHouse();
     Floor getResult();
 }

@@ -2,6 +2,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.activities.contextmodifiers;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
+import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction;
 
 public abstract class ContextModifierActivity extends ConsumingActivity {
 
@@ -30,6 +31,11 @@ public abstract class ContextModifierActivity extends ConsumingActivity {
 
     @Override
     public void step() {
+        if(isActive) {
+            currentTransaction = new ConsumptionTransaction(this, electricityActive,gasActive, waterActive);
+        } else {
+            currentTransaction = new ConsumptionTransaction(this, electricityIdle, gasIdle, waterIdle);
+        }
         super.step();
     }
 }

@@ -5,9 +5,8 @@ import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 public class TempSensor extends Sensor {
     boolean reportedOn = false;
 
-    public TempSensor(String... operations) {
-        super(operations);
-        this.name = "Inside temperature sensor";
+    public TempSensor(String name, String... operations) {
+        super(name, operations);
     }
 
     @Override
@@ -15,11 +14,11 @@ public class TempSensor extends Sensor {
         int tempLevel = Context.getTempLevel();
         if (tempLevel < 22 && !reportedOn) {
             reportedOn = true;
-            this.notifySubscribers("ItsCold");
+            this.notifySubscribers("Its cold");
         }
         if (tempLevel > 22 & reportedOn) {
             reportedOn = false;
-            this.notifySubscribers("ItsWarm");
+            this.notifySubscribers("Its warm");
         }
     }
 

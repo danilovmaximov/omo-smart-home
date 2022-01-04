@@ -3,7 +3,10 @@ package cz.fel.cvut.omo.fraloilyMaksidan.activities;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.Durability;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.reportTransactions.ConsumptionTransaction;
 
-public class ConsumingActivity extends Activity {
+/**
+ * Adds consumption functionality to basic class.
+ */
+public abstract class ConsumingActivity extends Activity {
 
     protected final int electricityActive;
     protected final int gasActive;
@@ -26,6 +29,9 @@ public class ConsumingActivity extends Activity {
         this.waterIdle = waterIdle;
     }
 
+    public ConsumptionTransaction getCurrentTransaction() {
+        return currentTransaction;
+    }
 
 
 }

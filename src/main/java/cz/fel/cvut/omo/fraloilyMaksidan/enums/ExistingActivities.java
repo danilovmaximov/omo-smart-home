@@ -7,12 +7,28 @@ public enum ExistingActivities {
     TV("TV"),
     COUCH("Couch"),
     REPAIR_KIT("Repair kit"),
+    BOILER("Boiler"),
     PLAY("Play"),
     SLEEP("Sleep"),
-    REMEMBER("Remember old times"),
-    BOILER("Boiler");
+    REMEMBER("Remember good times"),
+    BLOOP("Bloop"),
+    DRIP("Drip"),
+    SPLASH("Splash"),
+    JUMP_AROUND("Jump around"),
+    HUM("Hum"),
+    WASH("Wash"),
+    CLEAN_UP("Clean up"),
+    PLAY_BALL("Play ball"),
+    CHASE("Chase the tail"),
+    SKIS("Skis"),
+    TREADMILL("Treadmill"),
+    KITCHEN_STOVE("Kitchen stove"),
+    AUDIO_SYSTEM("Audio system"),
+    WASHING_MACHINE("Washing machine"),
+    CAR("Car"),
+    BARK("Bark");
 
-    private String name;
+    private final String name;
     ExistingActivities(String name) {
         this.name = name;
     }

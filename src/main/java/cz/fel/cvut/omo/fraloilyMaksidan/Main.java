@@ -1,19 +1,16 @@
 package cz.fel.cvut.omo.fraloilyMaksidan;
 
 
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.Baby;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.Father;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.Grandad;
-import cz.fel.cvut.omo.fraloilyMaksidan.entities.Mom;
-import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.*;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
+import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
+import cz.fel.cvut.omo.fraloilyMaksidan.parsing.models.HouseModel;
+import cz.fel.cvut.omo.fraloilyMaksidan.parsing.Loader;
 import cz.fel.cvut.omo.fraloilyMaksidan.reports.ReportsAPI;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 public class Main {
-  private static ObjectMapper objectMapper = new ObjectMapper();
-
   public static void main(String[] args) {
 
     /*
@@ -26,31 +23,38 @@ public class Main {
     Context.setTempLevel(20);
     ReportsAPI reports = new ReportsAPI(Context.getReports());
 
-    /* Create activities for the house */
-    Configurator.createActivityAll(
-        ExistingActivities.COFFEE_MAKER, ExistingActivities.REPAIR_KIT,
-        ExistingActivities.ELECTRIC_BIKE, ExistingActivities.COUCH,
-        ExistingActivities.TV, ExistingActivities.BOILER);
-
-    /* Create entities */
-    var father = new Father("Van Darkholme");
-    var grandad = new Grandad("Billy Herrington");
-    var mom = new Mom("Dungeon master");
-    var babyBoy = new Baby("Slave");
-    mom.addBabies(babyBoy);
-
-    Configurator.createStandardRooms();
-    Configurator.setUnattachedActivitiesToRooms();
-    Configurator.setEntitiesToRoom();
-    Configurator.createStandardFloors();
+    HouseModel houseModel = Loader.loadFromJSON("testConfig.json");
+    Configurator.createFloorsFromJSON(houseModel.getFloors());
+    Configurator.createHouseFromJSON(houseModel);
+    Configurator.createActivitiesFromJSON(houseModel.getActivities());
+    Configurator.createEntitiesFromJSON(houseModel.getEntities());
     Configurator.createStandardSensors();
-    Configurator.createStandardHouse();
+
+    System.out.println("Floors: ");
+    for (Floor floor : MapContext.getFloorsInHouse().values().stream().toList()) {
+      System.out.println("   " + floor);
+    }
+
+    System.out.println("Rooms: ");
+    for (Room room : MapContext.getRoomsInHouse().values().stream().toList()) {
+      System.out.println("   " + room);
+    }
+
+    System.out.println("Activities: ");
+    for (Activity activity : MapContext.getActivitiesInHouse().values().stream().toList()) {
+      System.out.println("   " + activity);
+    }
+
+    System.out.println("Entities: ");
+    for (LivingEntity entity : MapContext.getEntitiesInHouse().values().stream().toList()) {
+      System.out.println("   " + entity);
+    }
 
     /*
        World Class is a wrapper around house class to provide different simulations...
     */
     World w1 = new World(MapContext.getHouse());
-    w1.startSimulation(50);
+    w1.startSimulation(100);
 
     /*
        Reports are used to deliver different info based on the demand;

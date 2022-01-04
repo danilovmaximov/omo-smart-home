@@ -16,7 +16,7 @@ import java.nio.file.Paths;
  */
 public class ReportsAPI {
     private final Reports reports;
-    private static String relative = "./src/main/resources";
+    private static String relative = "./src/main/resources/";
 
     /**
      * @param newRelativePath

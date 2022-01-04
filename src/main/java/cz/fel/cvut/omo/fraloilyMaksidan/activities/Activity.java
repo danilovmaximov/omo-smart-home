@@ -20,7 +20,7 @@ abstract public class Activity {
     private int condition = 100;
 
     private final int activityLength;
-    private int currentStep = 0;
+    protected int currentStep = 0;
     protected LivingEntity isUsing;
     private boolean blocked = false;
 
@@ -85,6 +85,10 @@ abstract public class Activity {
         this.condition = 100;
     }
 
+
+    /**
+     * Changes state of the activity. Makes one step.
+     */
     public void step() {
         if (isBlocked()) {
             System.out.println(isUsing + " is interrupted from " + this);

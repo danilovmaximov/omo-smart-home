@@ -20,9 +20,4 @@ public class Boiler extends ContextModifierActivity {
             return;
         }
     }
-
-    @Override
-    protected void manageIdle() {
-        System.out.println("Boiler is idle");
-    }
 }

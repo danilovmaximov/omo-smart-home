@@ -1,7 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
-import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.Subscriber;
 
 public class Light implements Subscriber {
     boolean isOn = false;

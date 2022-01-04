@@ -5,9 +5,8 @@ import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 public class OxygenSensor extends Sensor {
     boolean reportedClose = false;
 
-    public OxygenSensor(String... operations) {
-        super(operations);
-        this.name = "Oxygen level sensor";
+    public OxygenSensor(String name, String... operations) {
+        super(name, operations);
     }
 
     @Override

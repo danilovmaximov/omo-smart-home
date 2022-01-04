@@ -1,6 +1,6 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.Subscriber;
 
 public class Humidifier implements Subscriber {
     boolean isWorking = false;

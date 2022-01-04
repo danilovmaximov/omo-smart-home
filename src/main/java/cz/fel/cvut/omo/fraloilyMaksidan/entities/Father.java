@@ -1,33 +1,34 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.entities;
 
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
 import cz.fel.cvut.omo.fraloilyMaksidan.enums.ExistingActivities;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.MapContext;
-import cz.fel.cvut.omo.fraloilyMaksidan.sensors.Subscriber;
-import java.util.ArrayList;
+import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.Subscriber;
+
 import java.util.List;
-import java.util.Arrays;
 
 public class Father extends LivingEntity implements Subscriber {
-    private static final List<ExistingActivities> standardActivities = new ArrayList<ExistingActivities>(
-        Arrays.asList(ExistingActivities.COFFEE_MAKER, ExistingActivities.REPAIR_KIT,
-            ExistingActivities.ELECTRIC_BIKE, ExistingActivities.COUCH,
-            ExistingActivities.TV)
-    );
 
-    public Father(String name) {
-        super(name, standardActivities);
+    public Father(String name, List<Activity> activities) {
+        super(name, activities);
     }
 
     @Override
     public void update(String event) {
         switch (event) {
-            case "ItsCold" -> {
+            case "Its cold" -> {
                 System.out.println(name + ": \"Winter is coming\"");
                 goToTempRaiser(false);
             }
-            case "ItsWarm" -> {
+            case "Its warm" -> {
                 System.out.println(name + ": \"Winter is over\"");
                 goToTempRaiser(true);
+            }
+            case "New breakage" -> {
+                System.out.println(name + ": \"I know something's broken\"");
+                this.addEmergentActivity(
+                        MapContext.getActivitiesInHouse().get(ExistingActivities.REPAIR_KIT.getName())
+                );
             }
         }
     }

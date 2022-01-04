@@ -1,7 +1,9 @@
 package cz.fel.cvut.omo.fraloilyMaksidan.house;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.Activity;
+import cz.fel.cvut.omo.fraloilyMaksidan.activities.ConsumingActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.activities.appliances.ApplianceActivity;
 import cz.fel.cvut.omo.fraloilyMaksidan.entities.LivingEntity;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
@@ -16,6 +18,7 @@ public class House {
 
     private String address;
     private SensorsStation station;
+
     private final List<Floor> floors = new ArrayList<>();
 
     public void doActivities() {
@@ -28,7 +31,7 @@ public class House {
 
     public void appendConsumptionAndGetContextChange() {
         MapContext.getActivitiesInHouse().values().forEach(activity -> {
-            if (activity instanceof ApplianceActivity a) {
+            if (activity instanceof ConsumingActivity a) {
                 Context.getReports().getConsumptionReport()
                         .addTransaction(a.getCurrentTransaction());
             }

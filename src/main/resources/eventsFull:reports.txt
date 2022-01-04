@@ -1,0 +1,21 @@
+{
+  "Cat pees" : {
+    "Murka" : 26
+  },
+  "Something's broken" : {
+    "New breakage" : 5
+  },
+  "Baby cries" : {
+    "Gulmaria" : 17
+  },
+  "Inside temperature sensor" : {
+    "Its cold" : 1,
+    "Its warm" : 1
+  },
+  "Baby cries" : {
+    "Erkezhan" : 18
+  },
+  "Dog fights" : {
+    "Sharik" : 34
+  }
+}

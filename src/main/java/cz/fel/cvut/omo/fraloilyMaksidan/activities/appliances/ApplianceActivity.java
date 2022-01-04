@@ -29,7 +29,5 @@ public abstract class ApplianceActivity extends ConsumingActivity {
                 electricityActive, gasActive, waterActive);
     }
 
-    public ConsumptionTransaction getCurrentTransaction() {
-        return currentTransaction;
-    }
+
 }

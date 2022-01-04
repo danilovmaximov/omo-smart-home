@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *  Containes parameters as temperature, light level and so on.
+ *  Contains parameters as temperature, light level and so on.
  *  Can be accessed from every place of application.
  */
 public class Context {

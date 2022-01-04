@@ -1,13 +1,19 @@
-package cz.fel.cvut.omo.fraloilyMaksidan.sensors;
+package cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer;
 
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 
 import java.util.*;
 
+
+/**
+ * Observer implementation.
+ */
 public class EventManager {
+    private String name;
     Map<String, List<Subscriber>> subscribers = new HashMap<>();
 
-    public EventManager(String... operations) {
+    public EventManager(String name, String... operations) {
+        this.name = name;
         for(String operation : operations) {
             this.subscribers.put(operation, new ArrayList<>());
         }
@@ -29,5 +35,10 @@ public class EventManager {
         for(Subscriber s: users) {
             s.update(event);
         }
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
     }
 }

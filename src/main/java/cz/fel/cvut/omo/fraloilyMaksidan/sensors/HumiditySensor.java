@@ -5,9 +5,8 @@ import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 public class HumiditySensor extends Sensor {
     boolean reportedOn = false;
 
-    public HumiditySensor(String... operations) {
-        super(operations);
-        this.name = "Humidity sensor";
+    public HumiditySensor(String name, String... operations) {
+        super(name, operations);
     }
 
     @Override

@@ -44,6 +44,7 @@ public class RepairKit extends Activity {
                         activity.getNew();
                     }
                     curStep = 1;
+                    finishActivity();
                     break;
             }
         }
