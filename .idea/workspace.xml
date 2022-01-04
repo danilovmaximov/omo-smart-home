@@ -5,19 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3991f032-01db-4b83-8de7-d6977191334e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configurationHouse:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/configurationHouse:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ConsumptionAmount:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConsumptionAmount:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ConsumptionPrice:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ConsumptionPrice:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/activityNumberOfUsage:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/activityNumberOfUsage:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/activitySteps:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/activitySteps:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/eventsByEvents:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/eventsByEvents:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/eventsFull:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/eventsFull:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConsumptionAmount:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsumptionAmount:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConsumptionPrice:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ConsumptionPrice:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/activityNumberOfUsage:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/activityNumberOfUsage:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/activitySteps:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/activitySteps:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/eventsByEvents:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eventsByEvents:reports.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/eventsFull:reports.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/eventsFull:reports.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/fel/cvut/omo/fraloilyMaksidan/Configurator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/fel/cvut/omo/fraloilyMaksidan/Configurator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/fel/cvut/omo/fraloilyMaksidan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/fel/cvut/omo/fraloilyMaksidan/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/fel/cvut/omo/fraloilyMaksidan/parsing/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/fel/cvut/omo/fraloilyMaksidan/parsing/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesewft.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +149,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cz/fel/cvut/omo/fraloilyMaksidan/Configurator.java</url>
-          <line>317</line>
+          <line>316</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint type="java-line">

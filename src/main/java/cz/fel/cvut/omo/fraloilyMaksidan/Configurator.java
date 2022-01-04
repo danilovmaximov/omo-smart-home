@@ -239,7 +239,6 @@ public class Configurator {
     /*
         Creating standard house configuration from main function.
     */
-
     private static final String[] standardRooms = {
             "Kitchen", "Bedroom", "Child's room", "Living room", "Hall of grandad's fame", "Garage"
     };

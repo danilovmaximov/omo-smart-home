@@ -30,26 +30,6 @@ public class Main {
     Configurator.createEntitiesFromJSON(houseModel.getEntities());
     Configurator.createStandardSensors();
 
-    System.out.println("Floors: ");
-    for (Floor floor : MapContext.getFloorsInHouse().values().stream().toList()) {
-      System.out.println("   " + floor);
-    }
-
-    System.out.println("Rooms: ");
-    for (Room room : MapContext.getRoomsInHouse().values().stream().toList()) {
-      System.out.println("   " + room);
-    }
-
-    System.out.println("Activities: ");
-    for (Activity activity : MapContext.getActivitiesInHouse().values().stream().toList()) {
-      System.out.println("   " + activity);
-    }
-
-    System.out.println("Entities: ");
-    for (LivingEntity entity : MapContext.getEntitiesInHouse().values().stream().toList()) {
-      System.out.println("   " + entity);
-    }
-
     /*
        World Class is a wrapper around house class to provide different simulations...
     */
@@ -59,10 +39,8 @@ public class Main {
     /*
        Reports are used to deliver different info based on the demand;
     */
-
     System.out.println("=========================== Reports =========================== ");
     reports.allReportsPrint(true);
     reports.allReportsPrintToFile("reports.txt");
-    System.out.println("=========================== Reports =========================== ");
   }
 }

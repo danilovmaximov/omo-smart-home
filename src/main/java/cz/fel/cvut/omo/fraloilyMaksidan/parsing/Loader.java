@@ -5,6 +5,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.parsing.models.HouseModel;
 
 import java.io.FileReader;
 import java.io.IOException;
+
 /**
     Maps json to models.
  */
