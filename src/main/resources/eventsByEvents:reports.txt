@@ -1,12 +1,12 @@
 {
   "Sharik" : {
-    "Murka" : 27
+    "Murka" : 32
   },
   "Murka" : {
-    "Gulshat" : 23
+    "Gulshat" : 16
   },
   "Erkezhan" : {
-    "Uazipa" : 17
+    "Uazipa" : 20
   },
   "New breakage" : {
     "Nursultan" : 5
@@ -18,6 +18,6 @@
     "Nursultan" : 1
   },
   "Gulmaria" : {
-    "Uazipa" : 18
+    "Uazipa" : 14
   }
 }

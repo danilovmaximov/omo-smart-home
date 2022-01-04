@@ -1,57 +1,44 @@
 {
-  "Uazipa" : {
-    "TV" : 5,
-    "Sleep" : 4,
-    "CoffeeMaker3000" : 12,
+  "Murka" : {
+    "Walk" : 1,
+    "Hum" : 13,
+    "Animal fight" : 2,
+    "Jump around" : 7,
+    "Wash" : 11,
+    "Couch" : 4
+  },
+  "Gulshat" : {
+    "Clean up" : 2,
+    "Audio system" : 5,
+    "Sleep" : 3,
     "Skis" : 2,
+    "Remember good times" : 5,
+    "Couch" : 4,
+    "Treadmill" : 1,
+    "Kitchen stove" : 5
+  },
+  "Uazipa" : {
+    "TV" : 8,
+    "Sleep" : 4,
+    "CoffeeMaker3000" : 8,
+    "Skis" : 1,
     "Washing machine" : 8,
     "Couch" : 4,
     "Crying baby" : 3,
     "Electric bike" : 4
   },
-  "Murka" : {
-    "Walk" : 2,
-    "Hum" : 10,
-    "Animal fight" : 2,
-    "Jump around" : 5,
-    "Wash" : 9,
-    "Couch" : 3
-  },
-  "Erkezhan" : {
-    "Play" : 1,
-    "TV" : 3,
-    "Computer" : 5,
-    "Couch" : 2
+  "Gulmaria" : {
+    "Walk" : 1,
+    "Play" : 5,
+    "TV" : 2
   },
   "Bublya" : {
     "Bloop" : 16,
     "Drip" : 17,
     "Splash" : 17
   },
-  "Sharik" : {
-    "Walk" : 1,
-    "Play ball" : 2,
-    "Bark" : 1,
-    "Couch" : 1,
-    "Chase the tail" : 2
-  },
-  "Gulmaria" : {
-    "Play" : 5,
-    "TV" : 3,
-    "Sleep" : 2
-  },
-  "Gulshat" : {
-    "Clean up" : 2,
-    "Audio system" : 6,
-    "Sleep" : 2,
-    "Skis" : 1,
-    "Remember good times" : 4,
-    "Couch" : 7,
-    "Treadmill" : 3,
-    "Kitchen stove" : 7
-  },
   "Azamat" : {
-    "TV" : 2,
+    "TV" : 4,
     "CoffeeMaker3000" : 2,
     "Skis" : 2,
     "Remember good times" : 2,
@@ -59,12 +46,26 @@
   },
   "Nursultan" : {
     "Boiler" : 2,
-    "CoffeeMaker3000" : 1,
+    "CoffeeMaker3000" : 3,
     "Car" : 3,
-    "Computer" : 2,
-    "Repair kit" : 6,
+    "Computer" : 4,
+    "Repair kit" : 5,
     "Couch" : 1,
-    "Treadmill" : 3,
-    "Electric bike" : 2
+    "Treadmill" : 5,
+    "Electric bike" : 1
+  },
+  "Erkezhan" : {
+    "Play" : 2,
+    "TV" : 2,
+    "Sleep" : 2,
+    "Computer" : 4,
+    "Couch" : 2
+  },
+  "Sharik" : {
+    "Walk" : 1,
+    "Play ball" : 2,
+    "Bark" : 2,
+    "Couch" : 1,
+    "Chase the tail" : 2
   }
 }
