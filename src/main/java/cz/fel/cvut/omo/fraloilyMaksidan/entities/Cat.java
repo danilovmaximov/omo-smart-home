@@ -45,15 +45,14 @@ public class Cat extends LivingEntity implements Subscriber {
 
     @Override
     public void step() {
-        if (justPissed) {
-        } else if (wannaPee()) {
+        if (wannaPee() && !justPissed) {
             if (currentActivity != null) {
                 currentActivity.setBlocked(true);
             }
             generatedActivity = new CleanUp(this);
             room.setActivity(generatedActivity);
             eventManager.notifySubscribers(name);
-        } else {
+        } else if(!justPissed) {
             super.step();
         }
     }

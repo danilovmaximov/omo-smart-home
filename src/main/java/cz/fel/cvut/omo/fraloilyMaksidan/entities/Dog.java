@@ -40,15 +40,14 @@ public class Dog extends LivingEntity {
 
     @Override
     public void step() {
-        if (isFighting) {
-        } else if (fightingIsFun()) {
+        if (fightingIsFun() && !isFighting) {
             if (currentActivity != null) {
                 currentActivity.setBlocked(true);
             }
             generatedActivity = new AnimalFight(this);
             room.setActivity(generatedActivity);
             eventManager.notifySubscribers(name);
-        } else {
+        } else if(!isFighting) {
             super.step();
         }
     }

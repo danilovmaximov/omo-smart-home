@@ -27,6 +27,7 @@ import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.Floor;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.floor.FloorBuilder;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.Room;
 import cz.fel.cvut.omo.fraloilyMaksidan.house.room.RoomBuilder;
+import cz.fel.cvut.omo.fraloilyMaksidan.parsing.Loader;
 import cz.fel.cvut.omo.fraloilyMaksidan.parsing.models.ActivityModel;
 import cz.fel.cvut.omo.fraloilyMaksidan.parsing.models.EntityModel;
 import cz.fel.cvut.omo.fraloilyMaksidan.parsing.models.FloorModel;
@@ -355,5 +356,19 @@ public class Configurator {
                 .addSensorsList(MapContext.getSensorsInHouse().values().stream().toList())
                 .getResult()
         );
+    }
+
+    public static World loadHouseFromConfig(String filename) {
+        HouseModel houseModel = Loader.loadFromJSON("testConfig.json");
+        if (houseModel != null) {
+            Configurator.createFloorsFromJSON(houseModel.getFloors());
+        } else {
+            throw new RuntimeException("Configurations loading failed.");
+        }
+        Configurator.createHouseFromJSON(houseModel);
+        Configurator.createActivitiesFromJSON(houseModel.getActivities());
+        Configurator.createEntitiesFromJSON(houseModel.getEntities());
+        Configurator.createStandardSensors();
+        return new World(MapContext.getHouse());
     }
 }
