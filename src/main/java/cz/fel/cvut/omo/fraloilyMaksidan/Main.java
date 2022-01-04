@@ -23,12 +23,8 @@ public class Main {
     Context.setTempLevel(20);
     ReportsAPI reports = new ReportsAPI(Context.getReports());
 
-    HouseModel houseModel = Loader.loadFromJSON("testConfig.json");
-    Configurator.createFloorsFromJSON(houseModel.getFloors());
-    Configurator.createHouseFromJSON(houseModel);
-    Configurator.createActivitiesFromJSON(houseModel.getActivities());
-    Configurator.createEntitiesFromJSON(houseModel.getEntities());
-    Configurator.createStandardSensors();
+    /*  Configuration is loaded from JSON. and main driver is returned */
+    World w1 = Configurator.loadHouseFromConfig("testConfig.json");
 
     System.out.println("Floors: ");
     for (Floor floor : MapContext.getFloorsInHouse().values().stream().toList()) {
@@ -50,15 +46,9 @@ public class Main {
       System.out.println("   " + entity);
     }
 
-    /*
-       World Class is a wrapper around house class to provide different simulations...
-    */
-    World w1 = new World(MapContext.getHouse());
     w1.startSimulation(100);
 
-    /*
-       Reports are used to deliver different info based on the demand;
-    */
+    /* Reports are used to deliver different info based on the demand. Can be printed to file or terminal. */
 
     System.out.println("=========================== Reports =========================== ");
     reports.allReportsPrint(true);
