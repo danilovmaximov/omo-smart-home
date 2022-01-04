@@ -1,4 +1,4 @@
-/target
-.idea/
+# Default ignored files
+.idea
+target
 .gitignore
-configurationHouse:reports.txt

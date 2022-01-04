@@ -1,0 +1,73 @@
+{
+  "Nursultan" : {
+    "Boiler" : 2,
+    "CoffeeMaker3000" : 3,
+    "Car" : 3,
+    "Computer" : 5,
+    "Repair kit" : 6,
+    "Couch" : 1,
+    "Treadmill" : 3,
+    "Electric bike" : 2
+  },
+  "Murka" : {
+    "Walk" : 1,
+    "Hum" : 16,
+    "Animal fight" : 3,
+    "Jump around" : 7,
+    "Wash" : 13,
+    "Couch" : 7
+  },
+  "Uazipa" : {
+    "TV" : 5,
+    "Sleep" : 3,
+    "CoffeeMaker3000" : 10,
+    "Skis" : 2,
+    "Washing machine" : 8,
+    "Couch" : 2,
+    "Crying baby" : 3,
+    "Electric bike" : 4
+  },
+  "Gulmaria" : {
+    "Walk" : 1,
+    "Play" : 3,
+    "TV" : 3,
+    "Couch" : 1
+  },
+  "Sharik" : {
+    "Play ball" : 4,
+    "Bark" : 3,
+    "Couch" : 2,
+    "Chase the tail" : 4
+  },
+  "Bublya" : {
+    "Bloop" : 16,
+    "Drip" : 17,
+    "Splash" : 17
+  },
+  "Gulshat" : {
+    "Clean up" : 3,
+    "Audio system" : 3,
+    "Sleep" : 2,
+    "Skis" : 1,
+    "Remember good times" : 5,
+    "Couch" : 8,
+    "Treadmill" : 5,
+    "Kitchen stove" : 6
+  },
+  "Azamat" : {
+    "TV" : 3,
+    "Sleep" : 1,
+    "CoffeeMaker3000" : 2,
+    "Skis" : 2,
+    "Remember good times" : 1,
+    "Couch" : 2
+  },
+  "Erkezhan" : {
+    "Walk" : 1,
+    "Play" : 2,
+    "TV" : 2,
+    "Sleep" : 2,
+    "Computer" : 2,
+    "Couch" : 1
+  }
+}
