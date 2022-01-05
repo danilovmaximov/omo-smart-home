@@ -1,0 +1,32 @@
+{
+  "Humidity level sensor" : {
+    "AirIsDry" : 99,
+    "AirIsWet" : 99
+  },
+  "Something's broken" : {
+    "New breakage" : 21
+  },
+  "Oxygen level sensor" : {
+    "OxygenHigh" : 1
+  },
+  "Baby cries" : {
+    "Son" : 58
+  },
+  "Inside temperature sensor" : {
+    "Its cold" : 4,
+    "Its warm" : 4
+  },
+  "Baby cries" : {
+    "Daughter" : 68
+  },
+  "Dog fights" : {
+    "Doggo" : 56
+  },
+  "Cat pees" : {
+    "Catto" : 59
+  },
+  "Sunlight sensor" : {
+    "LightDown" : 72,
+    "LightUp" : 74
+  }
+}

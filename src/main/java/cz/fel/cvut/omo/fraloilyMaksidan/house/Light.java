@@ -15,6 +15,6 @@ public class Light implements Subscriber {
 
     @Override
     public String toString() {
-        return "Light is on: " + isOn;
+        return "Light";
     }
 }

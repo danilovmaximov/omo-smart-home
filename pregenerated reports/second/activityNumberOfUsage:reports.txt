@@ -1,0 +1,72 @@
+{
+  "Daughter" : {
+    "Walk" : 1,
+    "Play" : 13,
+    "TV" : 9,
+    "Sleep" : 2,
+    "Couch" : 5
+  },
+  "Mother" : {
+    "TV" : 25,
+    "Sleep" : 15,
+    "CoffeeMaker3000" : 25,
+    "Skis" : 3,
+    "Couch" : 23,
+    "Crying baby" : 3,
+    "Electric bike" : 26
+  },
+  "Father" : {
+    "Boiler" : 5,
+    "CoffeeMaker3000" : 8,
+    "Car" : 7,
+    "Computer" : 4,
+    "Repair kit" : 23,
+    "Couch" : 2,
+    "Treadmill" : 5,
+    "Electric bike" : 1
+  },
+  "Son" : {
+    "Play" : 7,
+    "TV" : 8,
+    "Sleep" : 3,
+    "Computer" : 13,
+    "Couch" : 6
+  },
+  "Grandma" : {
+    "Clean up" : 3,
+    "Sleep" : 8,
+    "Skis" : 4,
+    "Remember good times" : 18,
+    "Couch" : 31,
+    "Treadmill" : 14,
+    "Kitchen stove" : 21
+  },
+  "Fishy" : {
+    "Bloop" : 50,
+    "Drip" : 50,
+    "Splash" : 50
+  },
+  "Doggo" : {
+    "Walk" : 2,
+    "Play ball" : 11,
+    "Bark" : 11,
+    "Couch" : 2,
+    "Chase the tail" : 11
+  },
+  "Grandpa" : {
+    "TV" : 8,
+    "Sleep" : 2,
+    "CoffeeMaker3000" : 11,
+    "Skis" : 6,
+    "Remember good times" : 2,
+    "Couch" : 9
+  },
+  "Catto" : {
+    "Walk" : 5,
+    "Hum" : 40,
+    "Animal fight" : 2,
+    "Jump around" : 18,
+    "Wash" : 30,
+    "Couch" : 12
+  }
+}

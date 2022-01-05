@@ -102,6 +102,7 @@ public class Configurator {
 
         MapContext.addSensors(sunSensor, oxygenSensor, humiditySensor, insideTempSensor);
         MapContext.getHouse().addSensorsList(MapContext.getSensorsInHouse().values().stream().toList());
+        MapContext.getHouse().getStation().getSensors().forEach(sensor -> System.out.println("Sensor: " + sensor));
     }
 
     public static void createHouseFromJSON(HouseModel houseModel) throws RuntimeException {
@@ -359,7 +360,7 @@ public class Configurator {
     }
 
     public static World loadHouseFromConfig(String filename) {
-        HouseModel houseModel = Loader.loadFromJSON("testConfig.json");
+        HouseModel houseModel = Loader.loadFromJSON("firstConfig.json");
         if (houseModel != null) {
             Configurator.createFloorsFromJSON(houseModel.getFloors());
         } else {

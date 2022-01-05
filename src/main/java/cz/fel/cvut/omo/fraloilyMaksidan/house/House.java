@@ -15,7 +15,7 @@ import java.util.List;
 public class House {
 
     private String address;
-    private SensorsStation station;
+    private final SensorsStation station = new SensorsStation();
 
     private final List<Floor> floors = new ArrayList<>();
 
@@ -60,18 +60,22 @@ public class House {
 
     public void addSensors(Sensor... sensors) {
         Arrays.stream(sensors)
-                .forEach(sensor -> this.station = new SensorsStation(sensor));
+                .forEach(sensor -> this.station.addSensors(sensor));
     }
 
     public void addSensorsList(List<Sensor> sensors) {
         sensors
-                .forEach(sensor -> this.station = new SensorsStation(sensor));
+                .forEach(sensor -> this.station.addSensors(sensor));
     }
 
     public void initFloors() {
         for (Floor floor : floors) {
             floor.setHouse(this);
         }
+    }
+
+    public SensorsStation getStation() {
+        return this.station;
     }
 
     @Override

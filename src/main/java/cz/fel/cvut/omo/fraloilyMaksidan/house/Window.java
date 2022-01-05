@@ -2,8 +2,15 @@ package cz.fel.cvut.omo.fraloilyMaksidan.house;
 import cz.fel.cvut.omo.fraloilyMaksidan.sensors.observer.Subscriber;
 
 public class Window implements Subscriber {
-    boolean closedShutters = false;
-    boolean closedWindow = false;
+    private boolean closedShutters = false;
+    private boolean closedWindow = false;
+
+    private final int closedOxygenChange = 0;
+    private final int openedOxygenChange = 3;
+
+    public int getOxygenChange() {
+        return closedWindow ? closedOxygenChange : openedOxygenChange;
+    }
 
     @Override
     public void update(String event) {
@@ -17,7 +24,6 @@ public class Window implements Subscriber {
 
     @Override
     public String toString() {
-        return "Roll Shutters are closed: " + closedShutters + "," +
-               "Window is closed: " + closedWindow;
+        return "Window";
     }
 }

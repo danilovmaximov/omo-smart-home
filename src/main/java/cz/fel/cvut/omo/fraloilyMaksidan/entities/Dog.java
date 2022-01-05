@@ -25,7 +25,7 @@ public class Dog extends LivingEntity {
 
     private boolean fightingIsFun() {
         Random r = new Random();
-        if (r.nextInt(3) == 1) {
+        if (r.nextInt(5) == 1) {
             this.isFighting = true;
         }
         return this.isFighting;
@@ -40,14 +40,17 @@ public class Dog extends LivingEntity {
 
     @Override
     public void step() {
-        if (fightingIsFun() && !isFighting) {
+        if (isFighting) {
+            return;
+        }
+        if (fightingIsFun()) {
             if (currentActivity != null) {
                 currentActivity.setBlocked(true);
             }
             generatedActivity = new AnimalFight(this);
             room.setActivity(generatedActivity);
             eventManager.notifySubscribers(name);
-        } else if(!isFighting) {
+        } else {
             super.step();
         }
     }

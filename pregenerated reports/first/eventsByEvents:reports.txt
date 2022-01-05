@@ -1,0 +1,40 @@
+{
+  "LightDown" : {
+    "Window" : 36,
+    "Light" : 36
+  },
+  "LightUp" : {
+    "Window" : 37,
+    "Light" : 37
+  },
+  "Son" : {
+    "Mother" : 58
+  },
+  "OxygenHigh" : {
+    "Window" : 1
+  },
+  "Doggo" : {
+    "Catto" : 56
+  },
+  "Daughter" : {
+    "Mother" : 68
+  },
+  "New breakage" : {
+    "Father" : 21
+  },
+  "AirIsDry" : {
+    "Humidifier" : 99
+  },
+  "Its cold" : {
+    "Father" : 4
+  },
+  "Its warm" : {
+    "Father" : 4
+  },
+  "AirIsWet" : {
+    "Humidifier" : 99
+  },
+  "Catto" : {
+    "Grandma" : 59
+  }
+}

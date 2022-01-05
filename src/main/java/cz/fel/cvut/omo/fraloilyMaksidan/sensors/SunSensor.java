@@ -3,7 +3,7 @@ package cz.fel.cvut.omo.fraloilyMaksidan.sensors;
 import cz.fel.cvut.omo.fraloilyMaksidan.Context;
 
 public class SunSensor extends Sensor {
-    boolean reportedUp = false;
+    private boolean reportedUp = false;
 
     public SunSensor(String name, String... operations) {
         super(name, operations);
@@ -11,12 +11,12 @@ public class SunSensor extends Sensor {
 
     @Override
     public void step() {
-        boolean isBright = Context.itsBright();
-        if (isBright && !reportedUp) {
+        boolean sunIsUp = Context.itsBright();
+        if (sunIsUp && !reportedUp) {
             reportedUp = true;
             this.notifySubscribers("LightUp");
         }
-        if (!isBright & reportedUp) {
+        if (!sunIsUp & reportedUp) {
             reportedUp = false;
             this.notifySubscribers("LightDown");
         }

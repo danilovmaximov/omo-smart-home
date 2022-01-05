@@ -1,0 +1,42 @@
+{
+  "Electric bike" : {
+    "water" : 0,
+    "gas" : 0,
+    "electricity" : 3910
+  },
+  "Boiler" : {
+    "water" : 3330,
+    "gas" : 1110,
+    "electricity" : 933
+  },
+  "TV" : {
+    "water" : 0,
+    "gas" : 0,
+    "electricity" : 2900
+  },
+  "Kitchen stove" : {
+    "water" : 492,
+    "gas" : 0,
+    "electricity" : 4044
+  },
+  "CoffeeMaker3000" : {
+    "water" : 254,
+    "gas" : 0,
+    "electricity" : 554
+  },
+  "Treadmill" : {
+    "water" : 402,
+    "gas" : 0,
+    "electricity" : 3015
+  },
+  "Car" : {
+    "water" : 0,
+    "gas" : 3150,
+    "electricity" : 0
+  },
+  "Computer" : {
+    "water" : 0,
+    "gas" : 0,
+    "electricity" : 2256
+  }
+}

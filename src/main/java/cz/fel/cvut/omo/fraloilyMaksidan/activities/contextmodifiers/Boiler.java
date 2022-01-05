@@ -15,7 +15,7 @@ public class Boiler extends ContextModifierActivity {
     public void step() {
         super.step();
         if (isActive()) {
-            Context.setTempLevel(Context.getTempLevel() + 1);
+            Context.changeTempLevel(3);
             System.out.println("Boiler is active");
         }
     }

@@ -24,9 +24,8 @@ public class World {
         }
     }
 
-    @SuppressWarnings("EmptyMethod")
     private void ChangeContext() {
-        //Strategy
+        Context.getCurrentStrategy().changeConditions();
     }
 
     public House getHouse() {

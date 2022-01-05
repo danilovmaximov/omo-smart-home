@@ -37,7 +37,7 @@ public class Cat extends LivingEntity implements Subscriber {
 
     private boolean wannaPee() {
         Random r = new Random();
-        if (r.nextInt(4) == 1) {
+        if (r.nextInt(5) == 1) {
             this.justPissed = true;
         }
         return this.justPissed;
@@ -45,14 +45,17 @@ public class Cat extends LivingEntity implements Subscriber {
 
     @Override
     public void step() {
-        if (wannaPee() && !justPissed) {
+        if (justPissed) {
+            return;
+        }
+        if (wannaPee()) {
             if (currentActivity != null) {
                 currentActivity.setBlocked(true);
             }
             generatedActivity = new CleanUp(this);
             room.setActivity(generatedActivity);
             eventManager.notifySubscribers(name);
-        } else if(!justPissed) {
+        } else {
             super.step();
         }
     }
@@ -62,7 +65,6 @@ public class Cat extends LivingEntity implements Subscriber {
         var fightingDog = dogs.stream()
                 .filter(dog -> Objects.equals(event, dog.getName()))
                 .toList().get(0);
-
         this.addEmergentActivity(fightingDog.getGeneratedActivity());
     }
 

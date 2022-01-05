@@ -3,29 +3,28 @@
 ### Intro
 Implementation of Smart Home assignment.
 
-
 ### Requirements
-+ F1: Done(House -> Floor -> Room -> entities, activities)
++ F1: Done, House -> Floor -> Room -> entities, activities
 + F2: Done, ex: Current user can be added for activity.
 + F3: Done, ConsumingActivity abstract class.
 + F4: Done, ex: appendConsumptionAndGetContextChange() in House class.
 + F5: Done, ex: Mother engages in BabyCry activity, where state of baby is changes.
 + F6: Maybe, events generated: Baby, but LivingEntities actively moving.
-+ F7: Done, Baby->Mom->BabyCry, TempSensor -> Dad -> Boiler
-+ F8: Done, reportAPI static methods are used to get reports(to stdout or file).
-+ F9: Done, 
++ F7: Done, Baby -> Mom -> BabyCry, TempSensor -> Dad -> Boiler
++ F8: Done, reportAPI static methods are used to get reports (to stdout or file).
++ F9: Done, when person finds broken activity, it reports it with event through BreakageManager, Father receives it and goes to solve it. He looks for manual for some time and then fixes activity or buys a new one. 
 + F10: Done, configurable - activities could be added to entities, length of activity could be configured.
 
 ### Implemented patterns:
 - Strategy: context changes according to loaded strategy.
 - State machine: LivingEntity contains circular queue of activities and public method to change state(go to next activity).
-- Builder: rooms, floors and house is configured through builders.
+- Builder: rooms, floors and house are configured through builders.
 - Observer: Sensors are implemented as event managers for subscribers(Window, Father).
 - Decorator - Derived classed such as Baby extends LivingEntity and contains EventManager to send messages to subscribers.
 - Singleton - instead of singletons static methods and fields are used(Context, MapContext).
 
 ### Minimal configuration
-Minimal configuration is done in JSON.
+Minimal configuration is done in JSONs.
 UMLs are in '.resources/UML/'.
 Methods are mostly self-described, but small javadoc comments added.
 

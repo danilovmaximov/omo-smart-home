@@ -1,0 +1,32 @@
+{
+  "Baby cries" : {
+    "Son" : 62
+  },
+  "Something's broken" : {
+    "New breakage" : 23
+  },
+  "Oxygen level sensor" : {
+    "OxygenHigh" : 1
+  },
+  "Humidity level sensor" : {
+    "AirIsDry" : 99,
+    "AirIsWet" : 99
+  },
+  "Cat pees" : {
+    "Catto" : 59
+  },
+  "Inside temperature sensor" : {
+    "Its cold" : 4,
+    "Its warm" : 3
+  },
+  "Sunlight sensor" : {
+    "LightDown" : 72,
+    "LightUp" : 74
+  },
+  "Dog fights" : {
+    "Doggo" : 47
+  },
+  "Baby cries" : {
+    "Daughter" : 67
+  }
+}

@@ -16,6 +16,13 @@ public class SensorsStation {
         Collections.addAll(this.sensors, sensors);
     }
 
+    public void addSensors(Sensor... sensors) {
+        Collections.addAll(this.sensors, sensors);
+    }
+
+    public List<Sensor> getSensors() {
+        return this.sensors;
+    }
 
     public void step() {
         for (Sensor m : sensors) {
